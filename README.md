@@ -1,14 +1,35 @@
-# Collected Workflows &amp; Proofs of Concept
+# Collected Workflows &amp; Proofs of Concept <!-- omit from toc -->
 
 Description.
 
-## Workflows
 
-### Duden Workflow
+---
 
-![](assets/icons/duden.png)
+- [1. Workflows](#1-workflows)
+  - [1.1. Duden Workflow](#11-duden-workflow)
+  - [1.2. What Unicode Character is this? (ツ)\_/¯](#12-what-unicode-character-is-this-ツ_)
+  - [1.3. Roman Numeral Converter](#13-roman-numeral-converter)
+  - [1.4. DEVONthink ↔ PDF Expert](#14-devonthink--pdf-expert)
+- [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
+  - [2.1. Modifier Palettes \& Double Tap Hotkeys](#21-modifier-palettes--double-tap-hotkeys)
+  - [2.2. Permission Handler](#22-permission-handler)
 
-Search, navigate and view information from duden.de German spelling dictionary. 
+
+## 1. Workflows
+
+### 1.1. Duden Workflow
+
+<table> 
+    <tr>
+        <td>
+            <img src="assets/icons/duden.png"> 
+        </td>
+        <td>
+           Search, navigate and view information from duden.de German spelling dictionary. 
+        </td>
+    </tr>
+</table>
+
 
 - ` shift ⇧ ` or `cmd ⌘+Y`: Get QuickLook previews for the landing page, grammar, and synonyms
 - `cmd ⌘+L` to view the full entry contents.
@@ -23,15 +44,15 @@ Download v.1.0.0 `TODO`
 
 - [SwiftSoup](https://github.com/scinfu/SwiftSoup)
 
-### What Unicode Character is this? (ツ)_/¯
+---
+
+### 1.2. What Unicode Character is this? (ツ)_/¯
 
 <!-- ![](assets/icons/whatisit.png) -->
-<img src="assets/icons/whatisit.png" width=50, height=50> 
-
-The *What Unicode Character is this?* workflow tells you which unicode character it is. Given a character or string, you will get the unicode code points, the scalar names and general categories.
+<!-- <img src="assets/icons/whatisit.png" width=50, height=50>  -->
 
 <table> 
-    <tr border-spacing=0>
+    <tr>
         <td>
             <img src="assets/icons/whatisit.png"> 
         </td>
@@ -62,25 +83,37 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 ![](assets/images/preview_whatisit.jpg)
 
-Code: Link to WhatIsIt.swift `TODO`  
+Code:  [WhatIsIt.swift](/assets/code/WhatIsIt.swift)  
 Download v2.0.1 `TODO`
 
 
-### Roman Numeral Converter
+---
+
+### 1.3. Roman Numeral Converter
 
 Convert Roman numerals to decimal and vice versa.
 
 ![](assets/images/preview_roman.jpg)
 
-Link to RomanNumeral.swift `TODO`  
+Code: [RomanNumeral.swift](/assets/code/RomanNumeral.swift)  
 Download v.1.0.0 `TODO`
 
-### DEVONthink ↔ PDF Expert
 
+---
 
-![](assets/icons/dt3pdf.png)
+### 1.4. DEVONthink ↔ PDF Expert
 
-Get the DEVONthink 3 reference URL from PDF Expert, i.e. the `x-devonthink-item` page link for the active document opened in PDF Expert.
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/dt3pdf.png">
+        </td>
+        <td>
+        	Get the DEVONthink 3 reference URL from PDF Expert, i.e. the <code>x-devonthink-item</code> page link for the active document opened in PDF Expert.
+        </td>
+    </tr>
+</table>
+
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
 
@@ -91,11 +124,11 @@ Get the DEVONthink 3 reference URL from PDF Expert, i.e. the `x-devonthink-item`
 - Fails for documents where the backmatter page description does not conform to the enumeration scheme
 - Fails for the left-hand side document if the PDF Expert split view is enabled
 
+---
 
+## 2. Proof of Concept & Demos
 
-## Proof of Concept & Demos
-
-### Modifier Palettes & Double Tap Hotkeys
+### 2.1. Modifier Palettes & Double Tap Hotkeys
 
 Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
 
@@ -110,7 +143,9 @@ Cf. Wiki `TODO`.
 Download `TODO`.
 
 
-### Permission Handler
+---
+
+### 2.2. Permission Handler
 
 An example of how to gracefully handle permissions for your executables.  
 Cf. Wiki `TODO`
