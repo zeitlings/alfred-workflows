@@ -14,7 +14,7 @@ If you find my workflows useful, perhaps consider reciprocating with a token of 
 Some Script Filter workflows live in their own repository:
 
 - [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar)
-- [Set Default Browser]()
+- [Set Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 
 ---
 
