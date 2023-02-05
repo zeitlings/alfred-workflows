@@ -2,9 +2,9 @@
 <!-- omit from toc -->
 
 <h1 align="center"></br>Collected Workflows and Proofs of Concept</h1>
-<p align="center">
+<!--<p align="center">
 <a href="#"><img src="https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=5C1F87&logo=Alfred&logoColor=FFFFFF&label="></a>
-</p>
+</p>-->
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗   
@@ -31,7 +31,7 @@ Some Script Filter workflows live in their own repository:
 
 ---
 
-# 1. Workflows
+# 1. Workflows 
 
 ## 1.1. Duden Workflow
 
