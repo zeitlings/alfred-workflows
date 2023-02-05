@@ -179,14 +179,17 @@ __Modifier Palettes & Double Tap Hotkeys.__
 Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
 
 Modifier Palette example behavior  
-- `⌥+O ⌥+K` To trigger action A.  
-- `⌥+I ⌥+K` To trigger action B.
+- `⌥O ⌥K` To trigger action A.  
+- `⌥I ⌥K` To trigger action B.
 
 Double Tap example behavior  
-- `⌥+# ⌥+#` To trigger action.
+- `⌃+ ⌃+` To trigger action.
 
 Cf. Wiki `TODO`.  
-Download `TODO`.
+Download `TODO`.  
+
+
+![](assets/images/preview_extended.jpg)
 
 
 ---
