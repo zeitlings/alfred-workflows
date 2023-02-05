@@ -1,7 +1,7 @@
 #!/usr/bin/swift
 //
 //  WhatIsIt.swift
-//  Inspect unicode characters
+//  Inspect Unicode Characters
 //
 //  Created by Patrick Sy on 27/01/2023.
 //
