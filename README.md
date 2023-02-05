@@ -6,15 +6,15 @@
 <a href="#"><img src="https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=5C1F87&logo=Alfred&logoColor=FFFFFF&label="></a>
 </p>
 
-This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). Some Script Filter workflows live in their own repository:
-
-- [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar)
-- [Set Default Browser]()
-
-
+This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗   
 
 <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+
+Some Script Filter workflows live in their own repository:
+
+- [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar)
+- [Set Default Browser]()
 
 ---
 
