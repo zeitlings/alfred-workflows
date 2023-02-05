@@ -11,10 +11,7 @@ If you find my workflows useful, perhaps consider reciprocating with a token of 
 
 <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
 
-Some Script Filter workflows live in their own repository:
-
-- [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar)
-- [Set Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
+Some Script Filter workflows live in their own repository: [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar), [Set Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 
 ---
 
