@@ -80,6 +80,7 @@ If you find my workflows useful, perhaps consider reciprocating with a token of 
 
 <p align="center">
     <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni"><img src="https://img.shields.io/badge/download-v2.0.1-informational"></a>
+    <a href="/assets/code/WhatIsIt.swift"><img src="https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code"></a>
 </p>
 
 <!-- [![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni) -->
@@ -107,23 +108,24 @@ Given a hex value either raw or in any of the above formattings will return its 
 ![](assets/images/preview_whatisit.jpg)
 
 
-[![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
+<!-- [![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift) -->
 
 ---
 
 ## 1.3. Roman Numeral Converter
 
-Convert Roman numerals to decimal and vice versa.
+Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the range 1 to 3999.
 
 <p align="center">
     <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
+    <a href="/assets/code/RomanNumeral.swift"><img src="https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code"></a>
 </p>
 
 <!-- [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn) -->
 
 ![](assets/images/preview_roman.jpg)
 
-[![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
+<!-- [![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift) -->
 
 
 ---
@@ -177,11 +179,11 @@ __Modifier Palettes & Double Tap Hotkeys.__
 Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
 
 Modifier Palette example behavior  
-: `⌥+O ⌥+K` To trigger action A.  
-: `⌥+I ⌥+K` To trigger action B.
+- `⌥+O ⌥+K` To trigger action A.  
+- `⌥+I ⌥+K` To trigger action B.
 
 Double Tap example behavior  
-: `⌥+# ⌥+#` To trigger action.
+- `⌥+# ⌥+#` To trigger action.
 
 Cf. Wiki `TODO`.  
 Download `TODO`.
