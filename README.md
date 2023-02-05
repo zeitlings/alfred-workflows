@@ -1,4 +1,10 @@
-# Collected Workflows &amp; Proofs of Concept <!-- omit from toc -->
+<!-- # Collected Workflows &amp; Proofs of Concept  -->
+<!-- omit from toc -->
+
+<h1 align="center"></br>Collected Workflows and Proofs of Concept</h1>
+<p align="center">
+<img src="https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=5C1F87&logo=Alfred&logoColor=FFFFFF&label=">
+</p>
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). Some Script Filter workflows live in their own repository:
 
@@ -39,7 +45,11 @@ Table of Contents
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
+<p align="center">
+    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
+</p>
+
+<!-- [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude) -->
 
 - ` shift ⇧ ` or `cmd ⌘+Y`: Get QuickLook previews for the landing page, grammar, and synonyms
 - `cmd ⌘+L` to view the full entry contents.
@@ -67,7 +77,11 @@ Table of Contents
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni)
+<p align="center">
+    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni"><img src="https://img.shields.io/badge/download-v2.0.1-informational"></a>
+</p>
+
+<!-- [![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni) -->
 
 
 ### Example `ツ`
@@ -100,7 +114,11 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 Convert Roman numerals to decimal and vice versa.
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn)
+<p align="center">
+    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
+</p>
+
+<!-- [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn) -->
 
 ![](assets/images/preview_roman.jpg)
 
@@ -122,7 +140,11 @@ Convert Roman numerals to decimal and vice versa.
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev)
+<p align="center">
+    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev"><img src="https://img.shields.io/badge/download-v1.2.0-informational"></a>
+</p>
+
+<!-- [![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev) -->
 
 The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in DEVONthink.
 
@@ -135,10 +157,10 @@ The PDF, of course, has to live in one of your DEVONthink databases. Actioning t
 - Fails for the left-hand side document if the PDF Expert split view is enabled
 
 <details>
-  <summary>Expand to watch a preview 🎥</summary>
+  <summary>Expand to watch a preview 👓</summary>
 
   https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
-  
+
 </details>    
 
 
@@ -146,7 +168,7 @@ The PDF, of course, has to live in one of your DEVONthink databases. Actioning t
 
 # 2. Proof of Concept & Demos
 
-`WIP`
+![WIP](https://img.shields.io/static/v1?style=for-the-badge&message=WIP&color=F00&logo=Alfred&logoColor=FFFFFF&label=)
 
 ## 2.1. Extended Hotkeys
 
