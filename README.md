@@ -24,9 +24,9 @@ Table of Contents
   - [2.2. Permission Handler](#22-permission-handler)
 
 
-## 1. Workflows
+# 1. Workflows
 
-### 1.1. Duden Workflow
+## 1.1. Duden Workflow
 
 <table> 
     <tr>
@@ -39,6 +39,7 @@ Table of Contents
     </tr>
 </table>
 
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](/releases/tag/v1.0.0-dude)
 
 - ` shift ⇧ ` or `cmd ⌘+Y`: Get QuickLook previews for the landing page, grammar, and synonyms
 - `cmd ⌘+L` to view the full entry contents.
@@ -47,18 +48,13 @@ Table of Contents
 
 ![](assets/images/preview_duden.jpg)
 
-Download v.1.0.0 `TODO`  
-
 **Credits**
 
 - [SwiftSoup](https://github.com/scinfu/SwiftSoup)
 
 ---
 
-### 1.2. What Unicode Character is this? (ツ)_/¯
-
-<!-- ![](assets/icons/whatisit.png) -->
-<!-- <img src="assets/icons/whatisit.png" width=50, height=50>  -->
+## 1.2. What Unicode Character is this? (ツ)_/¯
 
 <table> 
     <tr>
@@ -71,20 +67,23 @@ Download v.1.0.0 `TODO`
     </tr>
 </table>
 
-#### Example `ツ`
+[![](https://img.shields.io/badge/download-v2.0.1-informational)](/releases/tag/v2.0.1-uni)
+
+
+### Example `ツ`
 
 - KATAKANA LETTER TU
 - `U+30C4`
 - Other Letter
 
-#### Modifiers
+### Modifiers
 
 - `⌘ cmd` yields `\u{30C4}` (swift, ES6 formatted)
 - `⌥ opt` yields `\u30C4` (python, go formatted)
 - `⌃ ctrl` yields `&#x30C4;` (HTML entity)
 - `⇧ shift` yields `0x30C4` (hex literal)
 
-#### Inverse
+### Inverse
 
 Given a hex value either raw or in any of the above formattings will return its corresponding unicode character.
 - `whatisit? \u{1F914}` yields info for 🤔
@@ -92,25 +91,25 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 ![](assets/images/preview_whatisit.jpg)
 
-Code:  [WhatIsIt.swift](/assets/code/WhatIsIt.swift)  
-Download v2.0.1 `TODO`
 
+[![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
 
 ---
 
-### 1.3. Roman Numeral Converter
+## 1.3. Roman Numeral Converter
 
 Convert Roman numerals to decimal and vice versa.
 
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](/releases/tag/v1.0.0-rn)
+
 ![](assets/images/preview_roman.jpg)
 
-Code: [RomanNumeral.swift](/assets/code/RomanNumeral.swift)  
-Download v.1.0.0 `TODO`
+[![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
 
 
 ---
 
-### 1.4. DEVONthink `↔` PDF Expert
+## 1.4. DEVONthink `↔` PDF Expert
 
 <table>
     <tr>
@@ -123,28 +122,31 @@ Download v.1.0.0 `TODO`
     </tr>
 </table>
 
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](/releases/tag/v1.2.0-xdev)
+
 The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in DEVONthink.
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
 
-#### Known issues
+### Known issues
 
 - Fails for document pages that are indexed with roman numerals
 - Fails for documents where the backmatter page description does not conform to the enumeration scheme
 - Fails for the left-hand side document if the PDF Expert split view is enabled
 
-
-
 <details>
   <summary>Expand to watch a preview 🎥</summary>
-  <video src="assets/mov/demo_xdev.mp4"></video>
-</details>
+  https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
+</details>    
+
 
 ---
 
-## 2. Proof of Concept & Demos
+# 2. Proof of Concept & Demos
 
-### 2.1. Extended Hotkeys
+`WIP`
+
+## 2.1. Extended Hotkeys
 
 __Modifier Palettes & Double Tap Hotkeys.__
 Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
@@ -162,7 +164,7 @@ Download `TODO`.
 
 ---
 
-### 2.2. Permission Handler
+## 2.2. Permission Handler
 
 An example of how to gracefully handle permissions for your executables.  
 Cf. Wiki `TODO`
