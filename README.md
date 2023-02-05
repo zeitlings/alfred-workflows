@@ -18,7 +18,7 @@ If you find my workflows useful, perhaps consider reciprocating with a token of 
 
 ---
 
-Table of Contents
+**Table of Contents**
 
 - [1. Workflows](#1-workflows)
   - [1.1. Duden Workflow](#11-duden-workflow)
@@ -29,6 +29,7 @@ Table of Contents
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
 
+---
 
 # 1. Workflows
 
