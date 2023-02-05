@@ -39,7 +39,7 @@ Table of Contents
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](/releases/tag/v1.0.0-dude)
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
 
 - ` shift ⇧ ` or `cmd ⌘+Y`: Get QuickLook previews for the landing page, grammar, and synonyms
 - `cmd ⌘+L` to view the full entry contents.
@@ -67,7 +67,7 @@ Table of Contents
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v2.0.1-informational)](/releases/tag/v2.0.1-uni)
+[![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni)
 
 
 ### Example `ツ`
@@ -100,7 +100,7 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 Convert Roman numerals to decimal and vice versa.
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](/releases/tag/v1.0.0-rn)
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn)
 
 ![](assets/images/preview_roman.jpg)
 
@@ -122,7 +122,7 @@ Convert Roman numerals to decimal and vice versa.
     </tr>
 </table>
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](/releases/tag/v1.2.0-xdev)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev)
 
 The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in DEVONthink.
 
@@ -136,7 +136,9 @@ The PDF, of course, has to live in one of your DEVONthink databases. Actioning t
 
 <details>
   <summary>Expand to watch a preview 🎥</summary>
+
   https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
+  
 </details>    
 
 
