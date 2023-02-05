@@ -1,17 +1,26 @@
 # Collected Workflows &amp; Proofs of Concept <!-- omit from toc -->
 
-Description.
+This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). Some Script Filter workflows live in their own repository:
 
+- [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar)
+- [Set Default Browser]()
+
+
+If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗   
+
+<a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
 
 ---
+
+Table of Contents
 
 - [1. Workflows](#1-workflows)
   - [1.1. Duden Workflow](#11-duden-workflow)
   - [1.2. What Unicode Character is this? (ツ)\_/¯](#12-what-unicode-character-is-this-ツ_)
   - [1.3. Roman Numeral Converter](#13-roman-numeral-converter)
-  - [1.4. DEVONthink ↔ PDF Expert](#14-devonthink--pdf-expert)
+  - [1.4. DEVONthink `↔` PDF Expert](#14-devonthink--pdf-expert)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
-  - [2.1. Modifier Palettes \& Double Tap Hotkeys](#21-modifier-palettes--double-tap-hotkeys)
+  - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
 
 
@@ -101,7 +110,7 @@ Download v.1.0.0 `TODO`
 
 ---
 
-### 1.4. DEVONthink ↔ PDF Expert
+### 1.4. DEVONthink `↔` PDF Expert
 
 <table>
     <tr>
@@ -114,9 +123,9 @@ Download v.1.0.0 `TODO`
     </tr>
 </table>
 
+The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in DEVONthink.
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
-
 
 #### Known issues
 
@@ -124,12 +133,20 @@ Download v.1.0.0 `TODO`
 - Fails for documents where the backmatter page description does not conform to the enumeration scheme
 - Fails for the left-hand side document if the PDF Expert split view is enabled
 
+
+
+<details>
+  <summary>Expand to watch a preview 🎥</summary>
+  <video src="assets/mov/demo_xdev.mp4"></video>
+</details>
+
 ---
 
 ## 2. Proof of Concept & Demos
 
-### 2.1. Modifier Palettes & Double Tap Hotkeys
+### 2.1. Extended Hotkeys
 
+__Modifier Palettes & Double Tap Hotkeys.__
 Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
 
 Modifier Palette example behavior  
