@@ -156,13 +156,17 @@ The PDF, of course, has to live in one of your DEVONthink databases. Actioning t
 - Fails for documents where the backmatter page description does not conform to the enumeration scheme
 - Fails for the left-hand side document if the PDF Expert split view is enabled
 
+
+https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
+
+<!--
 <details>
   <summary>Expand to watch a preview 👓</summary>
 
   https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
 
 </details>    
-
+-->
 
 ---
 
