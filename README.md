@@ -32,6 +32,8 @@ Some Script Filter workflows live in their own repository: [Alfred Calendar++](h
 
 ## 1.1. Duden Workflow
 
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
+
 <table> 
     <tr>
         <td>
@@ -43,11 +45,6 @@ Some Script Filter workflows live in their own repository: [Alfred Calendar++](h
     </tr>
 </table>
 
-<p align="center">
-    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
-</p>
-
-<!-- [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude) -->
 
 - ` shift ⇧ ` or `cmd ⌘+Y`: Get QuickLook previews for the landing page, grammar, and synonyms
 - `cmd ⌘+L` to view the full entry contents.
@@ -64,6 +61,9 @@ Some Script Filter workflows live in their own repository: [Alfred Calendar++](h
 
 ## 1.2. What Unicode Character is this? (ツ)_/¯
 
+[![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni)
+[![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
+
 <table> 
     <tr>
         <td>
@@ -74,13 +74,6 @@ Some Script Filter workflows live in their own repository: [Alfred Calendar++](h
         </td>
     </tr>
 </table>
-
-<p align="center">
-    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni"><img src="https://img.shields.io/badge/download-v2.0.1-informational"></a>
-    <a href="/assets/code/WhatIsIt.swift"><img src="https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code"></a>
-</p>
-
-<!-- [![](https://img.shields.io/badge/download-v2.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.1-uni) -->
 
 
 ### Example `ツ`
@@ -105,29 +98,25 @@ Given a hex value either raw or in any of the above formattings will return its 
 ![](assets/images/preview_whatisit.jpg)
 
 
-<!-- [![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift) -->
-
 ---
 
 ## 1.3. Roman Numeral Converter
 
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn)
+[![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
+
+
 Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the range 1 to 3999.
 
-<p align="center">
-    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
-    <a href="/assets/code/RomanNumeral.swift"><img src="https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code"></a>
-</p>
-
-<!-- [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-rn) -->
-
 ![](assets/images/preview_roman.jpg)
-
-<!-- [![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift) -->
-
 
 ---
 
 ## 1.4. DEVONthink `↔` PDF Expert
+
+
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev)
+
 
 <table>
     <tr>
@@ -140,13 +129,8 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
     </tr>
 </table>
 
-<p align="center">
-    <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev"><img src="https://img.shields.io/badge/download-v1.2.0-informational"></a>
-</p>
 
-<!-- [![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev) -->
-
-The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in DEVONthink.
+The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in a DEVONthink document window.
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
 
@@ -172,23 +156,33 @@ https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-
 
 # 2. Proof of Concept & Demos
 
-![WIP](https://img.shields.io/static/v1?style=for-the-badge&message=WIP&color=F00&logo=Alfred&logoColor=FFFFFF&label=)
+<!-- ![WIP](https://img.shields.io/static/v1?style=for-the-badge&message=WIP&color=F00&logo=Alfred&logoColor=FFFFFF&label=) -->
 
 ## 2.1. Extended Hotkeys
 
-__Modifier Palettes & Double Tap Hotkeys.__
-Proof of Concept and demo implementation of modifier palettes to invoke actions on key combinations in Alfred. 
 
-Modifier Palette example behavior  
-- `⌥O ⌥K` To trigger action A.  
-- `⌥I ⌥K` To trigger action B.
+<a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v0.0.1-eh"><img src="https://img.shields.io/badge/download-v0.0.1-informational"></a>
 
-Double Tap example behavior  
-- `⌃+ ⌃+` To trigger action.
+__Modifier Palettes & Double Tap Hotkeys.__ Proof of concept and demo implementation of modifier palettes to invoke actions on consequtive keystrokes in Alfred. 
 
-Cf. Wiki `TODO`.  
-Download `TODO`.  
+Modifier Palette example behavior. 
+- `⌥O`, `⌥K` To trigger action A.  
+- `⌥I`, `⌥K` To trigger action B.
 
+Double-Tap Hotkey example behavior  
+- `⌃+`, `⌃+` To trigger action.
+
+### Some Details
+
+The core idea is to inject environment variables into the workflow configuration and to modify them with some delay.
+
+
+- To set up modifier palettes, all you have to do is define an identifier on any hotkey, `⌥O`, such as "`openA`". This is the "text" argument that the hotkey passes on as `{query}`. Set the identifier to some *environment* variable, say "`gate`", and use a downstream `conditional object` triggered by a different Hotkey, `⌥K`, to check if the variable (`{var:gate}`) is equal to the identifier `openA`. Any action that you make depend on this condition will be triggered iff `gate` is equal to `openA`, i.e. if you have recently tapped the hotkey associated with the identifier.
+
+- To set up double-tap hotkeys, proceed in the same way, defining an identifier for the hotkey's "text" argument. For each double tap hotkey, an environment variable is injected that is either `0` or `1` for inactive or active. 
+	
+
+`Disclaimer`: Alfred may crash if you get the timing of the keystrokes just right. This is due to a data race where the same variable ("`gate`") is accessed and modified by different threads at the same time. Also, for the double-tap hotkeys, there is some "bleed" into the other hotkeys with the way it is set up in the demo. Tapping a, then b, will also trigger b, instead of having to tap b twice.
 
 ![](assets/images/preview_extended.jpg)
 
@@ -197,6 +191,5 @@ Download `TODO`.
 
 ## 2.2. Permission Handler
 
-An example of how to gracefully handle permissions for your executables.  
-Cf. Wiki `TODO`
+An example of how to handle permissions gracefully for your executables. (For now, take a look at the *Duden Workflow* that implements the permission handler).
 
