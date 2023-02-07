@@ -163,7 +163,7 @@ https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-
 
 <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v0.0.1-eh"><img src="https://img.shields.io/badge/download-v0.0.1-informational"></a>
 
-__Modifier Palettes & Double Tap Hotkeys.__ Proof of concept and demo implementation of modifier palettes to invoke actions on consequtive keystrokes in Alfred. 
+__Modifier Palettes & Double Tap Hotkeys.__ Proof of concept and demo implementation of modifier palettes to invoke actions on consecutive keystrokes in Alfred.
 
 Modifier Palette example behavior. 
 - `⌥O`, `⌥K` To trigger action A.  
