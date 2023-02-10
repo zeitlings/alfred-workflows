@@ -115,7 +115,7 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
 ## 1.4. DEVONthink `↔` PDF Expert
 
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-xdev)
+[![](https://img.shields.io/badge/download-v2.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.0-xdev)
 
 
 <table>
@@ -130,15 +130,15 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
 </table>
 
 
-The PDF, of course, has to live in one of your DEVONthink databases. Actioning the workflow with the `cmd ⌘` modifier opens the PDF at the same page in a DEVONthink document window.
+The PDF, of course, has to live in one of your DEVONthink databases. 
+- `cmd ⌘` to open the PDF at the same page in DEVONthink
+- `.xdev` to enable or disable opening the document in DEVONthink when using the hotkey
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
 
 ### Known issues
 
-- Fails for document pages that are indexed with roman numerals
-- Fails for documents where the backmatter page description does not conform to the enumeration scheme
-- Fails for the left-hand side document if the PDF Expert split view is enabled
+- Fails with documents open in PDF Expert split view
 
 
 https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
