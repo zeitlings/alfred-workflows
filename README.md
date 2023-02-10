@@ -131,14 +131,14 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
 
 
 The PDF, of course, has to live in one of your DEVONthink databases. 
-- `cmd ⌘` to open the PDF at the same page in DEVONthink
+- `cmd ⌘` to open the PDF on the same page in DEVONthink
 - `.xdev` to enable or disable opening the document in DEVONthink when using the hotkey
 
 **Expected result:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
 
 ### Known issues
 
-- Fails with documents open in PDF Expert split view
+- Fails with documents opened in PDF Expert split view
 
 
 <!-- https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4 -->
