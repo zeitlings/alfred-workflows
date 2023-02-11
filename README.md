@@ -141,6 +141,10 @@ The PDF, of course, has to live in one of your DEVONthink databases.
 - Fails with documents opened in PDF Expert split view
 
 
+
+https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-9e55-38691f6b0a34.mp4
+
+
 <!-- https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4 -->
 
 <!--
