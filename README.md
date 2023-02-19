@@ -134,7 +134,7 @@ The PDF, of course, has to live in one of your DEVONthink databases.
 - `cmd ⌘` to open the PDF on the same page in DEVONthink
 - `.xdev` to enable or disable opening the document in DEVONthink when using the hotkey
 
-**Expected result A:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
+**Expected result A:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`  
 **Expected result B:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&start=66&length=9&search=selection`
 
 ### Known issues
