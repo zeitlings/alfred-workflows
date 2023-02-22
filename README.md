@@ -115,7 +115,7 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
 ## 1.4. DEVONthink `↔` PDF Expert
 
 
-[![](https://img.shields.io/badge/download-v2.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.0-xdev)
+[![](https://img.shields.io/badge/download-v2.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.1-xdev)
 
 
 <table>
@@ -124,18 +124,19 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
             <img src="assets/icons/dt3pdf.png">
         </td>
         <td>
-            Get either the DEVONthink 3 reference URL from PDF Expert, i.e. the <code>x-devonthink-item</code> page link for the active document opened in PDF Expert, or the <i>selection link</i> if you have text selected.
+            Get either the DEVONthink 3 reference URL from PDF Expert, i.e. the <code>x-devonthink-item</code> page link for the active document opened in PDF Expert, the <i>selection link</i> if you have text selected, or the <i>annotation link</i> if your selection intersects an annotation and checking for annotations is enabled.
         </td>
     </tr>
 </table>
 
 
-The PDF, of course, has to live in one of your DEVONthink databases. 
+The PDF, of course, has to live in one of your open DEVONthink databases. 
 - `cmd ⌘` to open the PDF on the same page in DEVONthink
 - `.xdev` to enable or disable opening the document in DEVONthink when using the hotkey
 
 **Expected result A:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`  
-**Expected result B:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&start=66&length=9&search=selection`
+**Expected result B:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&start=66&length=9&search=selection`  
+**Expected result C:** `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&annotation=Squiggly&x=212&y=406`
 
 ### Known issues
 
