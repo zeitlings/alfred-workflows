@@ -160,6 +160,31 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 </details>    
 -->
 
+## Define Word - A Better Dictionary
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dict)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/dict.png">
+        </td>
+        <td>
+            Customizable Dictionary with Preview - and Dark Mode.
+        </td>
+    </tr>
+</table>
+
+- `shift` or `cmd+Y` to preview the dictionary entry  
+- `cmd+C` to copy the dictionary entry's plain text to the clipboard  
+- `cmd+L` to view the plain text as large type 
+
+You can define fallback dictionaries for lookups, set the font size of previews, search for synonymes, or manually select a dictionary to use.
+
+![](assets/images/dict-dark.jpg)
+
+
+
 ---
 
 # 2. Proof of Concept & Demos
