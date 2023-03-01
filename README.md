@@ -180,7 +180,7 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 - `cmd+C` to copy the dictionary entry's plain text to the clipboard  
 - `cmd+L` to view the plain text as large type 
 
-You can define fallback dictionaries for lookups, set the font size of previews, search for synonymes, or manually select a dictionary to use.
+You can define fallback dictionaries for lookups, set the font size of the previews, or manually select a dictionary to use. The previews reflect the global appearance, i.e. they have a dark mode. The workflow also includes a preset for looking up synonyms of a word and a convenient keyboard shortcut for quick lookups.
 
 ![](assets/images/dict-dark.jpg)
 
