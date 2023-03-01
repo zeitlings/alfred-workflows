@@ -75,7 +75,6 @@ Some workflows live in their own repository: [Alfred Calendar++](https://github.
     </tr>
 </table>
 
-
 ### Example `ツ`
 
 - KATAKANA LETTER TU
@@ -124,7 +123,7 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
             <img src="assets/icons/dt3pdf.png">
         </td>
         <td>
-            Get either the DEVONthink 3 reference URL from PDF Expert, i.e. the <code>x-devonthink-item</code> page link for the active document opened in PDF Expert, the <i>selection link</i> if you have text selected, or the <i>annotation link</i> if your selection intersects an annotation and checking for annotations is enabled.
+            Get either the DEVONthink 3 reference URL from PDF Expert, that is the <code>x-devonthink-item</code> page link for the active document opened in PDF Expert, the <i>selection link</i> if you have text selected, or the <i>annotation link</i> if your selection intersects an annotation and checking for annotations is enabled.
         </td>
     </tr>
 </table>
