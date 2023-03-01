@@ -22,6 +22,7 @@ Some workflows live in their own repository: [Alfred Calendar++](https://github.
   - [1.2. What Unicode Character is this? (ツ)\_/¯](#12-what-unicode-character-is-this-ツ_)
   - [1.3. Roman Numeral Converter](#13-roman-numeral-converter)
   - [1.4. DEVONthink `↔` PDF Expert](#14-devonthink--pdf-expert)
+  - [1.5 Define Word - A Better Dictionary](#15-define-word---a-better-dictionary)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -160,7 +161,7 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 </details>    
 -->
 
-## Define Word - A Better Dictionary
+## 1.5 Define Word - A Better Dictionary
 
 [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dict)
 
