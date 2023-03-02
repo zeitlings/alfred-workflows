@@ -16,7 +16,7 @@ struct AlfredOCR {
 	static var snap: URL!
 	
 	static func run() {
-		fileManager.assert()
+		fileManager.validate()
 		recognizeText(in: snap)
 	}
 }
@@ -29,7 +29,7 @@ extension AlfredOCR {
 		recognizeLanguage: Bool = true,
 		languages: [String] = languages,
 		recognitionLevel: VNRequestTextRecognitionLevel = .accurate,
-		handler: @escaping (VNRequest, Error?) -> () = recognizeTextHandler
+		handler: @escaping (VNRequest, Error?) -> () = ocrHandler
 	) {
 		let nsImage: NSImage = .init(byReferencing: imageURL)
 		guard
@@ -52,7 +52,7 @@ extension AlfredOCR {
 		}
 	}
 	
-	static private func recognizeTextHandler(request: VNRequest, error: Error?) {
+	static private func ocrHandler(request: VNRequest, error: Error?) {
 		guard let observations = request.results as? [VNRecognizedTextObservation] else {
 			return
 		}
@@ -77,7 +77,7 @@ extension AlfredOCR {
 
 extension FileManager {
 	@discardableResult
-	func assert() -> Never? {
+	func validate() -> Never? {
 		guard fileExists(atPath: PATH) else {
 			print("OCR Failure: Nothing to recognize")
 			Darwin.exit(EXIT_FAILURE)
