@@ -189,8 +189,17 @@ You can define fallback dictionaries for lookups, set the font size of the previ
 [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
-Optical Character Recognition Workflow. Take a snapshot and copy the recognized text to the clipboard.  
-No external dependencies are required to perform the OCR.
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/ocr.png">
+        </td>
+        <td>
+            Optical Character Recognition Workflow. Take a snapshot and copy the recognized text to the clipboard. No external dependencies are required to perform the OCR.
+        </td>
+    </tr>
+</table>
+
 
 
 
