@@ -23,6 +23,7 @@ Some workflows live in their own repository: [Alfred Calendar++](https://github.
   - [1.3. Roman Numeral Converter](#13-roman-numeral-converter)
   - [1.4. DEVONthink `↔` PDF Expert](#14-devonthink--pdf-expert)
   - [1.5. Define Word - A Better Dictionary](#15-define-word---a-better-dictionary)
+  - [1.6. AlfredOCR](#16-alfredocr)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -183,6 +184,15 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 You can define fallback dictionaries for lookups, set the font size of the previews, or manually select a dictionary to use. The previews reflect the global appearance, i.e. they have a dark mode. The workflow also includes a preset for looking up synonyms of a word and a convenient keyboard shortcut for quick lookups.
 
 ![](assets/images/dict-dark.jpg)
+
+## 1.6. AlfredOCR
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ocr)
+[![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
+
+Optical Character Recognition Workflow. Take a snapshot and copy the recognized text to the clipboard.  
+No external dependencies are required to perform the OCR.
+
+
 
 
 
