@@ -186,7 +186,7 @@ You can define fallback dictionaries for lookups, set the font size of the previ
 ![](assets/images/dict-dark.jpg)
 
 ## 1.6. AlfredOCR
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ocr)
+[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
 <table>
@@ -195,7 +195,7 @@ You can define fallback dictionaries for lookups, set the font size of the previ
             <img src="assets/icons/ocr.png">
         </td>
         <td>
-            Optical Character Recognition Workflow. Take a snapshot and copy the recognized text to the clipboard. No external dependencies are required to perform the OCR.
+            The workflow allows you to copy text from images using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. No external dependencies are required to perform the OCR.
         </td>
     </tr>
 </table>

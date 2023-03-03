@@ -56,9 +56,13 @@ extension AlfredOCR {
 		guard let observations = request.results as? [VNRecognizedTextObservation] else {
 			return
 		}
+		let pasteBoard: NSPasteboard = .general
 		let recognized: [String] = observations.compactMap({ $0.topCandidates(1).first?.string })
+		let merged: String = recognized.joined(separator: "\n")
 		try? fileManager.removeItem(atPath: PATH)
-		print(recognized.joined(separator: "\n"))
+		pasteBoard.clearContents()
+		pasteBoard.setString(merged, forType: .string)
+		print(merged)
 		Darwin.exit(EXIT_SUCCESS)
 	}
 	
