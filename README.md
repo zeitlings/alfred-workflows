@@ -9,9 +9,21 @@
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗   
 
-<a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+<!-- <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
 
-Some workflows live in their own repository: [Alfred Calendar++](https://github.com/zeitlings/alfred-calendar), [Set Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
+Some workflows live in their own repository: [Calendar++](https://github.com/zeitlings/alfred-calendar), [Set Default Browser](https://github.com/zeitlings/alfred-set-default-browser/) -->
+
+
+<table align="center">
+    <td>
+        <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+    </td>
+    <td>
+        <p>Some workflows live in their own repository<br><a href="https://github.com/zeitlings/alfred-calendar">Calendar++</a>, <a href="https://github.com/zeitlings/alfred-set-default-browser/">Set Default Browser</a></p>
+    </td>
+
+</table>
+
 
 ---
 
