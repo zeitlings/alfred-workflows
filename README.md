@@ -200,6 +200,11 @@ You can define dictionaries for lookups, set the font size of the previews, or m
 ![](assets/images/dict-dark.jpg)
 
 ## 1.6. AlfredOCR
+
+_No external dependencies are required to perform the OCR._
+
+### 1.6.1 AlfredOCR Light
+
 [![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
@@ -209,13 +214,36 @@ You can define dictionaries for lookups, set the font size of the previews, or m
             <img src="assets/icons/ocr.png">
         </td>
         <td>
-            The workflow allows you to copy text from images using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. No external dependencies are required to perform the OCR.
+            The workflow allows you to <b>copy text from images</b> using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard.
         </td>
     </tr>
 </table>
 
+### 1.6.2 AlfredOCR+
+
+[![](https://img.shields.io/badge/download-v1.2.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.2-ocr2)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/ocr+.png">
+        </td>
+        <td>
+            The workflow allows you to <b>copy text from images</b> and to <b>convert PDFs to searchable PDF documents</b> using optical character recognition. Includes a progress tracker for the document recognition process.
+        </td>
+    </tr>
+</table>
+
+__A. Snapshot__  
+Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. 
+- Default shortcut: `⌘+⇧+6` 
+- Default keyword: `ocr`
 
 
+__B. PDF Document__
+- To convert a PDF into a searchable PDF document, pass it to the workflow's [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
+- To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
+- To force the replacement of a specific source document, pass it to the Universal Action while holding down the `⌘` key.
 
 
 
