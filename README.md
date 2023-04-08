@@ -242,9 +242,10 @@ Take a snapshot with your mouse or trackpad and the recognized text is automatic
 
 __B. PDF Document__
 - To convert a PDF into a searchable PDF document, pass it to the workflow's [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
-- To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
 - To force the replacement of a specific source document, pass it to the Universal Action while holding down the `⌘` key.
+- To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
 
+![](/assets/images/preview_ocr.gif)
 
 
 ---
