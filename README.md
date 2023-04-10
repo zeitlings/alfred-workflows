@@ -36,6 +36,8 @@ Some workflows live in their own repository: [Calendar++](https://github.com/zei
   - [1.4. DEVONthink `↔` PDF Expert](#14-devonthink--pdf-expert)
   - [1.5. Define Word - A Better Dictionary](#15-define-word---a-better-dictionary)
   - [1.6. AlfredOCR](#16-alfredocr)
+  - [1.7. Favorites](#17-favorites)
+  - [1.8. New File](#18-new-file)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -247,6 +249,64 @@ __B. PDF Document__
 
 ![](/assets/images/preview_ocr.gif)
 
+
+## 1.7. Favorites
+
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fav)
+
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/fav.png">
+        </td>
+        <td>
+            <p>Add files and folders to your list of favorites by using the workflow's <a href="https://www.alfredapp.com/help/features/universal-actions/">Universal Action</a>. Quickly find them again by activating the workflow with the <code>Keyword</code> (default: <code>fav</code>) or by setting a hotkey of your choice.</p>
+        </td>
+    </tr>
+</table>
+
+![](assets/images/preview_fav.png)
+
+- Hit `enter` or `cmd+O` to open a file or folder.
+- Add items with the workflow’s [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
+- **Modifiers:**
+	- `ctrl`: Show full Path
+	- `cmd`: Reveal in Finder
+	- `opt`: Browse in Alfred
+	- `cmd+shift`: Move up
+	- `opt+shift`: Move down
+	- `fn`: Remove from Favorites
+	- `shift` or `cmd+Y`: Quicklook Preview
+
+
+## 1.8. New File
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-nf)
+
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/nf.png">
+        </td>
+        <td>
+            <p>The workflow allows you to quickly create new files in the Finder.</p>
+            <p>If the <em>post-haste</em> behavior is enabled, new files are created the same way as folders are when you use the shortcut (default: <code>⌥+⇧+N</code>). Otherwise you will be prompted with the input mask where you can configure the file name and type.</p>        
+        </td>
+    </tr>
+</table>
+
+The workflow will pick up on your location in the Finder and create the new file there. If you use the keyword, the most recently used Finder window will be selected as the destination. If no Finder window is currently open, the file will be created in the configurable fallback location.
+
+**Feature:** In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents for you.
+
+![](assets/images/preview_nf.gif)
+
+__Modifiers__
+- Hold **⌘** to view the full file path.
+- Hold **⌘+⇧** before hitting enter to enforce creating the file **with clipboard** contents.
+- Hold **⌥+⇧** before hitting enter to enforce creating the file **without clipboard** contents.
 
 ---
 
