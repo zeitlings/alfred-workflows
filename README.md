@@ -1,4 +1,7 @@
-<h1 align="center"></br>Collected Workflows and Proofs of Concept</h1>
+<h1 align="center">
+	<a href='#'><img src='https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=fff&logo=Alfred&logoColor=000&label=' style='border:0px;height:36px;' /></a>
+	</br>Collected Workflows and Proofs of Concept
+</h1>
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 <!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
