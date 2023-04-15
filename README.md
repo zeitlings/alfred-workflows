@@ -7,7 +7,7 @@
 </p>-->
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
-If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗   
+<!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
 
 <!-- <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
 
@@ -19,7 +19,12 @@ Some workflows live in their own repository: [Calendar++](https://github.com/zei
         <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
     </td>
     <td>
-        <p>Some workflows live in their own repository<br><a href="https://github.com/zeitlings/alfred-calendar">Calendar++</a>, <a href="https://github.com/zeitlings/alfred-set-default-browser/">Set Default Browser</a></p>
+        <p>
+            Some workflows live in their own repository:<br>
+            <a href="https://github.com/zeitlings/alfred-devonthink">DEVONthink 3 Portal</a> |
+            <a href="https://github.com/zeitlings/alfred-calendar">Calendar++</a> |
+            <a href="https://github.com/zeitlings/alfred-set-default-browser/">Default Browser</a>
+        </p>
     </td>
 
 </table>
@@ -207,7 +212,7 @@ _No external dependencies are required to perform the OCR._
 
 ### 1.6.1 AlfredOCR Light
 
-[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-ocr)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
 <table>
@@ -238,14 +243,14 @@ _No external dependencies are required to perform the OCR._
 
 __A. Snapshot__  
 Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. 
-- Default shortcut: `⌘+⇧+6` 
+- Default shortcut: <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>6</kbd>
 - Default keyword: `ocr`
 
 
 __B. PDF Document__
 - To convert a PDF into a searchable PDF document, pass it to the workflow's [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
-- To force the replacement of a specific source document, pass it to the Universal Action while holding down the `⌘` key.
-- To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
+- To force the replacement of a specific source document, pass it to the Universal Action while holding down the <kbd>⌘</kbd> key.
+- To view the **progress tracker**, re-enable the workflow with the keyword (default: `ocr`).
 
 ![](/assets/images/preview_ocr.gif)
 
