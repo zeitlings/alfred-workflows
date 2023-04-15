@@ -31,9 +31,9 @@ extension Workflow {
 		let full: String = padding + codePoint
 		let uni: String = "U+\(full)"
 		let hex: String = "0x\(codePoint)"
-		let swi: String = "\\u{\(codePoint)}" // swift, es6, js
-		let pyg: String = "\\u\(full)"   	// python, go
-		let htm: String = "&#x\(full);"  	// html (yes?)
+		let swi: String = "\\u{\(full)}" // swift, es6, js
+		let pyg: String = "\\u\(full)"   // python, go
+		let htm: String = "&#x\(full);"  // html
 		var scalarString: String = .init(scalar)
 		let scalarName: String = {
 			if let sn: String = scalar.properties.name {
@@ -55,7 +55,7 @@ extension Workflow {
 			let cmd: Mod = .init(arg: swi, subtitle: swi)
 			let alt: Mod = .init(arg: pyg, subtitle: pyg)
 			let ctrl: Mod = .init(arg: htm, subtitle: "\(htm) (HTML entity)")
-			let shift: Mod = .init(arg: hex, subtitle: "\(hex) (Hex Literal)")
+			let shift: Mod = .init(arg: hex, subtitle: "\(hex) (Hex literal)")
 			return ModWrapper(cmd: cmd, alt: alt, ctrl: ctrl, shift: shift)
 		}()
 		let item: Item = .init(title, subtitle, arg, text, mods)
@@ -84,7 +84,6 @@ struct Item: Encodable {
 	let arg: String
 	let text: Text
 	let mods: ModWrapper
-	let icon: [String:String] = ["path":"icons/face.png"]
 	init(_ title: String, _ subtitle: String, _ arg: String, _ text: Text, _ mods: ModWrapper) {
 		self.title = title
 		self.subtitle = subtitle
