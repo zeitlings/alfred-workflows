@@ -1,9 +1,12 @@
-<h1 align="center"></br>Collected Workflows and Proofs of Concept</h1>
+<h1 align="center">
+	<a href='#'><img src='https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=fff&logo=Alfred&logoColor=000&label=' style='border:0px;height:36px;' /></a>
+	</br>Collected Workflows and Proofs of Concept
+</h1>
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 <!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
 
-__Some workflows live in their own repository__  
+__Some workflows live in their own repository:__ 
 [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) | 
 [Calendar++](https://github.com/zeitlings/alfred-calendar) | 
 [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
@@ -300,7 +303,7 @@ __B. PDF Document__
 
 The workflow will pick up on your location in the Finder and create the new file there. If you use the keyword, the most recently used Finder window will be selected as the destination. If no Finder window is currently open, the file will be created in the configurable fallback location.
 
-**Feature:** In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents for you.
+__Bonus:__ In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents for you.
 
 ![](assets/images/preview_nf.gif)
 
