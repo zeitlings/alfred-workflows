@@ -1,6 +1,6 @@
 <h1 align="center">
 	<a href='#'><img src='https://img.shields.io/static/v1?style=for-the-badge&message=Alfred&color=fff&logo=Alfred&logoColor=000&label=' style='border:0px;height:36px;' /></a>
-	</br>Collected Workflows and Proofs of Concept
+	</br>Collected Workflows
 </h1>
 
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
@@ -42,6 +42,7 @@ __Some workflows live in their own repository:__
   - [1.6. AlfredOCR](#16-alfredocr)
   - [1.7. Favorites](#17-favorites)
   - [1.8. New File](#18-new-file)
+  - [1.9 Keyboard Brightness](#19-keyboard-brightness)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -311,6 +312,31 @@ __Modifiers__
 - Hold **⌘** to view the full file path.
 - Hold **⌘+⇧** before hitting enter to enforce creating the file **with clipboard** contents.
 - Hold **⌥+⇧** before hitting enter to enforce creating the file **without clipboard** contents.
+
+
+## 1.9 Keyboard Brightness
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kbr)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/keybr.png">
+        </td>
+        <td>
+            <p>Adjust the keyboard brightness either by using the keyword or by setting up custom shortcuts.</p>
+            <p>When using the keyword
+                <ul>
+                <li> type <kbd>></kbd> to increase the brightness</li>
+                <li> type <kbd><</kbd> to decrease the brightness</li>
+                </ul>
+            </p>
+        </td>
+    </tr>
+</table>
+
+![](assets/images/preview_keybr.gif)
+
 
 ---
 
