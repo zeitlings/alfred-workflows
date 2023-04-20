@@ -42,7 +42,7 @@ __Some workflows live in their own repository:__
   - [1.6. AlfredOCR](#16-alfredocr)
   - [1.7. Favorites](#17-favorites)
   - [1.8. New File](#18-new-file)
-  - [1.9 Keyboard Brightness](#19-keyboard-brightness)
+  - [1.9. Keyboard Brightness](#19-keyboard-brightness)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -314,7 +314,7 @@ __Modifiers__
 - Hold **⌥+⇧** before hitting enter to enforce creating the file **without clipboard** contents.
 
 
-## 1.9 Keyboard Brightness
+## 1.9. Keyboard Brightness
 
 [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kbr)
 
