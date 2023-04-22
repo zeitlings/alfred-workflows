@@ -43,6 +43,7 @@ __Some workflows live in their own repository:__
   - [1.7. Favorites](#17-favorites)
   - [1.8. New File](#18-new-file)
   - [1.9. Keyboard Brightness](#19-keyboard-brightness)
+  - [1.10. GIF from Video](#110-gif-from-video)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -337,6 +338,28 @@ __Modifiers__
 
 ![](assets/images/preview_keybr.gif)
 
+
+## 1.10. GIF from Video
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-gif)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/gif.png">
+        </td>
+        <td>
+            <p>The workflow allows you to convert video of popular formats to animated GIFs. To do this, it uses <a href="https://ffmpeg.org/">ffmpeg</a> as a dependency.</p>
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/help/workflows/triggers/file-action/) or invoke the workflow using the keyword and search for the video file you want to convert. Then select the image size you want the resulting GIF to have from the list to start the conversion.
+
+![](assets/images/preview_gif1.png)
+![](assets/images/preview_gif2.png)
 
 ---
 
