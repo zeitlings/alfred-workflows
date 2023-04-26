@@ -7,6 +7,7 @@ This is a collection of smaller workflows, experiments, and demonstrations of in
 <!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
 
 __Some workflows live in their own repository:__ 
+[Quill](https://github.com/zeitlings/alfred-quill) |
 [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) | 
 [Calendar++](https://github.com/zeitlings/alfred-calendar) | 
 [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
