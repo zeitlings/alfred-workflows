@@ -323,7 +323,7 @@ __Modifiers__
 <table>
     <tr>
         <td>
-            <img src="assets/icons/keybr.png" width="256px">
+            <img src="assets/icons/keybr.png" width="170px">
         </td>
         <td>
             <p>Adjust the keyboard backlight brightness either by using the keyword or by setting up custom shortcuts.</p>
