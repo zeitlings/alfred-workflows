@@ -219,7 +219,7 @@ _No external dependencies are required to perform the OCR._
 <table>
     <tr>
         <td>
-            <img src="assets/icons/ocr.png">
+            <img src="assets/icons/ocr.png" />
         </td>
         <td>
             The workflow allows you to <b>copy text from images</b> using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard.
@@ -234,7 +234,7 @@ _No external dependencies are required to perform the OCR._
 <table>
     <tr>
         <td>
-            <img src="assets/icons/ocr+.png">
+            <img src="assets/icons/ocr+.png" />
         </td>
         <td>
             The workflow allows you to <b>copy text from images</b> and to <b>convert PDFs to searchable PDF documents</b> using optical character recognition. Includes a progress tracker for the document recognition process.
@@ -294,7 +294,7 @@ __B. PDF Document__
 <table>
     <tr>
         <td>
-            <img src="assets/icons/nf.png">
+            <img src="assets/icons/nf.png" />
         </td>
         <td>
             <p>The workflow allows you to quickly create new files in the Finder.</p>
@@ -317,19 +317,20 @@ __Modifiers__
 
 ## 1.9. Keyboard Brightness
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kbr)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-kbr)
+[![](https://img.shields.io/static/v1?message=Incandescent.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/Incandescent.swift)
 
 <table>
     <tr>
         <td>
-            <img src="assets/icons/keybr.png">
+            <img src="assets/icons/keybr.png" width="256px">
         </td>
         <td>
-            <p>Adjust the keyboard brightness either by using the keyword or by setting up custom shortcuts.</p>
+            <p>Adjust the keyboard backlight brightness either by using the keyword or by setting up custom shortcuts.</p>
             <p>When using the keyword
                 <ul>
-                <li> type <kbd>></kbd> to increase the brightness</li>
-                <li> type <kbd><</kbd> to decrease the brightness</li>
+                <li> type <kbd>></kbd> or <kbd>+</kbd> to increase the brightness</li>
+                <li> type <kbd><</kbd> or <kbd>-</kbd> to decrease the brightness</li>
                 </ul>
             </p>
         </td>
@@ -346,7 +347,7 @@ __Modifiers__
 <table>
     <tr>
         <td>
-            <img src="assets/icons/gif.png">
+            <img src="assets/icons/gif.png" width="256px">
         </td>
         <td>
             <p>The workflow allows you to convert video of popular formats to animated GIFs. To do this, it uses <a href="https://ffmpeg.org/">ffmpeg</a> as a dependency.</p>
