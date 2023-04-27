@@ -212,7 +212,7 @@ You can define dictionaries for lookups, set the font size of the previews, or m
 
 _No external dependencies are required to perform the OCR._
 
-### 1.6.1 AlfredOCR Light
+### 1.6.1 Alfred OCR Light
 
 [![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
@@ -228,9 +228,9 @@ _No external dependencies are required to perform the OCR._
     </tr>
 </table>
 
-### 1.6.2 AlfredOCR+
+### 1.6.2 Alfred OCR+
 
-[![](https://img.shields.io/badge/download-v1.2.3-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.3-ocr2)
+[![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ocr2)
 
 <table>
     <tr>
@@ -238,23 +238,30 @@ _No external dependencies are required to perform the OCR._
             <img src="assets/icons/ocr+.png" />
         </td>
         <td>
-            The workflow allows you to <b>copy text from images</b> and to <b>convert PDFs to searchable PDF documents</b> using optical character recognition. Includes a progress tracker for the document recognition process.
+            The workflow allows you to <strong>copy text from images</strong>, or to <strong>convert PDF files into searchable PDF documents</strong> using optical character recognition, and to apply compression to PDF documents.
         </td>
     </tr>
 </table>
 
-__A. Snapshot__  
+__1 / Snapshot__  
 Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. 
 - Default shortcut: <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>6</kbd>
 - Default keyword: `ocr`
 
 
-__B. PDF Document__
-- To convert a PDF into a searchable PDF document, pass it to the workflow's [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
-- To force the replacement of a specific source document, pass it to the Universal Action while holding down the <kbd>⌘</kbd> key.
-- To view the **progress tracker**, re-enable the workflow with the keyword (default: `ocr`).
+__2 / PDF Document__
 
-![](/assets/images/preview_ocr.gif)
+- To convert a PDF into a searchable PDF document, pass it to the workflow's *[Universal Action](https://www.alfredapp.com/help/features/universal-actions/)*.
+	- To compress the resulting PDF, pass the source document on while pressing the **⌘+⇧** keys.
+	- To open the resulting PDF, pass the source document on while pressing the **⌥+⇧** keys.
+	- To force the replacement of a source document, pass it on while pressing the **⌥+⌘** keys.
+
+- To compress a PDF without performing OCR, pass it to the `Compress PDF Document` File Action.
+- To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
+
+![](/assets/images/preview_ocr1.png)
+![](/assets/images/preview_ocr2.png)
+![](/assets/images/preview_ocr3.png)
 
 
 ## 1.7. Favorites
