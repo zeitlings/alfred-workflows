@@ -45,6 +45,7 @@ __Some workflows live in their own repository:__
   - [1.8. New File](#18-new-file)
   - [1.9. Keyboard Brightness](#19-keyboard-brightness)
   - [1.10. GIF from Video](#110-gif-from-video)
+  - [1.11. Bluetooth Device Battery](#111-bluetooth-device-battery)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -74,11 +75,9 @@ __Some workflows live in their own repository:__
 - Action synonymes to list all synonyms. Action any synonym to view the entry for it.
 - Action examples or idioms to list all that are available.
 
-![](assets/images/preview_duden.jpg)
+<img src="assets/images/preview_duden.png" width="564px" />
 
-**Credits**
-
-- [SwiftSoup](https://github.com/scinfu/SwiftSoup)
+**Credits:**  [SwiftSoup](https://github.com/scinfu/SwiftSoup)
 
 ---
 <!-- What Unicode Character is this? (ツ)_/¯ -->
@@ -117,7 +116,7 @@ Given a hex value either raw or in any of the above formattings will return its 
 - `whatisit? \u{1F914}` yields info for 🤔
 
 
-![](assets/images/preview_whatisit.jpg)
+<img src="assets/images/preview_whatisit.png" width="564px" />
 
 
 ---
@@ -130,7 +129,7 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the range 1 to 3999.
 
-![](assets/images/preview_roman.jpg)
+<img src="assets/images/preview_roman.jpg" width="564px" />
 
 ---
 
@@ -206,7 +205,8 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 
 You can define dictionaries for lookups, set the font size of the previews, or manually select a dictionary to use. The previews reflect the global appearance, i.e. they have a dark mode. The workflow also includes a preset for looking up synonyms of a word and a convenient keyboard shortcut for quick lookups. To use the workflow as a multilingual spell checker, you can use the `cmd` modifier when actioning the entry to paste the word to the frontmost application.
 
-![](assets/images/dict-dark.jpg)
+<img src="assets/images/preview-dict.png" width="650px"/>
+
 
 ## 1.6. AlfredOCR
 
@@ -259,9 +259,9 @@ __2 / PDF Document__
 - To compress a PDF without performing OCR, pass it to the `Compress PDF Document` File Action.
 - To view the **progress tracker**, re-enable the workflow with the `Keyword` (default: `ocr`).
 
-![](/assets/images/preview_ocr1.png)
-![](/assets/images/preview_ocr2.png)
-![](/assets/images/preview_ocr3.png)
+<img src="assets/images/preview_ocr1.png" width="564px" />
+<img src="assets/images/preview_ocr2.png" width="564px" />
+<img src="assets/images/preview_ocr3.png" width="564px" />
 
 
 ## 1.7. Favorites
@@ -280,7 +280,9 @@ __2 / PDF Document__
     </tr>
 </table>
 
-![](assets/images/preview_fav.png)
+
+<img src="assets/images/preview_fav.png" width="564px">
+
 
 - Hit `enter` or `cmd+O` to open a file or folder.
 - Add items with the workflow’s [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
@@ -315,7 +317,8 @@ The workflow will pick up on your location in the Finder and create the new file
 
 __Bonus:__ In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents for you.
 
-![](assets/images/preview_nf.gif)
+<img src="assets/images/preview_nf.gif" width="600px"/>
+
 
 __Modifiers__
 - Hold **⌘** to view the full file path.
@@ -345,7 +348,7 @@ __Modifiers__
     </tr>
 </table>
 
-![](assets/images/preview_keybr.gif)
+<img src="assets/images/preview_keybr.gif" width="600px"/>
 
 
 ## 1.10. GIF from Video
@@ -367,8 +370,24 @@ __Modifiers__
 
 Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/help/workflows/triggers/file-action/) or invoke the workflow using the keyword and search for the video file you want to convert. Then select the image size you want the resulting GIF to have from the list to start the conversion.
 
-![](assets/images/preview_gif1.png)
-![](assets/images/preview_gif2.png)
+<img src="assets/images/preview_gif1.png" width="564px"/>
+<img src="assets/images/preview_gif2.png" width="564px"/>
+
+
+## 1.11. Bluetooth Device Battery
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-btb)
+[![](https://img.shields.io/static/v1?message=DeviceBattery.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/DeviceBattery.swift)
+
+<table>
+    <tr>
+        <td><img src="assets/icons/btb.png" width="128px"></td>
+        <td>View the battery charge status of connected Bluetooth devices<br>(macOS 13.0+)</td>
+    </tr>
+</table>
+
+<img src="assets/images/preview_btb.png" width="564" >
+
 
 ---
 
