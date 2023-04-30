@@ -8,7 +8,7 @@
 //  in the Alfred app - or on the command line.
 //
 //  Created by Patrick Sy on 30/04/2023.
-//
+// 
 
 import SwiftUI
 
