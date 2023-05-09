@@ -46,6 +46,7 @@ __Some workflows live in their own repository:__
   - [1.9. Keyboard Brightness](#19-keyboard-brightness)
   - [1.10. GIF from Video](#110-gif-from-video)
   - [1.11. Bluetooth Device Battery](#111-bluetooth-device-battery)
+  - [1.12. QResolve](#112-qresolve)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -388,6 +389,28 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 </table>
 
 <img src="assets/images/preview_btb.png" width="564" >
+
+## 1.12. QResolve
+
+[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-qr)
+[![](https://img.shields.io/static/v1?message=QResolve.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/QResolve.swift)
+
+<table>
+    <tr>
+        <td><img src="assets/icons/qresolve.png" width="128px"></td>
+        <td>Resolve and open links from QR codes</td>
+    </tr>
+</table>
+
+### Usage
+
+**A /** Take a snapshot of the QR code you want to open the link to
+- Default keyword: `qrlink`
+- Default shortcut: **⌘+⇧+7**
+
+**B /** Send an image containing the QR code to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/)
+
+<img src="assets/images/preview_qrr.png" width="564" >
 
 
 ---
