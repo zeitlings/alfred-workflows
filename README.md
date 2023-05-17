@@ -48,6 +48,7 @@ __Some workflows live in their own repository:__
   - [1.10. GIF from Video](#110-gif-from-video)
   - [1.11. Bluetooth Device Battery](#111-bluetooth-device-battery)
   - [1.12. QResolve](#112-qresolve)
+  - [1.13. GIF from Images](#113-gif-from-images)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -414,6 +415,28 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 <img src="assets/images/preview_qrr.png" width="564" >
 
+
+## 1.13. GIF from Images
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-gif2)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/gif2.png" width="256px">
+        </td>
+        <td>
+            <p>
+            The workflow allows you to convert a series of still images into animated GIFs. For this, it uses <a href="https://imagemagick.org/">ImageMagick</a> as a dependency.
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Send a series of still images to the workflow's [*File Action*](https://www.alfredapp.com/help/workflows/triggers/file-action/) to create an animated GIF. The smallest image determines the dimensions of the result. All source images are assumed to be of the same file type, e.g. jpg or png.
+
+<img src="assets/images/preview_gif3.png" width="564px"/>
 
 ---
 
