@@ -52,6 +52,7 @@ __Some workflows live in their own repository:__
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
   - [2.3. GUI Input Experiment](#23-gui-input-experiment)
+  - [2.4. Heads-up Display](#24-heads-up-display)
 
 ---
 
@@ -463,5 +464,21 @@ An example of how to handle permissions gracefully for your executables. (For no
 Run a graphical prompt and read the input. Proof of concept for using NSWindow and SwiftUI components to get user input through a graphical prompt and then use it in the Alfred app - or on the command line.
 
 <img src="assets/images/preview_uiex1.png" width="564px"/>
-<img src="assets/images/preview_uiex2.png" width="564px"/>
-<img src="assets/images/preview_uiex3.png" width="382px"/>
+
+<details> 
+    <img src="assets/images/preview_uiex2.png" width="564px"/>
+    <img src="assets/images/preview_uiex3.png" width="382px"/>
+</details>
+
+
+## 2.4. Heads-up Display
+
+<a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-hudex"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
+[![](https://img.shields.io/static/v1?message=HUD.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/HUD.swift)
+
+Demo for displaying notifications on a heads-up display.  
+The script takes two arguments: 
+- The text to display 
+- The width of the prompt
+
+<img src="assets/images/demo.hud.gif" width="649px">
