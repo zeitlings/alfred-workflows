@@ -6,11 +6,12 @@
 This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
 <!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
 
-__Some workflows live in their own repository:__ 
-[Quill](https://github.com/zeitlings/alfred-quill) |
-[DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) | 
-[Calendar++](https://github.com/zeitlings/alfred-calendar) | 
-[Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
+__Some workflows live in their own repository:__  
+- [µBib | Citations, BibTeX, and Research](https://github.com/zeitlings/ubib)
+- [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill) 
+- [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) 
+- [Calendar++](https://github.com/zeitlings/alfred-calendar) 
+- [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 
 <!--
 <table align="center">
