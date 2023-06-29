@@ -233,6 +233,8 @@ _No external dependencies are required to perform the OCR._
     </tr>
 </table>
 
+<img src="assets/images/preview_ocr_snapshot.gif" width="800"/>
+
 ### 1.6.2 Alfred OCR+
 
 [![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ocr2)
