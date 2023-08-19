@@ -86,7 +86,13 @@ extension FileManager {
 			print("OCR Failure: Nothing to recognize")
 			Darwin.exit(EXIT_FAILURE)
 		}
-		AlfredOCR.snap = URL(filePath: PATH)
+		AlfredOCR.snap = {
+			if #available(macOS 13.0, *) {
+				return URL(filePath: PATH)
+			} else {
+				return URL(fileURLWithPath: PATH)
+			}
+		}()
 		return nil
 	}
 }
