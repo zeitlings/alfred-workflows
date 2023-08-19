@@ -49,6 +49,7 @@ __Some workflows live in their own repository:__
   - [1.11. Bluetooth Device Battery](#111-bluetooth-device-battery)
   - [1.12. QResolve](#112-qresolve)
   - [1.13. GIF from Images](#113-gif-from-images)
+  - [1.14 Extract Keywords](#114-extract-keywords)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -439,6 +440,43 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 Send a series of still images to the workflow's [*File Action*](https://www.alfredapp.com/help/workflows/triggers/file-action/) to create an animated GIF. The smallest image determines the dimensions of the result. All source images are assumed to be of the same file type, e.g. jpg or png.
 
 <img src="assets/images/preview_gif3.png" width="564px"/>
+
+## 1.14 Extract Keywords
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kw)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/kw.png" width="256px">
+        </td>
+        <td>
+            <p>
+            Extract keywords and keyphrases from articles, books or other documents with <a href="https://github.com/LIAAD/yake/">YAKE!</a>
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+- Send `PDF`, `docx`, `doc`, `rtf` or `txt` documents to the workflow's File Actions
+- Pass the text from your selection in macOS on to the workflow's Universal Action
+- Use the keyword and paste your text (default: `kw`) 
+
+### Dependencies
+
+The workflow relies on **Python3** to install the YAKE standalone.
+
+#### YAKE!
+- `pip install git+https://github.com/LIAAD/yake` 
+- [official installation guide](https://github.com/LIAAD/yake/#option-3-standalone-installation-for-development-or-integration)
+
+#### pdftotext
+- `brew install poppler` 
+- [formula on brew.sh](https://formulae.brew.sh/formula/poppler)
+
+<img src="assets/images/preview_kw1.png" width="564px"/>
+<img src="assets/images/preview_kw2.png" width="564px"/>
 
 ---
 
