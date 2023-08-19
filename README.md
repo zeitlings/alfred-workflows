@@ -220,7 +220,7 @@ _No external dependencies are required to perform the OCR._
 
 ### 1.6.1 Alfred OCR Light
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ocr)
+[![](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
 <table>
