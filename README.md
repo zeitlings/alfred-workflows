@@ -448,7 +448,7 @@ Send a series of still images to the workflow's [*File Action*](https://www.alfr
 <table>
     <tr>
         <td>
-            <img src="assets/icons/kw.png" width="256px">
+            <img src="assets/icons/kw.png" width="200px">
         </td>
         <td>
             <p>
