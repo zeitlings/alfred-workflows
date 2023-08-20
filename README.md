@@ -50,6 +50,7 @@ __Some workflows live in their own repository:__
   - [1.12. QResolve](#112-qresolve)
   - [1.13. GIF from Images](#113-gif-from-images)
   - [1.14 Extract Keywords](#114-extract-keywords)
+  - [1.15 Color Picker](#115-color-picker)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -477,6 +478,33 @@ The workflow relies on **Python3** to install the YAKE standalone.
 
 <img src="assets/images/preview_kw1.png" width="564px"/>
 <img src="assets/images/preview_kw2.png" width="564px"/>
+
+## 1.15 Color Picker
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/cp.png" width="150px">
+        </td>
+        <td>
+            <p>
+            Pick a color to get its hex, rgba, hsl representation or NSColor initializer.
+        </td>
+    </tr>
+</table>
+
+### Usage 
+
+Activate the *Color Sampler* with the keyword (default: `cp`) and pick the desired color.
+
+<img src="assets/images/preview_cp.png" width="564px"/>
+
+### Color History
+
+To review previously picked colors, activate the workflow with the keyword preceded by a colon (default: `:cp`).
+
 
 ---
 
