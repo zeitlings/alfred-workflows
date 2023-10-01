@@ -10,6 +10,7 @@ __Some workflows live in their own repository:__
 - [µBib | Citations, BibTeX, and Research](https://github.com/zeitlings/ubib)
 - [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill) 
 - [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) 
+- [Logseq Workflow](https://github.com/zeitlings/alfred-logseq)
 - [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 - [Calendar++](https://github.com/zeitlings/alfred-calendar) 
 
