@@ -482,7 +482,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
 
 ## 1.15 Color Picker
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
 
 <table>
     <tr>
