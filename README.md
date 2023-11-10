@@ -222,7 +222,7 @@ _No external dependencies are required to perform the OCR._
 
 ### 1.6.1 Alfred OCR Light
 
-[![](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-ocr)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-ocr)
 [![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
 <table>
@@ -231,7 +231,7 @@ _No external dependencies are required to perform the OCR._
             <img src="assets/icons/ocr.png" />
         </td>
         <td>
-            The workflow allows you to <b>copy text from images</b> using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard.
+            The workflow allows you to <b>copy text from images</b> using optical character recognition. Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard.<br>You can also extract text from images sent to the workflow's <a href="https://www.alfredapp.com/help/workflows/triggers/file-action/">File Action</a>.
         </td>
     </tr>
 </table>
