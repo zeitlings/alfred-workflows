@@ -144,7 +144,7 @@ Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the 
 ## 1.4. DEVONthink ←→ PDF Expert
 
 
-[![](https://img.shields.io/badge/download-v2.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.1-xdev)
+[![](https://img.shields.io/badge/download-v2.1.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.2-xdev)
 
 
 <table>
