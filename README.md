@@ -52,6 +52,9 @@ __Some workflows live in their own repository:__
   - [1.13. GIF from Images](#113-gif-from-images)
   - [1.14 Extract Keywords](#114-extract-keywords)
   - [1.15 Color Picker](#115-color-picker)
+  - [1.16 PDF to Text](#116-pdf-to-text)
+  - [1.17 PDF Split](#117-pdf-split)
+  - [1.18 PDF Compress](#118-pdf-compress)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -490,8 +493,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
             <img src="assets/icons/cp.png" width="150px">
         </td>
         <td>
-            <p>
-            Pick a color to get its hex, rgba, hsl representation or NSColor initializer.
+            <p>Pick a color to get its hex, rgba, hsl representation or NSColor initializer.</p>
         </td>
     </tr>
 </table>
@@ -511,6 +513,154 @@ To review previously picked colors, activate the workflow with the keyword prece
 <img src="assets/images/preview_cp2.png" width="564px"/>
 
 
+## 1.16 PDF to Text
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdftotext)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdftotext.png" width="150px">
+        </td>
+        <td>
+            Extract text from PDF documents.
+        </td>
+    </tr>
+</table>
+
+
+### Usage
+
+Extract the entire text from one or more PDFs by sending them to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/) or locate a PDF with the [File Filter](https://www.alfredapp.com/help/workflows/inputs/file-filter/) by using the keyword (default: `pdftotext`). To extract the text from specific pages of a single document, use the <kbd>⌘</kbd> modifier. The result will be exported as a plain text document.
+
+#### File Filter
+
+<img src="assets/images/preview_pdftotext-1.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to extract the entire text.
+- <kbd>⌘</kbd><kbd>↩</kbd> Proceed by specifing the pages to extract.
+- <kbd>⌃</kbd><kbd>↩</kbd> Proceed, push the result to the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer) and [action it in Alfred](https://www.alfredapp.com/help/features/universal-actions/).
+
+
+#### File Action
+
+<img src="assets/images/preview_pdftotext-2.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to extract the entire text.
+- <kbd>⌘</kbd><kbd>↩</kbd> Proceed by specifing the pages to extract (single file only).
+- <kbd>⌃</kbd><kbd>↩</kbd> Proceed, push the result(s) to the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer) and [action them in Alfred](https://www.alfredapp.com/help/features/universal-actions/).
+
+#### Specifying the Pages
+
+<img src="assets/images/preview_pdftotext-3.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to extract text from the specified pages.
+- <kbd>⌘</kbd><kbd>↩</kbd> Preview the first and last PDF pages w/ Alfred's PDF View.
+- <kbd>⌥</kbd><kbd>↩</kbd> Preview the contents of the first and last page w/ Alfred's Text View.
+- <kbd>⌃</kbd><kbd>↩</kbd> Proceed, push the result to the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer) and [action it in Alfred](https://www.alfredapp.com/help/features/universal-actions/).
+
+<img src="assets/images/preview_pdftotext-4.png" width="564px"/>
+
+Press <kbd>↩</kbd> to return to the view where you can set the start and end pages.
+
+<img src="assets/images/preview_pdftotext-5.png" width="564px"/>
+
+### Dependencies
+
+- With [Homebrew](https://brew.sh/) install
+- Poppler: `brew install poppler`
+
+
+## 1.17 PDF Split
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfsplit)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdfsplit.png" width="150px">
+        </td>
+        <td>
+            Easily extract a specific page range from an existing PDF document and create a new PDF file with the selected pages.
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Either invoke the workflow by using the keyword (default: `pdfsplit`) and locate a PDF, or send a PDF to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/). Specify the start and end pages of the range you want to be extracted. The specified first and last page can be previewed by pressing the <kbd>⌘</kbd> modifier. 
+
+<img src="assets/images/preview_pdfsplit-1.png" width="564px"/>
+<img src="assets/images/preview_pdfsplit-2.png" width="564px"/>
+
+#### Specifying the Pages
+
+<img src="assets/images/preview_pdfsplit-3.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to extract text from the specified pages.
+- <kbd>⌘</kbd><kbd>↩</kbd> Preview the first and last PDF pages w/ Alfred's PDF View.
+- <kbd>⌥</kbd><kbd>↩</kbd> Proceed, push the result to the [File Buffer](https://www.alfredapp.com/help/features/file-search/#file-buffer) and [action it in Alfred](https://www.alfredapp.com/help/features/universal-actions/).
+
+<img src="assets/images/preview_pdfsplit-4.png" width="564px"/>
+
+Press <kbd>↩</kbd> to return to the view where you can set the start and end pages.
+
+### Dependencies
+
+- With [Homebrew](https://brew.sh/) install
+- Poppler: `brew install poppler`
+
+
+## 1.18 PDF Compress
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfcompress)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdfcompress.png" width="150px">
+        </td>
+        <td>
+            Compress PDF documents.
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+
+Either invoke the workflow by using the keyword (default: `pdfcompress`) and locate a PDF, or send a PDF to the workflow's "Compress PDF Document" [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/). 
+
+A compression preset can be selected by pressing <kbd>⌥</kbd> before proceeding with <kbd>↩</kbd>. 
+
+#### File Filter
+
+<img src="assets/images/preview_pdfcmpr-1.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to compress the PDF using the default strategy.
+- <kbd>⌥</kbd><kbd>↩</kbd> Select a compression preset.
+
+#### File Action
+
+<img src="assets/images/preview_pdfcmpr-2.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to compress the PDF using the default strategy.
+- <kbd>⌥</kbd><kbd>↩</kbd> Select a compression preset.
+
+#### Compression Presets
+
+<img src="assets/images/preview_pdfcmpr-3.png" width="564px"/>
+
+- <kbd>↩</kbd> Proceed to compress the PDF using the selected strategy.
+
+
+The result will be a compressed document in the same location as the source PDF file.
+
+
+### Dependencies
+
+- With [Homebrew](https://brew.sh/) install
+- Ghostscript: `brew install gs`
 
 
 ---
