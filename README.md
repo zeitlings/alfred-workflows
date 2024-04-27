@@ -485,7 +485,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
 
 ## 1.15 Color Picker
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
+[![](https://img.shields.io/badge/download-v1.2.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.1-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
 
 <table>
     <tr>
@@ -613,7 +613,7 @@ Press <kbd>↩</kbd> to return to the view where you can set the start and end p
 
 ## 1.18 PDF Compress
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfcompress)
+[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-pdfcompress)
 
 <table>
     <tr>
