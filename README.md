@@ -311,7 +311,7 @@ __2 / PDF Document__
 
 ## 1.8. New File
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-nf)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-nf)
 
 
 <table>
@@ -328,15 +328,18 @@ __2 / PDF Document__
 
 The workflow will pick up on your location in the Finder and create the new file there. If you use the keyword, the most recently used Finder window will be selected as the destination. If no Finder window is currently open, the file will be created in the configurable fallback location.
 
-__Bonus:__ In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents for you.
+__Bonus:__ In addition to all plain-text type files, the workflow can also quickly create `docx`, `doc`, `odt`, `rtf` and `rtfd` documents and Xcode `playground`s.
 
 <img src="assets/images/preview_nf.gif" width="600px"/>
 
 
-__Modifiers__
-- Hold **⌘** to view the full file path.
-- Hold **⌘+⇧** before hitting enter to enforce creating the file **with clipboard** contents.
-- Hold **⌥+⇧** before hitting enter to enforce creating the file **without clipboard** contents.
+__Creating a new file__
+- <kbd>⌘</kbd> to view the full path to the target folder.
+- <kbd>↩</kbd> to create the file with configured settings.
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>↩</kbd> to create the file **with clipboard** contents.
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>↩</kbd> to create the file **without clipboard** contents.
+
+If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the suggested filename. (new in v1.2.0)
 
 
 ## 1.9. Keyboard Brightness
