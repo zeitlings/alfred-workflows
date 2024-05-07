@@ -670,7 +670,7 @@ The result will be a compressed document in the same location as the source PDF 
 
 ## 1.19 Scratchpad
 
-[![](https://img.shields.io/badge/download_soon-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pad)
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pad)
 
 <table>
     <tr>
@@ -679,7 +679,7 @@ The result will be a compressed document in the same location as the source PDF 
         </td>
         <td>
             <p>
-            Quickly access up to 9 scratchpads for spontaneous note-taking.<br> 🟡 🟠 🔴 🟣 🔵 🟢 ⚪️
+            Quickly access up to 9 scratchpads for spontaneous note-taking.<br> 🟡 🟠 🔴 🟣 🔵 🟢 
             </p>
         </td>
     </tr>
@@ -692,7 +692,7 @@ Press the keyboard shortcut (default: <kbd>⌘⌥P</kbd>) to open the scratchpad
 * <kbd>⌘⏎</kbd> to save your changes¹
 * <kbd>⇧⏎</kbd> to preview as rendered markdown
 * <kbd>⌥⏎</kbd> to view all pads and search your notes²
-* <kbd>⌘⇧⏎</kbd> to cycle through your scratch pads
+* <kbd>⌘⇧⏎</kbd> to cycle through your scratchpads
 
 
 Press the secondary keyboard shortcut (default: <kbd>⌘⌥⌃P</kbd>) or enter the workflow's keyword (default: `sps`) to open a list of all scratch pads and search mask. 
