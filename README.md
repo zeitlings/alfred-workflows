@@ -685,9 +685,13 @@ The result will be a compressed document in the same location as the source PDF 
     </tr>
 </table>
 
+### Setup
+
+Define the two keyboard shortcuts, e.g. <kbd>⌘⌥P</kbd> for the primary and <kbd>⌘⌥⌃P</kbd> for the secondary entry point.
+
 ### Usage 
 
-Press the keyboard shortcut (default: <kbd>⌘⌥P</kbd>) to open the scratchpad that was last used. 
+Press the keyboard shortcut to open the scratchpad that was last used. 
 * Press the keyboard shortcut again or <kbd>⎋</kbd> to dismiss the scratchpad without saving.
 * <kbd>⌘⏎</kbd> to save your changes¹
 * <kbd>⇧⏎</kbd> to preview as rendered markdown
@@ -695,7 +699,7 @@ Press the keyboard shortcut (default: <kbd>⌘⌥P</kbd>) to open the scratchpad
 * <kbd>⌘⇧⏎</kbd> to cycle through your scratchpads
 
 
-Press the secondary keyboard shortcut (default: <kbd>⌘⌥⌃P</kbd>) or enter the workflow's keyword (default: `sps`) to open a list of all scratch pads and search mask. 
+Press the secondary keyboard shortcut or enter the workflow's keyword (default: `sps`) to open a list of all scratch pads and the search mask.
 
 <img src="assets/images/preview_pad-1.gif" width="564px"/>
 <img src="assets/images/preview_pad-2.png" width="564px"/>
