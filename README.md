@@ -55,6 +55,7 @@ __Some workflows live in their own repository:__
   - [1.16 PDF to Text](#116-pdf-to-text)
   - [1.17 PDF Split](#117-pdf-split)
   - [1.18 PDF Compress](#118-pdf-compress)
+  - [1.19 Scratchpad](#119-scratchpad)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -664,6 +665,46 @@ The result will be a compressed document in the same location as the source PDF 
 
 - With [Homebrew](https://brew.sh/) install
 - Ghostscript: `brew install gs`
+
+
+
+## 1.19 Scratchpad
+
+[![](https://img.shields.io/badge/download_soon-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pad)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pad.png" width="150px">
+        </td>
+        <td>
+            <p>
+            Quickly access up to 9 scratchpads for spontaneous note-taking.<br> 🟡 🟠 🔴 🟣 🔵 🟢 ⚪️
+            </p>
+        </td>
+    </tr>
+</table>
+
+### Usage 
+
+Press the keyboard shortcut (default: <kbd>⌘⌥P</kbd>) to open the scratchpad that was last used. 
+* Press the keyboard shortcut again or <kbd>⎋</kbd> to dismiss the scratchpad without saving.
+* <kbd>⌘⏎</kbd> to save your changes¹
+* <kbd>⇧⏎</kbd> to preview as rendered markdown
+* <kbd>⌥⏎</kbd> to view all pads and search your notes²
+* <kbd>⌘⇧⏎</kbd> to cycle through your scratch pads
+
+
+Press the secondary keyboard shortcut (default: <kbd>⌘⌥⌃P</kbd>) or enter the workflow's keyword (default: `sps`) to open a list of all scratch pads and search mask. 
+
+<img src="assets/images/preview_pad-1.gif" width="564px"/>
+<img src="assets/images/preview_pad-2.png" width="564px"/>
+<img src="assets/images/preview_pad-3.png" width="564px"/>
+
+
+__Notes:__  
+¹  Changes are also saved when previewing and when switching the active pad.  
+²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [large type](https://www.alfredapp.com/help/features/large-type/).
 
 
 ---
