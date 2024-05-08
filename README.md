@@ -670,7 +670,7 @@ The result will be a compressed document in the same location as the source PDF 
 
 ## 1.19 Scratchpad
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pad)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-pad)
 
 <table>
     <tr>
@@ -685,21 +685,26 @@ The result will be a compressed document in the same location as the source PDF 
     </tr>
 </table>
 
-### Setup
-
-Define the two keyboard shortcuts, e.g. <kbd>⌘⌥P</kbd> for the primary and <kbd>⌘⌥⌃P</kbd> for the secondary entry point.
 
 ### Usage 
 
-Press the keyboard shortcut to open the scratchpad that was last used. 
-* Press the keyboard shortcut again or <kbd>⎋</kbd> to dismiss the scratchpad without saving.
-* <kbd>⌘⏎</kbd> to save your changes¹
+Press the keyboard shortcut to open the scratchpad that was last used.  
+Press the keyboard shortcut again or <kbd>⎋</kbd> to dismiss the scratchpad without saving.
+
+In __Editing Mode__
+* <kbd>⌘⏎</kbd> to save changes¹
 * <kbd>⇧⏎</kbd> to preview as rendered markdown
 * <kbd>⌥⏎</kbd> to view all pads and search your notes²
 * <kbd>⌘⇧⏎</kbd> to cycle through your scratchpads
 
+In __Markdown Mode__
+* <kbd>⏎</kbd> or <kbd>⇧⏎</kbd> to start editing
+* <kbd>⌥⏎</kbd> to view all pads and search your notes²
+* <kbd>⌘⇧⏎</kbd> to cycle through your scratchpads
+* <kbd>⎋</kbd> to either cancel or go back through previously viewed pads 
 
-Press the secondary keyboard shortcut or enter the workflow's keyword (default: `sps`) to open a list of all scratch pads and the search mask.
+
+Press the secondary keyboard shortcut or enter the workflow's keyword (default: `pad`) to open a list of all scratch pads and the search mask.
 
 <img src="assets/images/preview_pad-1.gif" width="564px"/>
 <img src="assets/images/preview_pad-2.png" width="564px"/>
