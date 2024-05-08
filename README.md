@@ -704,7 +704,7 @@ In __Markdown Mode__
 * <kbd>⎋</kbd> to either cancel or go back through previously viewed pads 
 
 
-Press the secondary keyboard shortcut or enter the workflow's keyword (default: `pad`) to open a list of all scratch pads and the search mask.
+Press the secondary keyboard shortcut or enter the workflow's keyword (default: `pad`) to view all scratchpads and to search their contents.
 
 <img src="assets/images/preview_pad-1.gif" width="564px"/>
 <img src="assets/images/preview_pad-2.png" width="564px"/>
