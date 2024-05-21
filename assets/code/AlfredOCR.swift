@@ -12,8 +12,10 @@ let PATH: String = "/tmp/snap.png"
 
 struct AlfredOCR {
 	static let environment: [String:String] = ProcessInfo.processInfo.environment
+	static let snapshotConnector: String = environment["gristle"] == "nl" ? "\n" : "\u{0020}"
 	static let fileManager: FileManager = .default
 	static var snap: URL!
+	static var qrCodeURLs: [String]?
 	
 	static func run() {
 		fileManager.validate()
@@ -38,6 +40,9 @@ extension AlfredOCR {
 			print("OCR Failure: CGImage")
 			Darwin.exit(EXIT_FAILURE)
 		}
+		// ===-------------------------------=== //
+		Self.captureQRCodeURL(from: image)
+		// ===-------------------------------=== //
 		let requestHandler = VNImageRequestHandler(cgImage: image)
 		let request = VNRecognizeTextRequest(completionHandler: handler)
 		request.recognitionLanguages = languages
@@ -52,13 +57,38 @@ extension AlfredOCR {
 		}
 	}
 	
+	static private func captureQRCodeURL(
+		from cgImage: CGImage,
+		qrDetector: CIDetector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: nil)!
+	) {
+		let ciImage: CIImage = CIImage(cgImage: cgImage)
+		let features = qrDetector.features(in: ciImage)
+		let qrCodeURLs: [String] = features.reduce(into: []) { partialResult, feature in
+			if let qrCodeFeature = feature as? CIQRCodeFeature,
+			   let qrCodeURL: String = qrCodeFeature.messageString
+			{
+				partialResult.append(qrCodeURL)
+			}
+		}
+		if !qrCodeURLs.isEmpty {
+			Self.qrCodeURLs = qrCodeURLs
+		}
+	}
+	
 	static private func ocrHandler(request: VNRequest, error: Error?) {
 		guard let observations = request.results as? [VNRecognizedTextObservation] else {
 			return
 		}
 		let pasteBoard: NSPasteboard = .general
 		let recognized: [String] = observations.compactMap({ $0.topCandidates(1).first?.string })
-		let merged: String = recognized.joined(separator: "\n")
+		guard !recognized.isEmpty else {
+			print("OCR Failure: No text detected")
+			Darwin.exit(EXIT_FAILURE)
+		}
+		var merged: String = recognized.joined(separator: Self.snapshotConnector)
+		if let qrCodeURLs: [String] {
+			merged += "\(Self.snapshotConnector)\(qrCodeURLs.joined(separator: Self.snapshotConnector))"
+		}
 		try? fileManager.removeItem(atPath: PATH)
 		pasteBoard.clearContents()
 		pasteBoard.setString(merged, forType: .string)
@@ -70,7 +100,9 @@ extension AlfredOCR {
 		if let raw: String = environment["languages"] {
 			let components: [String] = raw.split(separator: ",")
 				.map({ $0.trimmingCharacters(in: .whitespaces) })
-			guard !components.isEmpty else { return [] }
+			guard !components.isEmpty else {
+				return ["en-US", "de-DE", "fr-FR"]
+			}
 			return components
 		}
 		return []
