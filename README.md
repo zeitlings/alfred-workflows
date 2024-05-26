@@ -56,7 +56,7 @@ __Some workflows live in their own repository:__
   - [1.17 PDF Split](#117-pdf-split)
   - [1.18 PDF Compress](#118-pdf-compress)
   - [1.19 Scratchpad](#119-scratchpad)
-- [1.20 Window Navigator](#120-window-navigator)
+  - [1.20 Window Navigator](#120-window-navigator)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -717,7 +717,7 @@ __Notes:__
 ²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [large type](https://www.alfredapp.com/help/features/large-type/).
 
 
-# 1.20 Window Navigator
+## 1.20 Window Navigator
 
 [![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=apple&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
