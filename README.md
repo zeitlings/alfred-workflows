@@ -56,6 +56,7 @@ __Some workflows live in their own repository:__
   - [1.17 PDF Split](#117-pdf-split)
   - [1.18 PDF Compress](#118-pdf-compress)
   - [1.19 Scratchpad](#119-scratchpad)
+- [1.20 Window Navigator](#120-window-navigator)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -714,6 +715,46 @@ Press the secondary keyboard shortcut or enter the workflow's keyword (default: 
 __Notes:__  
 ¹  Changes are also saved when previewing and when switching the active pad.  
 ²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [large type](https://www.alfredapp.com/help/features/large-type/).
+
+
+# 1.20 Window Navigator
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=apple&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/winnav.png" width="150px">
+        </td>
+        <td>
+            <p>
+            Navigate to any window of the currently focused application across all desktops or switch windows in the current desktop space.
+            </p>
+        </td>
+    </tr>
+</table>
+
+
+### Usage 
+
+1. Search the windows of the active app globally using the Navigator keyword. 
+2. Search app windows in the current desktop space using the Switcher keyword. 
+
+#### 1. Navigator
+
+<img src="assets/images/preview_winnav-1.png" width="564px"/>
+
+* <kbd>↩</kbd> to navigate to the selected window.
+* <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
+* <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
+
+#### 2. Switcher
+
+<img src="assets/images/preview_winnav-2.png" width="564px"/>  
+
+* <kbd>↩</kbd> to raise the selected window to the foreground.
+* <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
+* <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
 
 
 ---
