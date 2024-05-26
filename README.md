@@ -719,7 +719,7 @@ __Notes:__
 
 ## 1.20 Window Navigator
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=apple&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
