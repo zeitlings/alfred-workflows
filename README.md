@@ -719,7 +719,7 @@ __Notes:__
 
 ## 1.20 Window Navigator
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
@@ -739,6 +739,8 @@ __Notes:__
 
 1. Search the windows of the active app globally using the Navigator keyword. 
 2. Search app windows in the current desktop space using the Switcher keyword. 
+3. Search all visible windows of all apps globally using the Global keyword.
+
 
 #### 1. Navigator
 
@@ -755,7 +757,6 @@ __Notes:__
 * <kbd>↩</kbd> to raise the selected window to the foreground.
 * <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
 * <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
-
 
 ---
 
