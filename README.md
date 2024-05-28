@@ -11,6 +11,7 @@ __Some workflows live in their own repository:__
 - [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill) 
 - [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) 
 - [Logseq Workflow](https://github.com/zeitlings/alfred-logseq)
+- [Ollama Workflow](https://github.com/zeitlings/alfred-ollama)
 - [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 - [Calendar++](https://github.com/zeitlings/alfred-calendar) 
 
@@ -719,7 +720,7 @@ __Notes:__
 
 ## 1.20 Window Navigator
 
-[![](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
@@ -728,7 +729,7 @@ __Notes:__
         </td>
         <td>
             <p>
-            Navigate to any window of the currently focused application across all desktops or switch windows in the current desktop space.
+            Navigate to any window of the currently focused application or any application across all desktops, or switch windows within the current desktop space.
             </p>
         </td>
     </tr>
@@ -740,23 +741,21 @@ __Notes:__
 1. Search the windows of the active app globally using the Navigator keyword. 
 2. Search app windows in the current desktop space using the Switcher keyword. 
 3. Search all visible windows of all apps globally using the Global keyword.
-
+* <kbd>↩</kbd> to navigate to the selected window.
+* <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
+* <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
 
 #### 1. Navigator
 
 <img src="assets/images/preview_winnav-1.png" width="564px"/>
 
-* <kbd>↩</kbd> to navigate to the selected window.
-* <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
-* <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
-
 #### 2. Switcher
 
 <img src="assets/images/preview_winnav-2.png" width="564px"/>  
 
-* <kbd>↩</kbd> to raise the selected window to the foreground.
-* <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
-* <kbd>⌥</kbd><kbd>↩</kbd> to quit the owning application.
+#### 3. Global
+
+<img src="assets/images/preview_winnav-3.png" width="564px"/>  
 
 ---
 
