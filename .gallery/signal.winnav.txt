@@ -1,1 +1,1 @@
-v1.0.0-winnav
+v1.2.0-winnav
