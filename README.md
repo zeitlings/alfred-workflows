@@ -9,6 +9,7 @@ This is a collection of smaller workflows, experiments, and demonstrations of in
 __Some workflows live in their own repository:__  
 - [µBib | Citations, BibTeX, and Research](https://github.com/zeitlings/ubib)
 - [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill) 
+- [Ayai · GPT Nexus (preview)](https://github.com/zeitlings/ayai-gpt-nexus) ★
 - [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) 
 - [Logseq Workflow](https://github.com/zeitlings/alfred-logseq)
 - [Ollama Workflow](https://github.com/zeitlings/alfred-ollama)
