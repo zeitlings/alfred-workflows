@@ -37,7 +37,6 @@ struct WindowNavigator {
 		switch directive {
 		case .navigator: return windows
 		case .switcher:  return Environment.includeFrontmostWindow ? windows : .init(windows.dropFirst())
-		//case .global: preconditionFailure()
 		case .global: return windows.first != nil ? [windows.first!] : []
 		}
 	}()
@@ -225,11 +224,21 @@ struct WindowWrapper: CustomDebugStringConvertible {
 		}
 		
 		// TODO: Preserve the Emoji / Character Viewer
-		// Exceptions: Character Viewer (Layer 20)
-		// Not caught.
+		// Exceptions: Character Viewer (Layer 20). Not caught.
 		
 		guard windowLayer == 0 else { return nil } // isWindow
 		guard !windowTitle.isEmpty || windowHeight > 70 else { return nil }
+		
+		if !Environment.preserveWindowsWithoutName {
+			guard !windowTitle.isEmpty else { return nil }
+		}
+		
+		if let blacklist: [String] = Environment.ignoredWindowNames {
+			guard blacklist.firstIndex(of: windowTitle) == nil else {
+				return nil
+			}
+		}
+		
 		let bounds = NSRect(
 			origin: NSPoint(x: CGFloat(windowX), y: CGFloat(windowY)),
 			size: NSSize(width: CGFloat(windowWidth), height: CGFloat(windowHeight))
@@ -282,8 +291,7 @@ struct WindowWrapper: CustomDebugStringConvertible {
 		}
 	}
 	
-	/// If we succeed in creating a composited image representation of the window,
-	/// then it is an actual window visible somewhere on some workspace.
+	/// If we succeed in creating a composited image representation of the window, then it is an actual window visible somewhere on some workspace.
 	var isValidWindow: Bool {
 		CGWindowListCreateImage(self.windowBounds, CGWindowListOption.optionIncludingWindow, UInt32(windowNumber), CGWindowImageOption.onlyShadows) != nil
 	}
@@ -340,6 +348,10 @@ struct Environment {
 	static let windowNumber: Int32 = Int32(env["win_num"]!)!
 	static let windowName: String = env["win_name"]!
 	static let includeFrontmostWindow: Bool = env["include_top_win"] == "1"
+	static let preserveWindowsWithoutName: Bool = env["preserve_unnamed_windows"] == "1"
+	static let ignoredWindowNames: [String]? = env["ignored_window_names"]?
+		.split(separator: ",")
+		.map({ $0.trimmingCharacters(in: .whitespaces) })
 	
 	static private let stdErr: FileHandle = .standardError
 	static func log(_ message: String) {
