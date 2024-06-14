@@ -402,7 +402,8 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 <table>
     <tr>
         <td><img src="assets/icons/btb.png" width="128px"></td>
-        <td>View the battery charge status of connected Bluetooth devices<br>(macOS 13.0+)</td>
+        <td>View the battery charge status of connected Bluetooth devices<br>(macOS 13.0+). Install Apple's <a href="https://developer.apple.com/fonts/">SF Pro font</a> to see the icons.</td>
+
     </tr>
 </table>
 
@@ -423,8 +424,8 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 ### Usage
 
 **A /** Take a snapshot of the QR code you want to open the link to
-- Default keyword: `qrlink`
-- Default shortcut: **⌘+⇧+7**
+- Default keyword: `qrr`
+- Recommended shortcut: **⌘+⇧+7**
 
 **B /** Send an image containing the QR code to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/)
 
