@@ -403,7 +403,6 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
     <tr>
         <td><img src="assets/icons/btb.png" width="128px"></td>
         <td>View the battery charge status of connected Bluetooth devices<br>(macOS 13.0+). Install Apple's <a href="https://developer.apple.com/fonts/">SF Pro font</a> to see the icons.</td>
-
     </tr>
 </table>
 
