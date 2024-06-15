@@ -1,4 +1,4 @@
-#!/usr/bin/swift
+//#!/usr/bin/swift
 //
 //  ColorPicker.swift
 //  Color Picker Alfred Workflow
@@ -6,19 +6,23 @@
 //  Created by Patrick Sy on 20/08/2023.
 //
 
-
 import AppKit
 
 guard #available(OSX 10.15, *) else {
-	print("macOS 10.15 or greater required", terminator: "")
-	exit(1)
+	let response: Response = .init(items: [.init(title: "macOS 10.15 or greater required.", icon: "images/icons/info.png")])
+	try? FileHandle.standardOutput.write(contentsOf: response.encoded)
+	Darwin.exit(EXIT_FAILURE)
 }
 
+// MARK: - Environment
 let cache: String = ProcessInfo.processInfo.environment["alfred_workflow_cache"]!
 let showHSL: Bool = ProcessInfo.processInfo.environment["show_hsl"] == "1"
 let showNSColor: Bool = ProcessInfo.processInfo.environment["show_nscolor"] == "1"
 let showRGBa: Bool = ProcessInfo.processInfo.environment["show_rgba"] == "1"
+let workflowBundleID: String = ProcessInfo.processInfo.environment["alfred_workflow_bundleid"]!
 
+
+// MARK: - Color
 struct Color {
 	let red: Int
 	let blue: Int
@@ -37,7 +41,7 @@ struct Color {
 	var rgb: String { "rgb(\(red), \(green), \(blue))" }
 	var rgba: String { "rgb(\(red), \(green), \(blue), \(alpha))" }
 	var hex: String {
-		[\Color.red, \Color.green, \Color.blue].map({
+		"#" + [\Color.red, \Color.green, \Color.blue].map({
 			String(self[keyPath: $0], radix: 16)
 		}).joined().uppercased()
 	}
@@ -75,16 +79,22 @@ struct Color {
 	}
 	
 	var nsColor: String {
+		let pfms: FloatingPointFormatStyle<CGFloat> = .init(locale: Locale(identifier: "en_US")).precision(.fractionLength(3))
 		let nsRed: CGFloat = (.init(red) * 1.0) / 255.0
 		let nsGreen: CGFloat = (.init(green) * 1.0) / 255.0
 		let nsBlue: CGFloat = (.init(blue) * 1.0) / 255.0
 		let nsAlpha: CGFloat = (.init(alpha) * 1.0) / 0xFF
-		return "NSColor(red: \(nsRed), green: \(nsGreen), blue: \(nsBlue), alpha: \(nsAlpha))"
-		//"NSColor(red: \(color.alphaComponent), green: \(color.greenComponent), blue: \(color.blueComponent), alpha: \(color.alphaComponent))"
+		return "NSColor(red: \(pfms.format(nsRed)), green: \(pfms.format(nsGreen)), blue: \(pfms.format(nsBlue)), alpha: \(pfms.format(nsAlpha)))"
 	}
 	
 	func cacheIcon(fm: FileManager = .default) throws -> URL {
-		let url: URL = URL(filePath: "\(cache)/\(hex).png")
+		let url: URL = {
+			if #available(macOS 13, *) {
+				return URL(filePath: "\(cache)/\(hex.dropFirst()).png")
+			} else {
+				return URL(fileURLWithPath: "\(cache)/\(hex.dropFirst()).png")
+			}
+		}()
 		if !fm.fileExists(atPath: cache) {
 			try fm.createDirectory(atPath: cache, withIntermediateDirectories: true)
 		}
@@ -96,6 +106,7 @@ struct Color {
 	
 }
 
+// MARK: - Extensions
 extension NSColor {
 	
 	func icon() -> Data? {
@@ -157,85 +168,71 @@ extension NSColor {
 	}
 }
 
+extension Process {
+	func hide() -> Never {
+		launchPath = "/bin/bash"
+		arguments = ["-c", "open alfred://runtrigger/\(workflowBundleID)/hide"]
+		launch()
+		waitUntilExit()
+		Darwin.exit(EXIT_SUCCESS)
+	}
+}
+
+// MARK: - Workflow
+
+struct Response: Encodable {
+	var items: [Item]
+	
+	mutating func append(_ item: Item) {
+		items.append(item)
+	}
+
+	var encoded: Data { try! JSONEncoder().encode(self) }
+	
+	struct Item: Encodable {
+		let title: String
+		let subtitle: String
+		let arg: String
+		let icon: [String:String]
+		init(title: String, subtitle: String = "", arg: String = "", icon: String) {
+			self.title = title
+			self.subtitle = subtitle
+			self.arg = arg
+			self.icon = ["path": icon]
+		}
+	}
+}
 
 let colorSampler = NSColorSampler()
 colorSampler.show { selectedColor in
 	guard let color: NSColor = selectedColor else {
-		print("No color selected", terminator: "")
-		exit(1)
+		//try? FileHandle.standardError.write(contentsOf: Data("No color selected".utf8))
+		Process().hide()
 	}
-
-	let c: Color = .init(nsColor: color)
 	do {
+		let c: Color = .init(nsColor: color)
 		let icon: URL = try c.cacheIcon()
-		var items: String = """
-{
-	"items": [
-		{
-			"title": "#\(c.hex)",
-			"subtitle": "HEX",
-			"arg": "#\(c.hex)",
-			"icon": {
-				"path": "\(icon.path)"
-			}
-		},
-		{
-			"title": "\(c.rgb)",
-			"subtitle": "RGB",
-			"arg": "\(c.rgb)",
-			"icon": {
-				"path": "\(icon.path)"
-			}
-		},
-"""
-		
+		var response: Response = .init(items: [
+			.init(title: c.hex, subtitle: "HEX", arg: c.hex, icon: icon.path),
+			.init(title: c.rgb, subtitle: "RGB", arg: c.rgb, icon: icon.path)
+		])
 		if showHSL {
-			items += """
-   {
-   "title": "\(c.hsl)",
-   "subtitle": "HSL",
-   "arg": "\(c.hsl)",
-   "icon": { "path": "\(icon.path)" }
-   },
-   """
+			response.append(.init(title: c.hsl, subtitle: "HSL", arg: c.hsl, icon: icon.path))
 		}
-		
 		if showNSColor {
-			items += """
-  {
-	  "title": "\(c.nsColor)",
-	  "subtitle": "NSColor",
-	  "arg": "\(c.nsColor)",
-	  "icon": {
-		  "path": "\(icon.path)"
-	  }
-  },
-"""
+			response.append(.init(title: c.nsColor, subtitle: "NSColor", arg: c.nsColor, icon: icon.path))
 		}
-		
 		if showRGBa {
-			items += """
-  {
-	  "title": "\(c.rgba)",
-	  "subtitle": "RGBa",
-	  "arg": "\(c.rgba)",
-	  "icon": {
-		  "path": "\(icon.path)"
-	  }
-  },
-"""
+			response.append(.init(title: c.rgba, subtitle: "RGBa", arg: c.rgba, icon: icon.path))
 		}
 		
-		items += "]}"
-		print(items, terminator: "")
-		exit(EXIT_SUCCESS)
+		try? FileHandle.standardOutput.write(contentsOf: response.encoded)
+		Darwin.exit(EXIT_SUCCESS)
 		
-	} catch let error as NSError {
-		print(error.debugDescription, terminator: "")
-		exit(EXIT_FAILURE)
+	} catch {
+		//try? FileHandle.standardError.write(contentsOf: Data(error.debugDescription.utf8))
+		Process().hide()
 	}
 }
-
-
 
 RunLoop.main.run()
