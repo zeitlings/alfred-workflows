@@ -1,4 +1,4 @@
-//#!/usr/bin/swift
+#!/usr/bin/swift
 //
 //  ColorPicker.swift
 //  Color Picker Alfred Workflow
