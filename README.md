@@ -59,6 +59,7 @@ __Some workflows live in their own repository:__
   - [1.18 PDF Compress](#118-pdf-compress)
   - [1.19 Scratchpad](#119-scratchpad)
   - [1.20 Window Navigator](#120-window-navigator)
+  - [1.21 Fuzzy Search](#121-fuzzy-search)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -757,6 +758,23 @@ __Notes:__
 #### 3. Global
 
 <img src="assets/images/preview_winnav-3.png" width="564px"/>  
+
+
+
+## 1.21 Fuzzy Search
+
+[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fuzzy)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdfcompress.png" width="150px">
+        </td>
+        <td>
+            Compress PDF documents.
+        </td>
+    </tr>
+</table>
 
 ---
 
