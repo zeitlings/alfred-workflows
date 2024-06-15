@@ -493,7 +493,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
 
 ## 1.15 Color Picker
 
-[![](https://img.shields.io/badge/download-v1.2.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.1-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
+[![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
 
 <table>
     <tr>
@@ -515,8 +515,6 @@ Activate the *Color Sampler* with the keyword (default: `cp`) and pick the desir
 ### Color History
 
 To review previously picked colors, activate the workflow with the keyword preceded by a colon (default: `:cp`).
-
-(GridView available from v.1.2.0, requires Alfred 5.5+)
 
 <img src="assets/images/preview_cp2.png" width="564px"/>
 
