@@ -768,10 +768,14 @@ __Notes:__
 <table>
     <tr>
         <td>
-            <img src="assets/icons/pdfcompress.png" width="150px">
+            <img src="assets/icons/fuzzy.png" width="125px">
         </td>
         <td>
-            Compress PDF documents.
+            Limited scope classic fuzzy and initial character matching.
+            <ul>
+                <li>use <b>fzf</b></li>
+                <li>use <b>fzf-abbrev</b></li>
+            </ul>
         </td>
     </tr>
 </table>
