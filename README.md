@@ -410,7 +410,7 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.12. QResolve
 
-[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-qr)
+[![](https://img.shields.io/badge/download-v1.0.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.2-qr)
 [![](https://img.shields.io/static/v1?message=QResolve.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/QResolve.swift)
 
 <table>
@@ -420,7 +420,7 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
     </tr>
 </table>
 
-### Usage
+### How to Use
 
 **A /** Take a snapshot of the QR code you want to open the link to
 - Default keyword: `qrr`
