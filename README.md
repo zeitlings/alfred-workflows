@@ -771,10 +771,10 @@ __Notes:__
             <img src="assets/icons/fuzzy.png" width="125px">
         </td>
         <td>
-            Limited scope classic fuzzy and initial character matching.
+            Limited scope fuzzy search.
             <ul>
-                <li>use <b>fzf</b></li>
-                <li>use <b>fzf-abbrev</b></li>
+                <li>use <b>fzf</b> for classic matching</li>
+                <li>use <b>fzf-abbrev</b> for initial character matching</li>
             </ul>
         </td>
     </tr>
