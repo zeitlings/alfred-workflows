@@ -672,7 +672,7 @@ The result will be a compressed document in the same location as the source PDF 
 
 ## 1.19 Scratchpad
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-pad)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-pad)
 
 <table>
     <tr>
