@@ -40,11 +40,7 @@ struct Color {
 	
 	var rgb: String { "rgb(\(red), \(green), \(blue))" }
 	var rgba: String { "rgb(\(red), \(green), \(blue), \(alpha))" }
-	var hex: String {
-		"#" + [\Color.red, \Color.green, \Color.blue].map({
-			String(self[keyPath: $0], radix: 16)
-		}).joined().uppercased()
-	}
+	var hex: String { String(format:"#%02X%02X%02X", red, green, blue) }
 	
 	var hsl: String {
 		let red: CGFloat = CGFloat(color.redComponent)
