@@ -154,7 +154,7 @@ Given a hex value either raw or in any of the above formattings will return its 
     </tr>
 </table>
 
-<img src="assets/images/preview_roman.jpg" width="564px" />
+<img src="assets/images/preview_roman.png" width="550px" />
 
 ---
 
