@@ -143,7 +143,16 @@ Given a hex value either raw or in any of the above formattings will return its 
 [![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
 
 
-Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the range 1 to 3999.
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/rn.png" width="170px">
+        </td>
+        <td>
+            Convert Roman numerals to decimal and vice versa. Accepts Arabic numbers in the range 1 to 3999.
+        </td>
+    </tr>
+</table>
 
 <img src="assets/images/preview_roman.jpg" width="564px" />
 
