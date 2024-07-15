@@ -11,7 +11,7 @@ import AppKit
 guard #available(OSX 10.15, *) else {
 	let response: Response = .init(items: [.init(title: "macOS 10.15 or greater required.", icon: "images/icons/info.png")])
 	try? FileHandle.standardOutput.write(contentsOf: response.encoded)
-	Darwin.exit(EXIT_FAILURE)
+	Darwin.exit(EXIT_SUCCESS)
 }
 
 // MARK: - Environment
@@ -39,12 +39,10 @@ struct Color {
 	}
 	
 	var rgb: String { "rgb(\(red), \(green), \(blue))" }
+	
 	var rgba: String { "rgb(\(red), \(green), \(blue), \(alpha))" }
-	var hex: String {
-		"#" + [\Color.red, \Color.green, \Color.blue].map({
-			String(self[keyPath: $0], radix: 16)
-		}).joined().uppercased()
-	}
+	
+	var hex: String { "#" + [red, green, blue].map(\.hex).joined() }
 	
 	var hsl: String {
 		let red: CGFloat = CGFloat(color.redComponent)
@@ -175,6 +173,13 @@ extension Process {
 		launch()
 		waitUntilExit()
 		Darwin.exit(EXIT_SUCCESS)
+	}
+}
+
+extension Int {
+	var hex: String {
+		let v = String(self, radix: 16, uppercase: true)
+		return self < 16 ? "0" + v : v
 	}
 }
 
