@@ -383,7 +383,7 @@ If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the sugges
 
 ## 1.10. GIF from Video
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-gif)
+[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-gif)
 
 <table>
     <tr>
