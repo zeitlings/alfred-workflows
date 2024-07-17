@@ -23,7 +23,7 @@ struct QResolver {
 				else {
 					preconditionFailure()
 				}
-				print(landingPage)
+				print(landingPage, terminator: "")
 				exit(0)
 			}
 		}
