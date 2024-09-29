@@ -210,7 +210,7 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 
 ## 1.5. Define Word - A Better Dictionary
 
-[![](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-dict)
+[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-dict)
 
 <table>
     <tr>
@@ -223,11 +223,11 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
     </tr>
 </table>
 
+`shift` or `cmd+Y` to preview the dictionary entry  
 `ctrl` to see the dictionary associated with the entry  
 `cmd + ⏎` to paste a word to the frontmost application (spell checker)  
-`shift` or `cmd+Y` to preview the dictionary entry  
 `cmd+C` to copy the dictionary entry's plain text to the clipboard  
-`cmd+L` to view the plain text as large type  
+`cmd+L` to view the plain text as Large Type  
 
 You can define dictionaries for lookups, set the font size of the previews, or manually select a dictionary to use. The previews reflect the global appearance, i.e. they have a dark mode. The workflow also includes a preset for looking up synonyms of a word and a convenient keyboard shortcut for quick lookups. To use the workflow as a multilingual spell checker, you can use the `cmd` modifier when actioning the entry to paste the word to the frontmost application.
 
