@@ -73,7 +73,7 @@ __Some workflows live in their own repository:__
 
 ## 1.1. Duden Workflow
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
+[![Download button for workflow: Duden workflow](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
 
 <table> 
     <tr>
@@ -100,8 +100,8 @@ __Some workflows live in their own repository:__
 <!-- What Unicode Character is this? (ツ)_/¯ -->
 ## 1.2. What Unicode character is this?
 
-[![](https://img.shields.io/badge/download-v2.0.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.2-uni)
-[![](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
+[![Download button for workflow: What Unicode character is this?](https://img.shields.io/badge/download-v2.0.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.2-uni)
+[![Swift source code button for workflow: What Unicode character is this?](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
 
 <table> 
     <tr>
@@ -140,8 +140,8 @@ Given a hex value either raw or in any of the above formattings will return its 
 
 ## 1.3. Roman Numeral Converter
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-rn)
-[![](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
+[![Download button for workflow: Roman Numeral Converter](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-rn)
+[![Swift source code button for workflow: Roman Numeral Converter](https://img.shields.io/static/v1?message=RomanNumeral.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/RomanNumeral.swift)
 
 
 <table>
@@ -162,7 +162,7 @@ Given a hex value either raw or in any of the above formattings will return its 
 ## 1.4. DEVONthink ←→ PDF Expert
 
 
-[![](https://img.shields.io/badge/download-v2.1.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.2-xdev)
+[![Download button for workflow: DEVONthink to PDF Expert](https://img.shields.io/badge/download-v2.1.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.2-xdev)
 
 
 <table>
@@ -210,7 +210,7 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 
 ## 1.5. Define Word - A Better Dictionary
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-dict)
+[![Download button for workflow: Define Word - A Better Dictionary](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-dict)
 
 <table>
     <tr>
@@ -240,8 +240,8 @@ _No external dependencies are required to perform the OCR._
 
 ### 1.6.1 Alfred OCR Light
 
-[![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ocr)
-[![](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
+[![Download button for workflow: Alfred OCR Light](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ocr)
+[![Swift source code button for workflow: Alfred OCR Light](https://img.shields.io/static/v1?message=AlfredOCR.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/AlfredOCR.swift)
 
 <table>
     <tr>
@@ -258,7 +258,7 @@ _No external dependencies are required to perform the OCR._
 
 ### 1.6.2 Alfred OCR+
 
-[![](https://img.shields.io/badge/download-v1.4.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.4.0-ocr2)
+[![Download button for workflow: Alfred OCR+](https://img.shields.io/badge/download-v1.4.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.4.0-ocr2)
 
 <table>
     <tr>
@@ -294,7 +294,7 @@ __2 / PDF Document__
 
 ## 1.7. Favorites
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fav)
+[![Download button for workflow: Favorites](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fav)
 
 
 <table>
@@ -326,7 +326,7 @@ __2 / PDF Document__
 
 ## 1.8. New File
 
-[![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-nf)
+[![Download button for workflow: New File](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-nf)
 
 
 <table>
@@ -359,8 +359,8 @@ If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the sugges
 
 ## 1.9. Keyboard Brightness
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-kbr)
-[![](https://img.shields.io/static/v1?message=Incandescent.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/Incandescent.swift)
+[![Download button for workflow: Keyboard Brightness](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-kbr)
+[![Swift source code button for workflow: Keyboard Brightness](https://img.shields.io/static/v1?message=Incandescent.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/Incandescent.swift)
 
 <table>
     <tr>
@@ -384,7 +384,7 @@ If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the sugges
 
 ## 1.10. GIF from Video
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-gif)
+[![Download button for workflow: GIF from Video](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-gif)
 
 <table>
     <tr>
@@ -407,8 +407,8 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.11. Bluetooth Device Battery
 
-[![](https://img.shields.io/badge/download-v1.1.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.2-btb)
-[![](https://img.shields.io/static/v1?message=DeviceBattery.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/DeviceBattery.swift)
+[![Download button for workflow: Bluetooth Device Battery](https://img.shields.io/badge/download-v1.1.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.2-btb)
+[![Swift source code button for workflow: Bluetooth Device Battery](https://img.shields.io/static/v1?message=DeviceBattery.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/DeviceBattery.swift)
 
 <table>
     <tr>
@@ -421,8 +421,8 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.12. QResolve
 
-[![](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-qr)
-[![](https://img.shields.io/static/v1?message=QResolve.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/QResolve.swift)
+[![Download button for workflow: QResolve](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-qr)
+[![Swift source code button for workflow: QResolve](https://img.shields.io/static/v1?message=QResolve.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/QResolve.swift)
 
 <table>
     <tr>
@@ -445,7 +445,7 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.13. GIF from Images
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-gif2)
+[![Download button for workflow: GIF from Images](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-gif2)
 
 <table>
     <tr>
@@ -467,7 +467,7 @@ Send a series of still images to the workflow's [*File Action*](https://www.alfr
 
 ## 1.14 Extract Keywords
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kw)
+[![Download button for workflow: Extract Keywords](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-kw)
 
 <table>
     <tr>
@@ -504,7 +504,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
 
 ## 1.15 Color Picker
 
-[![](https://img.shields.io/badge/download-v1.3.3-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.3-cp) [![](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
+[![Download button for workflow: Color Picker](https://img.shields.io/badge/download-v1.3.3-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.3-cp) [![Swift source code button for workflow: Color Picker](https://img.shields.io/static/v1?message=ColorPicker.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/ColorPicker.swift)
 
 <table>
     <tr>
@@ -532,7 +532,7 @@ To review previously picked colors, activate the workflow with the keyword prece
 
 ## 1.16 PDF to Text
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdftotext)
+[![Download button for workflow: PDF to Text](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdftotext)
 
 <table>
     <tr>
@@ -590,7 +590,7 @@ Press <kbd>↩</kbd> to return to the view where you can set the start and end p
 
 ## 1.17 PDF Split
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfsplit)
+[![Download button for workflow: PDF Split](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfsplit)
 
 <table>
     <tr>
@@ -630,7 +630,7 @@ Press <kbd>↩</kbd> to return to the view where you can set the start and end p
 
 ## 1.18 PDF Compress
 
-[![](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-pdfcompress)
+[![Download button for workflow: PDF Compress](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-pdfcompress)
 
 <table>
     <tr>
@@ -683,7 +683,7 @@ The result will be a compressed document in the same location as the source PDF 
 
 ## 1.19 Scratchpad
 
-[![](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-pad)
+[![Download button for workflow: Scratchpad](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-pad)
 
 <table>
     <tr>
@@ -726,12 +726,12 @@ Press the secondary keyboard shortcut or enter the workflow's keyword (default: 
 
 __Notes:__  
 ¹  Changes are also saved when previewing and when switching the active pad.  
-²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [large type](https://www.alfredapp.com/help/features/large-type/).
+²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [Large Type](https://www.alfredapp.com/help/features/large-type/).
 
 
 ## 1.20 Window Navigator
 
-[![](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-winnav) [![](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![Download button for workflow: Window Navigator](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-winnav) [![Swift source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![Objective-C source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
@@ -745,6 +745,10 @@ __Notes:__
         </td>
     </tr>
 </table>
+
+> [!NOTE]
+> macOS 15  deprecates an API that Window Navigator uses to retrieve window information. Already compiled executables will continue to work as expected, but compilation will fail if you try to run the workflow for the first time with macOS 15.
+> I'm investigating a solution to this problem. 
 
 
 ### Usage 
@@ -772,7 +776,7 @@ __Notes:__
 
 ## 1.21 Fuzzy Search
 
-[![](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fuzzy)
+[![Download button for workflow: Fuzzy Search](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fuzzy)
 
 <table>
     <tr>
