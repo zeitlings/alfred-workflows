@@ -61,6 +61,7 @@ __Some workflows live in their own repository:__
   - [1.19 Scratchpad](#119-scratchpad)
   - [1.20 Window Navigator](#120-window-navigator)
   - [1.21 Fuzzy Search](#121-fuzzy-search)
+  - [1.22 PDF to Table](#122-pdf-to-table)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -792,6 +793,38 @@ __Notes:__
         </td>
     </tr>
 </table>
+
+
+## 1.22 PDF to Table
+
+[![Download button for workflow: PDF to Table](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdftable)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdftable.png" width="150px">
+        </td>
+        <td>
+            Extract tables from PDF documents as CSV.
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions) and export them as CSV.
+- Use __PDF to Table (Lattice)__ if there are ruling lines separating each cell
+- Use __PDF to Table (Stream)__ if there are no ruling lines separating each cell
+
+
+![PDF to Table Universal Action preview image](assets/images/preview_pdftable-1.png)
+
+### Dependencies
+
+- [Java](https://www.java.com/en/download/help/mac_install.html) (Information on installing Java)
+	* [Java for macOS download page](https://www.java.com/en/download/)
+- [Tabula](https://github.com/tabulapdf/tabula-java) (The jar file is included in this workflow)
+
 
 ---
 
