@@ -62,6 +62,7 @@ __Some workflows live in their own repository:__
   - [1.20 Window Navigator](#120-window-navigator)
   - [1.21 Fuzzy Search](#121-fuzzy-search)
   - [1.22 PDF to Table](#122-pdf-to-table)
+  - [1.23 PDF to Docx](#123-pdf-to-docx)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -829,6 +830,35 @@ Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/he
 - [Java](https://www.java.com/en/download/help/mac_install.html) (Information on installing Java)
 	* [Java for macOS download page](https://www.java.com/en/download/)
 - [Tabula](https://github.com/tabulapdf/tabula-java) (The jar file is included in this workflow)
+
+
+## 1.23 PDF to Docx
+
+[![Download button for workflow: PDF to Docx](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfdocx)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/pdfdocx.png" width="150px">
+        </td>
+        <td>
+            Convert PDFs to Word documents.
+        </td>
+    </tr>
+</table>
+
+### Setup
+
+- Install [pdf2docx](https://github.com/ArtifexSoftware/pdf2docx) via the command line: `pip install pdf2docx`
+
+### Usage
+
+Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions).
+
+<!-- PDF to Docx Universal Action preview image -->
+<img src="assets/images/preview_pdfdocx-1.png" width="550px"/> 
+
+
 
 
 ---
