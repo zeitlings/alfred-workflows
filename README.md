@@ -817,7 +817,12 @@ Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/he
 - Use __PDF to Table (Stream)__ if there are no ruling lines separating each cell
 
 
-![PDF to Table Universal Action preview image](assets/images/preview_pdftable-1.png)
+<!-- PDF to Table Universal Action preview image --->
+<img src="assets/images/preview_pdftable-1.png" width="550px"/> 
+
+<!-- PDF to Table Lattice resulting CSV Quicklook preview image --->
+<img src="assets/images/preview_pdftable-2.png" width="550px"/> 
+
 
 ### Dependencies
 
