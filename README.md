@@ -834,7 +834,7 @@ Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/he
 
 ## 1.23 PDF to Docx
 
-[![Download button for workflow: PDF to Docx](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-pdfdocx)
+[![Download button for workflow: PDF to Docx](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-pdfdocx)
 
 <table>
     <tr>
