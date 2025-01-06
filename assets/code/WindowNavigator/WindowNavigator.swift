@@ -11,6 +11,7 @@
 
 import Foundation
 import ApplicationServices
+import AppKit
 
 // MARK: - WindowNavigator
 struct WindowNavigator {
@@ -293,7 +294,15 @@ struct WindowWrapper: CustomDebugStringConvertible {
 	
 	/// If we succeed in creating a composited image representation of the window, then it is an actual window visible somewhere on some workspace.
 	var isValidWindow: Bool {
-		CGWindowListCreateImage(self.windowBounds, CGWindowListOption.optionIncludingWindow, UInt32(windowNumber), CGWindowImageOption.onlyShadows) != nil
+		// Prüfe grundlegende Fenstereigenschaften
+		guard windowAlpha > 0,                    // Fenster ist sichtbar
+			  windowBounds.size.width > 0,        // Fenster hat eine Breite
+			  windowBounds.size.height > 0,       // Fenster hat eine Höhe
+			  windowLayer == 0                    // Ist ein normales Fenster
+		else {
+			return false
+		}
+		return true
 	}
 	
 	var debugDescription: String {
