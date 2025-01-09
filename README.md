@@ -296,7 +296,7 @@ __2 / PDF Document__
 
 ## 1.7. Favorites
 
-[![Download button for workflow: Favorites](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fav)
+[![Download button for workflow: Favorites](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-fav)
 
 
 <table>
