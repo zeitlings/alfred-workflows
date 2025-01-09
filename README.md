@@ -313,17 +313,13 @@ __2 / PDF Document__
 
 <img src="assets/images/preview_fav.png" width="564px">
 
-
-- Hit `enter` or `cmd+O` to open a file or folder.
-- Add items with the workflow’s [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
-- **Modifiers:**
-	- `ctrl`: Show full Path
-	- `cmd`: Reveal in Finder
-	- `opt`: Browse in Alfred
-	- `cmd+shift`: Move up
-	- `opt+shift`: Move down
-	- `fn`: Remove from Favorites
-	- `shift` or `cmd+Y`: Quicklook Preview
+- <kbd>↩</kbd> Open file or folder.
+- <kbd>⌘</kbd><kbd>↩</kbd> Reveal in Finder.
+- <kbd>⌥</kbd><kbd>↩</kbd> Browse in Alfred.
+- <kbd>fn</kbd><kbd>↩</kbd> Remove from favorites.
+- <kbd>⌘</kbd><kbd>Y</kbd> (or tap <kbd>⇧</kbd>) Quicklook Preview.
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>↩</kbd> Move item up in the list.
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>↩</kbd> Move item down in the list.
 
 
 ## 1.8. New File
@@ -733,7 +729,7 @@ __Notes:__
 
 ## 1.20 Window Navigator
 
-[![Download button for workflow: Window Navigator](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-winnav) [![Swift source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![Objective-C source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![Download button for workflow: Window Navigator](https://img.shields.io/badge/download-v2.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.0-winnav) [![Swift source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![Objective-C source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
@@ -748,10 +744,11 @@ __Notes:__
     </tr>
 </table>
 
+<!--  
 > [!NOTE]
 > macOS 15  deprecates an API that Window Navigator uses to retrieve window information. Already compiled executables will continue to work as expected, but compilation will fail if you try to run the workflow for the first time with macOS 15.
 > I'm investigating a solution to this problem. 
-
+-->
 
 ### Usage 
 

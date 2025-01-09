@@ -1,25 +1,89 @@
 //
 //  WindowNavigator.swift
-//  Window Navigator Alfred Workflow
+//  Window Navigator Alfred Workflow (v2.0.0)
 //
-//  Navigate to any window of the active app over all desktop spaces or
-//  Switch to a window open in the current desktop space.
+//  Navigate to any window of the active app over all desktop spaces
+//  or Switch to a window open in the current desktop space.
 //  <https://github.com/zeitlings/alfred-workflows>
 //
 //  Created by Patrick Sy on 21/05/2024.
 //
 
-import Foundation
 import ApplicationServices
 
 // MARK: - WindowNavigator
 struct WindowNavigator {
-	static let directive: Directive = .init(rawValue: CommandLine.arguments[1])!
 	private static let stdOut: FileHandle = .standardOutput
+	static let cacheDuration: TimeInterval = Environment.cacheLifetime
+	static let frontMostApplicationName: String? = NSWorkspace.shared.frontmostApplication?.localizedName
+	static let directive: Directive = .init(rawValue: CommandLine.arguments[1])!
+	static var windowNameCandidates: Set<String>?
 	
-	static let frontMostApplicationName: String? = {
-		onScreenWindows.first(where: { $0.windowIsOnScreen })?.owningApplicationName
-	}()
+	static func run() {
+		tryCachedWindows()
+		windowNameCandidates = getCandidates()
+		let items: [Item]
+		switch directive {
+		case .navigator: items = relativeWindows.map({ $0.alfredItem })
+		case .switcher:  items = onScreenWindows.map({ $0.alfredItem })
+		case .global:    items = completeWindows.map({ $0.alfredItem })
+		}
+		yield(items: items, save: true)
+	}
+	
+	static func getCandidates() -> Set<String> {
+		guard directive != .switcher else {
+			return []
+		}
+		var windowCandidates: Set<String> = []
+		var observedFrauds: Set<String> = []
+		let runningApplications: [NSRunningApplication] = NSWorkspace.shared.runningApplications.deduplicated()
+		
+		for application in runningApplications {
+			guard let applicationName: String = application.localizedName else {
+				Environment.log("[WARNING] Application with PID <\(application.processIdentifier)> has no localized name")
+				continue
+			}
+			guard !knownFrauds.contains(applicationName),
+				  !knownFraudsSharedPrefixes.anySatisfy({ applicationName.hasPrefix($0) }),
+				  !knownFraudsSharedSuffixes.anySatisfy({ applicationName.hasSuffix($0) })
+			else {
+				continue
+			}
+			let axApp: AXUIElement = AXUIElementCreateApplication(application.processIdentifier)
+			guard let targetMenuBar: AXUIElement = axApp.menunBar else {
+				Environment.log("[INFO] Could not retrieve menu bar of application with name <\(application.localizedName ?? "Unknown")> PID <\(application.processIdentifier)>")
+				if let appName: String = application.localizedName {
+					observedFrauds.insert(appName)
+				}
+				continue
+			}
+			
+			if let menuItems: [AXUIElement] = targetMenuBar.children {
+				// Reverse the array to crawl the list starting with Help > Window ... then each sub bar from the bottom
+				for menuItem: AXUIElement in menuItems.reversed() {
+					guard localizedWindowMenubarNames.contains(menuItem.name ?? "") else {
+						continue
+					}
+					if let extraElement: AXUIElement = menuItem.children?.first,
+					   let menuBarItems: [AXUIElement] = extraElement.children
+					{
+						// TODO: Drop suffix tested: no
+						let candidates: [String] = menuBarItems.compactMap({ $0.name?.droppingSuffix() }).filter({ !$0.isEmpty })
+						windowCandidates.formUnion(candidates)
+					}
+				}
+			}
+		}
+		
+		if !observedFrauds.isEmpty {
+			Environment.log("Remembering \(observedFrauds.count) new \(observedFrauds.count == 1 ? "process" : "processes") to ignore.")
+			Environment.log(" ~ \(Environment.runtimeFraudsFile.path)")
+			remember(frauds: observedFrauds)
+		}
+		
+		return windowCandidates
+	}
 	
 	/// A list of `WindowWrapper` objects representing all on-screen windows.
 	///
@@ -33,10 +97,12 @@ struct WindowNavigator {
 		guard let onScreenWindows = onScreenWindowList as? [[String: Any]] else {
 			preconditionFailure("Unable to retrieve on-screen window list")
 		}
-		let windows: [WindowWrapper] = onScreenWindows.compactMap({ WindowWrapper($0) })
+		let windows: [WindowWrapper] = onScreenWindows
+			.compactMap({ WindowWrapper($0) })
+
 		switch directive {
 		case .navigator: return windows
-		case .switcher:  return Environment.includeFrontmostWindow ? windows : .init(windows.dropFirst())
+		case .switcher:  return (Environment.includeFrontmostWindow ? windows : .init(windows.dropFirst())).sorted(by: { $0.owningApplicationPID < $1.owningApplicationPID })
 		case .global: return windows.first != nil ? [windows.first!] : []
 		}
 	}()
@@ -50,9 +116,9 @@ struct WindowNavigator {
 	/// - Returns: An array of `WindowWrapper` objects representing the windows relative to the frontmost active window.
 	private static let relativeWindows: [WindowWrapper] = {
 		guard let frontMost: WindowWrapper = onScreenWindows.first(where: { $0.windowIsOnScreen }) else {
-			//preconditionFailure("Unable to retrieve the frontmost window.")
-			yield(items: [.noWindows])
+			yield(items: [.noWindows], save: false)
 		}
+		
 		let frontMostApplicationWindowID: CGWindowID = CGWindowID(frontMost.windowNumber)
 		let frontMostApplicationPID: Int32 = frontMost.owningApplicationPID
 		
@@ -68,9 +134,10 @@ struct WindowNavigator {
 		let windows: [WindowWrapper] = relativeWindows.lazy
 			.compactMap({ .init($0) })
 			.filter({ $0.owningApplicationPID == frontMostApplicationPID })
+			.deduplicated()
 			.filter({ $0.isValidWindow })
 		
-		return windows
+		return windows.sorted(by: { $0.owningApplicationPID < $1.owningApplicationPID })
 	}()
 	
 	private static let completeWindows: [WindowWrapper] = {
@@ -80,7 +147,10 @@ struct WindowNavigator {
 		}
 		
 		// TODO: Group the apps together?
-		var windows: [WindowWrapper] = allWindows.compactMap({ .init($0) }).filter({ $0.isValidWindow })
+		var windows: [WindowWrapper] = allWindows
+			.compactMap({ .init($0) })
+			.deduplicated()
+			.filter({ $0.isValidWindow })
 		if
 			!Environment.includeFrontmostWindow,
 			let first: WindowWrapper = onScreenWindows.first,
@@ -88,25 +158,19 @@ struct WindowNavigator {
 		{
 			windows.remove(at: index)
 		}
-		return windows
+		return windows.sorted(by: { $0.owningApplicationPID < $1.owningApplicationPID })
 	}()
-	
-	static func run() {
-		let items: [Item]
-		switch directive {
-		case .navigator: items = relativeWindows.map({ $0.alfredItem })
-		case .switcher:  items = onScreenWindows.map({ $0.alfredItem })
-		case .global:    items = completeWindows.map({ $0.alfredItem })
-		}
-		yield(items: items.isEmpty ? [.noWindows] : items)
-	}
 	
 	/// Outputs the given items as an Alfred script filter response and terminates the program.
 	///
 	/// - Parameters:
 	///   - items: An array of `Item` objects to be included in the response.
-	private static func yield(items: [Item]) -> Never {
-		try? stdOut.write(contentsOf: Response(items: items).encoded())
+	private static func yield(items: [Item], save saveCache: Bool) -> Never {
+		if items.isEmpty {
+			try? stdOut.write(contentsOf: Response(items: [.noWindows]).encoded(save: false))
+		} else {
+			try? stdOut.write(contentsOf: Response(items: items).encoded(save: saveCache))
+		}
 		Darwin.exit(EXIT_SUCCESS)
 	}
 	
@@ -125,18 +189,62 @@ struct WindowNavigator {
 
 }
 
+extension WindowNavigator {
+	
+	@discardableResult
+	static func tryCachedWindows(fm: FileManager = .default) -> Never? {
+		guard directive != .switcher,
+			  !Environment.cacheFeedbackGiven,
+			  fm.fileExists(atPath: Environment.cacheFile.path)
+		else {
+			return nil
+		}
+		
+		if let cached: Data = fm.contents(atPath: Environment.cacheFile.path),
+		   let wrapper: [CacheWrapper] = try? JSONDecoder().decode([CacheWrapper].self, from: cached),
+		   let cached: CacheWrapper = wrapper.first(where: { $0.directive == directive }),
+		   !cached.isStale
+		{
+			let old: Response = cached.response
+			// FIXME: potentially a source of problems
+			let variables = old.variables?.merging(["cache_feedback_given": "true"], uniquingKeysWith: { _, new in new })
+			var response: Response = .init(items: old.items, rerun: 0.1, variables: variables)
+			
+			if WindowNavigator.directive == .navigator,
+			   let frontmost = WindowNavigator.frontMostApplicationName,
+			   cached.frontmostApplication != frontmost,
+			   let global = wrapper.first(where: { $0.directive == .global })
+			{
+				let items: [Item] = global.response.items.filter({ $0.subtitle == frontmost })
+				response.items = items
+			}
+			
+			if response.items.isEmpty {
+				yield(items: [.noWindows], save: directive == .navigator)
+			} else {
+				try? stdOut.write(contentsOf: response.encoded(save: false))
+			}
+			Darwin.exit(EXIT_SUCCESS)
+		}
+		
+		return nil
+	}
+	
+}
 
 // MARK: - Item
-struct Item: Codable {
+struct Item: Codable, Hashable, Equatable {
 	let title: String
 	let subtitle: String
 	let arg: [String]?
 	let variables: [String: String]?
+	let uid: String
 	let icon: [String: String]
 	let autocomplete: String?
 	let match: String?
 	let text: [String:String]?
 	let valid: Bool
+	
 	
 	static let noWindows: Item = {
 		let subtitle: String = {
@@ -163,6 +271,7 @@ struct Item: Codable {
 			subtitle: subtitle,
 			arg: nil,
 			variables: nil,
+			uid: "",
 			icon: ["path":"icons/info.png"],
 			autocomplete: nil,
 			match: nil,
@@ -174,21 +283,68 @@ struct Item: Codable {
 
 // MARK: - Response
 struct Response: Codable {
-	let items: [Item]
-	let variables: [String:String]?
+	var items: [Item]
+	var variables: [String:String]?
+	var skipknowledge: Bool = true
+	var rerun: Double?
 	
-	init(items: [Item]) {
+	init(
+		items: [Item],
+		rerun: Double? = nil,
+		variables: [String:String]? = ["trigger":"raise_window"]
+	) {
 		self.items = items
-		self.variables = ["trigger":"raise_window"]
+		self.rerun = rerun
+		self.variables = variables
 	}
 	
-	func encoded() -> Data {
-		try! JSONEncoder().encode(self)
+	func encoded(fm: FileManager = .default, save saveCache: Bool) -> Data {
+		let encoder = JSONEncoder()
+		encoder.outputFormatting = .prettyPrinted
+		if saveCache {
+			let wrapper: CacheWrapper = .init(
+				directive: WindowNavigator.directive,
+				timestamp: .now,
+				frontmostApplication: WindowNavigator.frontMostApplicationName ?? "",
+				response: self
+			)
+			
+			if let cached: Data = fm.contents(atPath: Environment.cacheFile.path),
+			   var cached: [CacheWrapper] = try? JSONDecoder().decode([CacheWrapper].self, from: cached)
+			{
+				if let replacementIndex = cached.firstIndex(where: { $0.directive == wrapper.directive }) {
+					cached[replacementIndex] = wrapper
+				} else {
+					cached.append(wrapper)
+				}
+				let extendedCacheEncoded: Data = try! encoder.encode(cached)
+				try? extendedCacheEncoded.write(to: Environment.cacheFile)
+			} else {
+				let cacheEncoded: Data = try! encoder.encode([wrapper])
+				try? cacheEncoded.write(to: Environment.cacheFile)
+			}
+			
+		}
+		
+		let encoded = try! encoder.encode(self)
+		return encoded
+	}
+}
+
+// MARK: - CacheWrapper
+struct CacheWrapper: Codable {
+	let directive: Directive
+	let timestamp: Date
+	let frontmostApplication: String
+	let response: Response
+	
+	var isStale: Bool {
+		Date().timeIntervalSince(timestamp) > WindowNavigator.cacheDuration
 	}
 }
 
 // MARK: - WindowWrapper
-struct WindowWrapper: CustomDebugStringConvertible {
+struct WindowWrapper: CustomDebugStringConvertible, Hashable {
 	let owningApplicationName: String
 	let owningApplicationPID: Int32
 	let applicationPath: String
@@ -227,6 +383,7 @@ struct WindowWrapper: CustomDebugStringConvertible {
 		// Exceptions: Character Viewer (Layer 20). Not caught.
 		
 		guard windowLayer == 0 else { return nil } // isWindow
+		guard windowAlpha > 0 else  { return nil }
 		guard !windowTitle.isEmpty || windowHeight > 70 else { return nil }
 		
 		if !Environment.preserveWindowsWithoutName {
@@ -243,6 +400,7 @@ struct WindowWrapper: CustomDebugStringConvertible {
 			origin: NSPoint(x: CGFloat(windowX), y: CGFloat(windowY)),
 			size: NSSize(width: CGFloat(windowWidth), height: CGFloat(windowHeight))
 		)
+		
 		self.owningApplicationName = String(owningApplicationName.unicodeScalars.prefix(while: { $0 != "." }))
 		self.owningApplicationPID = owningApplicationPID
 		self.applicationPath = applicationPath
@@ -255,6 +413,19 @@ struct WindowWrapper: CustomDebugStringConvertible {
 		self.windowBackingType = .init(rawValue: windowBackingType) ?? .backingStoreUnknown
 		self.windowSharingState = .init(rawValue: windowSharingState) ?? .unknown
 		self.windowMemoryUsage = windowMemoryUsage
+	}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(windowBounds.size.width)
+		hasher.combine(windowBounds.size.height)
+		hasher.combine(windowBounds.origin.x)
+		hasher.combine(windowBounds.origin.y)
+		hasher.combine(self.windowTitle)
+	}
+	
+	static func == (lhs: WindowWrapper, rhs: WindowWrapper) -> Bool {
+		lhs.windowBounds == rhs.windowBounds
+		&& lhs.windowTitle == rhs.windowTitle
 	}
 	
 	// kCGWindowStoreType
@@ -291,9 +462,26 @@ struct WindowWrapper: CustomDebugStringConvertible {
 		}
 	}
 	
+	// RIP CGWindowListCreateImage
 	/// If we succeed in creating a composited image representation of the window, then it is an actual window visible somewhere on some workspace.
 	var isValidWindow: Bool {
-		CGWindowListCreateImage(self.windowBounds, CGWindowListOption.optionIncludingWindow, UInt32(windowNumber), CGWindowImageOption.onlyShadows) != nil
+		var title: String = windowTitle
+		title.removeAll(where: { !$0.isLetter })
+		let fuzzyComponents: [String] = windowTitle
+			.components(separatedBy: .whitespaces)
+			.filter({
+				$0.count > 1 && $0 != "Edited"
+			})
+		
+		if let candidates = WindowNavigator.windowNameCandidates,
+		   (candidates.contains(windowTitle)
+			|| candidates.anySatisfy({ c in
+			   fuzzyComponents.allSatisfy({ c.hasSubstring($0) })
+		   }))
+		{
+			return true
+		}
+		return false
 	}
 	
 	var debugDescription: String {
@@ -319,20 +507,24 @@ struct WindowWrapper: CustomDebugStringConvertible {
 	}
 	
 	var alfredItem: Item {
+		let text = Environment.isDebugPanelOpen
+			? ["largetype":"\(windowTitle)\n\(owningApplicationName)\n\n\(debugDescription)"]
+			: ["largetype":"\(windowTitle)\n\(owningApplicationName)"]
 		return Item(
 			title: windowTitle,
 			subtitle: owningApplicationName,
 			arg: nil,
 			variables: [
-				"app_pid": "\(owningApplicationPID)",
+				"app_pid":  "\(owningApplicationPID)",
 				"app_name": "\(owningApplicationName)",
-				"win_num": "\(windowNumber)",
+				"win_num":  "\(windowNumber)",
 				"win_name": "\(windowTitle)"
 			],
+			uid: windowTitle,
 			icon: ["type": "fileicon", "path": applicationPath],
-			autocomplete: nil,
+			autocomplete: owningApplicationName,
 			match: "\(windowTitle) \(owningApplicationName)",
-			text: ["largetype":"\(windowTitle)\n\(owningApplicationName)"],
+			text: text,
 			valid: true
 		)
 	}
@@ -349,9 +541,14 @@ struct Environment {
 	static let windowName: String = env["win_name"]!
 	static let includeFrontmostWindow: Bool = env["include_top_win"] == "1"
 	static let preserveWindowsWithoutName: Bool = env["preserve_unnamed_windows"] == "1"
-	static let ignoredWindowNames: [String]? = env["ignored_window_names"]?
-		.split(separator: ",")
-		.map({ $0.trimmingCharacters(in: .whitespaces) })
+	static let ignoredWindowNames: [String]? = env["ignored_window_names"]?.split(separator: ",").map(\.trimmed)
+	static let isDebugPanelOpen: Bool = env["alfred_debug"] == "1"
+	static let cacheLifetime: TimeInterval = TimeInterval(env["cache_lifetime"] ?? "2400")! // 1200 - 20 mins
+	static let cacheFolder: URL = URL(file: env["alfred_workflow_cache"]!)
+	static let cacheFile: URL = cacheFolder.appendingPathComponent("windows.json")
+	static let cacheFeedbackGiven: Bool = env["cache_feedback_given"] == "true"
+	static let dataFolder: URL = URL(file: env["alfred_workflow_data"]!)
+	static let runtimeFraudsFile: URL = dataFolder.appending(component: "runtime_frauds.txt")
 	
 	static private let stdErr: FileHandle = .standardError
 	static func log(_ message: String) {
@@ -360,7 +557,7 @@ struct Environment {
 }
 
 // MARK: - Directive
-enum Directive: String {
+enum Directive: String, Codable {
 	case navigator
 	case switcher
 	case global
@@ -380,18 +577,17 @@ extension WindowNavigator {
 		) -> Never {
 			let axApp: AXUIElement = AXUIElementCreateApplication(pid_t(applicationPID))
 			if let axWindow: AXUIElement = axApp.windowWithinCurrentDesktopSpace(windowNumber: windowNumber) {
-				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate(options: .activateIgnoringOtherApps)
+				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate()
 				AXUIElementPerformAction(axWindow, kAXRaiseAction as CFString)
 			} else {
 				guard
 					let menuBar: AXUIElement = axApp.getAttribute(named: kAXMenuBarAttribute),
 					let targetWindowRep: AXUIElement = menuBar.firstMenuBarItem(named: windowName)
 				else {
-					//Environment.log("[WARNING] Failure retrieving menu bar of application with PID <\(applicationPID)>")
 					Environment.log("[WARNING] Failure retrieving menu bar item representation of window with name <\(windowName)>")
 					exit(0)
 				}
-				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate(options: .activateIgnoringOtherApps)
+				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate()
 				targetWindowRep.press()
 			}
 			Darwin.exit(EXIT_SUCCESS)
@@ -409,13 +605,12 @@ extension WindowNavigator {
 			{
 				closeButton.press()
 			} else {
-				
 				guard let targetMenuBar: AXUIElement = axApp.getAttribute(named: kAXMenuBarAttribute) else {
 					Environment.log("[WARNING] Failure retrieving menu bar of application with PID <\(applicationPID)>")
 					Darwin.exit(EXIT_FAILURE)
 				}
 				
-				guard let targetWindowMenuBarRep = targetMenuBar.firstMenuBarItem(named: windowName) else {
+				guard let targetWindowMenuBarRep: AXUIElement = targetMenuBar.firstMenuBarItem(named: windowName) else {
 					Environment.log("[WARNING] Failure retrieving menu bar item representation of window with name <\(windowName)>")
 					Darwin.exit(EXIT_FAILURE)
 				}
@@ -432,10 +627,10 @@ extension WindowNavigator {
 				/// The currently active window is decorated with a check mark which can be retrieved using the `kAXMenuItemMarkCharAttribute` key.
 				let originWindowMenuBarRep: AXUIElement? = originMenuBar?.firstMenuBarItem(where: { $0.isActiveWindowRepresentation })
 				/// In some cases the `originWindowMenuBarRep` element becomes invalid after closing the target window.
-				/// This may be related to its position in the menu bar list. To prevent this eventuality, we retrieve a new version of it.
+				/// This may be related to its position in the menu bar list. To compensate for this eventuality, we retrieve a new version of it.
 				let originWindowMenuBarRepName: String? = originWindowMenuBarRep?.name
 				
-				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate(options: .activateIgnoringOtherApps)
+				NSRunningApplication(processIdentifier: pid_t(applicationPID))?.activate()
 				targetWindowMenuBarRep.press()
 				RunLoop.current.run(until: Date.now + TimeInterval(0.5))
 				// Now we are on the desktop space that contains the window we want to close
@@ -452,7 +647,7 @@ extension WindowNavigator {
 				
 				// Return to the previously focused window if it exists.
 				if let originWindowMenuBarRep: AXUIElement {
-					frontmost?.activate(options: .activateIgnoringOtherApps)
+					frontmost?.activate()
 					// Required where the owning app of the closed window is the frontmost app
 					if !originWindowMenuBarRep.press(),
 					   let originWindowMenuBarRepName: String,
@@ -469,13 +664,17 @@ extension WindowNavigator {
 
 // MARK: - AX Helpers
 extension AXUIElement {
+	
+	var name: String? { getAttribute(named: kAXTitleAttribute) }
+	var children: [AXUIElement]? { getAttribute(named: kAXChildrenAttribute) }
+	var menunBar: AXUIElement? { getAttribute(named: kAXMenuBarAttribute) }
+	
 	var isActiveWindowRepresentation: Bool {
 		if let presentCheckmark: String = getAttribute(named: kAXMenuItemMarkCharAttribute), presentCheckmark == "✓" {
 			return true
 		}
 		return false
 	}
-	var name: String? { getAttribute(named: kAXTitleAttribute) }
 	
 	func getAttribute<T>(named axAttributeName: String, log: Bool = false) -> T? {
 		var value: CFTypeRef?
@@ -514,7 +713,7 @@ extension AXUIElement {
 		return nil
 	}
 	
-	/// Get the menu bar item matching the giving the predicate.
+	/// Get the menu bar item matching the givien predicate.
 	///
 	/// - Note: This function can only succeed if the calling `AXUIElement` is an accessibility object representing the menu bar of an application.
 	func firstMenuBarItem(where predicate: (AXUIElement) throws -> Bool) rethrows -> AXUIElement? {
@@ -548,7 +747,7 @@ extension AXUIElement {
 	}
 }
 
-extension AXError: CustomDebugStringConvertible {
+extension AXError: @retroactive CustomDebugStringConvertible {
 	public var debugDescription: String {
 		switch self {
 		case .notImplemented: return "This error indicates that the function or method is not implemented (this can be returned if a process does not support the accessibility API)."
@@ -572,6 +771,141 @@ extension AXError: CustomDebugStringConvertible {
 		}
 	}
 }
+
+extension String {
+	func droppingSuffix(_ suffix: String = "Edited") -> String {
+		if hasSuffix(suffix) {
+			return self.dropLast(suffix.count).trimmingCharacters(in: .whitespacesAndNewlines)
+		} else {
+			return self
+		}
+	}
+	
+	func hasSubstring<T: StringProtocol>(_ other: T, options: String.CompareOptions = [.caseInsensitive, .diacriticInsensitive]) -> Bool {
+		range(of: other, options: options) != nil
+	}
+}
+
+extension StringProtocol {
+	var trimmed: String {
+		self.trimmingCharacters(in: .whitespaces)
+	}
+}
+
+extension Collection {
+	func anySatisfy(_ p: (Element) -> Bool) -> Bool {
+		return !self.allSatisfy { !p($0) }
+	}
+}
+
+extension Array where Element: Hashable {
+	func deduplicated() -> [Element] {
+		var seen: Set<Element> = []
+		return filter { seen.insert($0).inserted }
+	}
+}
+
+extension URL {
+	init(file: String) {
+		if #available(macOS 14, *) {
+			self = URL(filePath: file)
+		} else {
+			self = URL(fileURLWithPath: file)
+		}
+	}
+}
+
+// MARK: - Runtime validation + caching
+
+extension Set where Element == String {
+	static func observedFrauds(fm: FileManager = .default) -> Set<String> {
+		guard fm.fileExists(atPath: Environment.runtimeFraudsFile.path) else { return [] }
+		var frauds: Set<String> = []
+		do {
+			let previousFrauds = try String(contentsOf: Environment.runtimeFraudsFile)
+			frauds.formUnion(previousFrauds.components(separatedBy: .newlines).map(\.trimmed))
+		} catch {
+			Environment.log("Error reading previous frauds: \(error)")
+		}
+		return frauds
+	}
+}
+
+extension WindowNavigator {
+	static let knownFrauds: Set<String> = .observedFrauds()
+	
+	static let knownFraudsSharedPrefixes: Set<String> = [
+		"QLPreviewGenerationExtension",
+		"Open and Save Panel Service",
+		"QuickLookUIService", // e.g. 'QuickLookUIService (Open and Save Panel Service (Xcode))'
+		"LookupViewService",
+		"Apparency (", // e.g. Apparency (Finder)
+		"Dock Extra",
+		"ThemeWidgetControlViewService",
+		"LocalAuthenticationRemoteService",
+		"WritingToolsViewService"
+	]
+	
+	static let knownFraudsSharedSuffixes: Set<String> = [
+		"Networking", "Update Assistant", "Web Content",
+		"Quick Look Extension (Finder)", "XPC", "(Plugin)",
+		"Helper"
+	]
+	
+	static let localizedWindowMenubarNames: Set<String> = [
+		"Window", 		// English
+		"Fenster", 		// German
+		"Ventana", 		// Spanish
+		"Fenêtre", 		// French
+		"Finestra", 	// Italian
+		"Janela", 		// Portuguese
+		"ウィンドウ", 	// Japanese
+		"窗口", 			// Chinese (Simplified)
+		"視窗", 			// Chinese (Traditional)
+		"윈도우", 		// Korean
+		"Окно", 		// Russian
+		"Fönster", 		// Swedish
+		"Vindue", 		// Danish
+		"Vindu", 		// Norwegian
+		"Venster", 		// Dutch
+		"Ikkuna", 		// Finnish
+		"Ablak", 		// Hungarian
+		"Pencere", 		// Turkish
+		"Okno", 		// Polish
+		"Fereastră", 	// Romanian
+		"Prozor", 		// Croatian
+		"Okno", 		// Czech
+		"Okno", 		// Slovak
+		"Παράθυρο", 	// Greek
+		"חלון", 			// Hebrew
+		"نافذة", 		// Arabic
+		"پنجره", 		// Persian
+		"หน้าต่าง", 		// Thai
+		"Cửa sổ", 		// Vietnamese
+	]
+	
+	static func remember(frauds: Set<String>, fm: FileManager = .default) {
+		let file: URL = Environment.runtimeFraudsFile
+		if !fm.fileExists(atPath: file.path) {
+			do {
+				try fm.createDirectory(at: Environment.dataFolder, withIntermediateDirectories: true)
+			} catch {
+				Environment.log("[WARNING] Failed to create data folder: \(error)")
+				return
+			}
+		}
+		let message: String = frauds.joined(separator: "\n")
+		let data: Data = Data("\(message)\n".utf8)
+		if let fileHandle = try? FileHandle(forWritingTo: file) {
+			fileHandle.seekToEndOfFile()
+			fileHandle.write(data)
+			fileHandle.closeFile()
+		} else {
+			try? data.write(to: file, options: .atomicWrite)
+		}
+	}
+}
+
 
 // MARK: - Main
 if Environment.shouldCloseWindow { WindowNavigator.AX.close() }
