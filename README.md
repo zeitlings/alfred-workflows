@@ -405,7 +405,7 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.11. Bluetooth Device Battery
 
-[![Download button for workflow: Bluetooth Device Battery](https://img.shields.io/badge/download-v2.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.0-btb)
+[![Download button for workflow: Bluetooth Device Battery](https://img.shields.io/badge/download-v2.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.0-btb)
 [![Swift source code button for workflow: Bluetooth Device Battery](https://img.shields.io/static/v1?message=DeviceBattery.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/DeviceBattery.swift)
 
 <table>
