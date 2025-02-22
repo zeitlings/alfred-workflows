@@ -878,10 +878,12 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 
 
 <img src="assets/images/preview.speedtest.keyword.png" width="550px"/>
+
 - <kbd>⏎</kbd> Start the Speedtest
 
 <img src="assets/images/preview.speedtest.update.png" width="550px"/>
 <img src="assets/images/preview.speedtest.result.png" width="550px"/>
+
 - <kbd>⌘</kbd><kbd>⏎</kbd> Rerun the Speedtest
 
 
