@@ -64,6 +64,7 @@ __Some workflows live in their own repository:__
   - [1.22 PDF to Table](#122-pdf-to-table)
   - [1.23 PDF to Docx](#123-pdf-to-docx)
   - [1.24 Internet Speedtest](#124-internet-speedtest)
+  - [1.25 Image Compression](#125-image-compression)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -886,7 +887,35 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 
 - <kbd>⌘</kbd><kbd>⏎</kbd> Rerun the Speedtest
 
+## 1.25 Image Compression
 
+[![Download button for workflow: Image Compression](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ic)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/imagecompress.png" width="150px">
+        </td>
+        <td>
+            The workflow is designed for aggressive compression, minimizing file size while preserving essential image quality details. 
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+
+Compress one or more images via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions) and replace the original if the file size was reduced.
+
+
+<img src="assets/images/preview.imagecompression.universalaction.png" width="550px"/>
+
+### Dependencies
+- __[pngquant](https://formulae.brew.sh/formula/pngquant#default)__ for PNG compression
+- __[oxipng](https://formulae.brew.sh/formula/oxipng#default)__ for further PNG optimization
+- __[jpegoptim](https://formulae.brew.sh/formula/jpegoptim#default)__ for JPG compression
+- __[webp](https://formulae.brew.sh/formula/webp#default)__ for WEBP compression
+- __[gifsicle](https://formulae.brew.sh/formula/gifsicle#default)__ for GIF compression
 
 ---
 
