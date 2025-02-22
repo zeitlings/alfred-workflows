@@ -63,6 +63,7 @@ __Some workflows live in their own repository:__
   - [1.21 Fuzzy Search](#121-fuzzy-search)
   - [1.22 PDF to Table](#122-pdf-to-table)
   - [1.23 PDF to Docx](#123-pdf-to-docx)
+  - [1.24 Internet Speedtest](#124-internet-speedtest)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -855,6 +856,33 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 <!-- PDF to Docx Universal Action preview image -->
 <img src="assets/images/preview_pdfdocx-1.png" width="550px"/> 
 
+
+## 1.24 Internet Speedtest
+
+
+
+[![Download button for workflow: Internet Speedtest](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-st)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/speedtest.png" width="150px">
+        </td>
+        <td>
+            Test your internet connection speed via the <code>speedtest</code> keyword.
+        </td>
+    </tr>
+</table>
+
+### Usage 
+
+
+<img src="assets/images/preview.speedtest.keyword.png" width="550px"/>
+- <kbd>⏎</kbd> Start the Speedtest
+
+<img src="assets/images/preview.speedtest.update.png" width="550px"/>
+<img src="assets/images/preview.speedtest.result.png" width="550px"/>
+- <kbd>⌘</kbd><kbd>⏎</kbd> Rerun the Speedtest
 
 
 
