@@ -65,6 +65,7 @@ __Some workflows live in their own repository:__
   - [1.23 PDF to Docx](#123-pdf-to-docx)
   - [1.24 Internet Speedtest](#124-internet-speedtest)
   - [1.25 Image Compression](#125-image-compression)
+  - [1.26 Finder Crawl](#126-finder-crawl)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -916,6 +917,38 @@ Compress one or more images via the [Universal Action](https://www.alfredapp.com
 - __[jpegoptim](https://formulae.brew.sh/formula/jpegoptim#default)__ for JPG compression
 - __[webp](https://formulae.brew.sh/formula/webp#default)__ for WEBP compression
 - __[gifsicle](https://formulae.brew.sh/formula/gifsicle#default)__ for GIF compression
+
+
+## 1.26 Finder Crawl
+
+[![Download button for workflow: Finder Crawl](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fc)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/findercrawl.png" width="150px">
+        </td>
+        <td>
+            Find files and folders recursively in the frontmost Finder window. 
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Find files and folders nested within folders of the active Finder window via the `fn` keyword. 
+Alternatively, use the `fnd` keyword to only search for folders.
+
+
+<img src="assets/images/preview.fcrawl.fn.png" width="550px"/>
+<img src="assets/images/preview.fcrawl.fnd.png" width="550px"/>
+
+- <kbd>↩</kbd> Open file or folder
+- <kbd>⌘</kbd><kbd>↩</kbd> Reveal file or folder
+- <kbd>⌥</kbd><kbd>↩</kbd> Browse in Alfred
+- <kbd>⌘</kbd><kbd>L</kbd> View the unabridged file path as [Large Type](https://www.alfredapp.com/help/features/large-type/)
+- <kbd>⌃</kbd> View file path
+
 
 ---
 
