@@ -862,7 +862,7 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 
 
 
-[![Download button for workflow: Internet Speedtest](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-st)
+[![Download button for workflow: Internet Speedtest](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-st)
 
 <table>
     <tr>
