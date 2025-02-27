@@ -890,7 +890,7 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 
 ## 1.25 Image Compression
 
-[![Download button for workflow: Image Compression](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ic)
+[![Download button for workflow: Image Compression](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ic)
 
 <table>
     <tr>
@@ -921,7 +921,7 @@ Compress one or more images via the [Universal Action](https://www.alfredapp.com
 
 ## 1.26 Finder Crawl
 
-[![Download button for workflow: Finder Crawl](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fc)
+[![Download button for workflow: Finder Crawl](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fc)
 
 <table>
     <tr>
