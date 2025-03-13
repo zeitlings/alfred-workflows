@@ -863,7 +863,7 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 
 
 
-[![Download button for workflow: Internet Speedtest](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-st)
+[![Download button for workflow: Internet Speedtest](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-st)
 
 <table>
     <tr>
@@ -882,11 +882,14 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
 <img src="assets/images/preview.speedtest.keyword.png" width="550px"/>
 
 - <kbd>⏎</kbd> Start the Speedtest
+- <kbd>⌘</kbd><kbd>⏎</kbd> Start the Speedtest [sequentially | in parallel]
 
 <img src="assets/images/preview.speedtest.update.png" width="550px"/>
+
 <img src="assets/images/preview.speedtest.result.png" width="550px"/>
 
 - <kbd>⌘</kbd><kbd>⏎</kbd> Rerun the Speedtest
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Rerun the Speedtest [sequentially | in parallel]
 
 ## 1.25 Image Compression
 
