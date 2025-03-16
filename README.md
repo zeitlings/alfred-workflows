@@ -3,24 +3,24 @@
 	</br>Collected Workflows
 </h1>
 
-This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/). 
-<!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->  
+This is a collection of smaller workflows, experiments, and demonstrations of interesting concepts for writing automations with the [Alfred App](https://www.alfredapp.com/workflows/).
+<!-- If you find my workflows useful, perhaps consider reciprocating with a token of appreciation 🤗 -->
 
-__Some workflows live in their own repository:__  
+__Some workflows live in their own repository:__
 - [µBib | Citations, BibTeX, and Research](https://github.com/zeitlings/ubib)
-- [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill) 
+- [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill)
 - [Ayai · GPT Nexus (alpha)](https://github.com/zeitlings/ayai-gpt-nexus)
-- [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink) 
+- [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink)
 - [Logseq Workflow](https://github.com/zeitlings/alfred-logseq)
 - [Ollama Workflow](https://github.com/zeitlings/alfred-ollama) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
 - [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 - [Unified Search](https://github.com/zeitlings/alfred-unified-search) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
-- [Calendar++](https://github.com/zeitlings/alfred-calendar) 
+- [Calendar++](https://github.com/zeitlings/alfred-calendar)
 
 <!--
 <table align="center">
     <td>
-        <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+        <a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
     </td>
     <td>
         <p>
@@ -33,7 +33,7 @@ __Some workflows live in their own repository:__
 </table>
 -->
 
-<a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' align='right' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>  
+<a href='https://ko-fi.com/G2G1IH7RR' target='_blank'><img height='36' align='right' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ---
 
@@ -74,19 +74,19 @@ __Some workflows live in their own repository:__
 
 ---
 
-# 1. Workflows 
+# 1. Workflows
 
 ## 1.1. Duden Workflow
 
 [![Download button for workflow: Duden workflow](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dude)
 
-<table> 
+<table>
     <tr>
         <td>
-            <img src="assets/icons/duden.png"> 
+            <img src="assets/icons/duden.png">
         </td>
         <td>
-           Search, navigate and view information from duden.de German spelling dictionary. 
+           Search, navigate and view information from duden.de German spelling dictionary.
         </td>
     </tr>
 </table>
@@ -108,10 +108,10 @@ __Some workflows live in their own repository:__
 [![Download button for workflow: What Unicode character is this?](https://img.shields.io/badge/download-v2.0.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.2-uni)
 [![Swift source code button for workflow: What Unicode character is this?](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
 
-<table> 
+<table>
     <tr>
         <td>
-            <img src="assets/icons/whatisit.png"> 
+            <img src="assets/icons/whatisit.png">
         </td>
         <td>
             The <i>What Unicode character is this?</i> workflow tells you which unicode character it is. Given a character or string, you will get the unicode code points, the scalar names and general categories.
@@ -182,15 +182,15 @@ Given a hex value either raw or in any of the above formattings will return its 
 </table>
 
 
-The PDF, of course, has to live in one of your open DEVONthink databases. 
+The PDF, of course, has to live in one of your open DEVONthink databases.
 - `cmd ⌘` to open the PDF on the same page in DEVONthink
 - `.xdev` to enable or disable opening the document in DEVONthink when using the hotkey
 
-**Expected result A**  
-`x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`  
-**Expected result B**  
-`x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&start=66&length=9&search=selection`  
-**Expected result C**  
+**Expected result A**
+`x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6`
+**Expected result B**
+`x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&start=66&length=9&search=selection`
+**Expected result C**
 `x-devonthink-item://1D7FA99A-AAFF-4883-9853-F0666A650400?page=6&annotation=Squiggly&x=212&y=406`
 
 ### Known issues
@@ -210,7 +210,7 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
 
   https://user-images.githubusercontent.com/25689591/216837085-fa114af5-ab98-4c1c-a866-a44725b4578a.mp4
 
-</details>    
+</details>
 -->
 
 ## 1.5. Define Word - A Better Dictionary
@@ -228,11 +228,11 @@ https://user-images.githubusercontent.com/25689591/218268102-3c07c799-4906-4d2b-
     </tr>
 </table>
 
-`shift` or `cmd+Y` to preview the dictionary entry  
-`ctrl` to see the dictionary associated with the entry  
-`cmd + ⏎` to paste a word to the frontmost application (spell checker)  
-`cmd+C` to copy the dictionary entry's plain text to the clipboard  
-`cmd+L` to view the plain text as Large Type  
+`shift` or `cmd+Y` to preview the dictionary entry
+`ctrl` to see the dictionary associated with the entry
+`cmd + ⏎` to paste a word to the frontmost application (spell checker)
+`cmd+C` to copy the dictionary entry's plain text to the clipboard
+`cmd+L` to view the plain text as Large Type
 
 You can define dictionaries for lookups, set the font size of the previews, or manually select a dictionary to use. The previews reflect the global appearance, i.e. they have a dark mode. The workflow also includes a preset for looking up synonyms of a word and a convenient keyboard shortcut for quick lookups. To use the workflow as a multilingual spell checker, you can use the `cmd` modifier when actioning the entry to paste the word to the frontmost application.
 
@@ -276,8 +276,8 @@ _No external dependencies are required to perform the OCR._
     </tr>
 </table>
 
-__1 / Snapshot__  
-Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard. 
+__1 / Snapshot__
+Take a snapshot with your mouse or trackpad and the recognized text is automatically copied to the clipboard.
 - Default shortcut: <kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>6</kbd>
 - Default keyword: `ocr`
 
@@ -337,7 +337,7 @@ __2 / PDF Document__
         </td>
         <td>
             <p>The workflow allows you to quickly create new files in the Finder.</p>
-            <p>If the <em>post-haste</em> behavior is enabled, new files are created the same way as folders are when you use the shortcut (default: <code>⌥+⇧+N</code>). Otherwise you will be prompted with the input mask where you can configure the file name and type.</p>        
+            <p>If the <em>post-haste</em> behavior is enabled, new files are created the same way as folders are when you use the shortcut (default: <code>⌥+⇧+N</code>). Otherwise you will be prompted with the input mask where you can configure the file name and type.</p>
         </td>
     </tr>
 </table>
@@ -408,7 +408,7 @@ Either send a video to the workflow's [*File Action*](https://www.alfredapp.com/
 
 ## 1.11. Bluetooth Device Battery
 
-[![Download button for workflow: Bluetooth Device Battery](https://img.shields.io/badge/download-v2.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.0-btb)
+[![Download button for workflow: Bluetooth Device Battery](https://img.shields.io/badge/download-v2.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.1-btb)
 [![Swift source code button for workflow: Bluetooth Device Battery](https://img.shields.io/static/v1?message=DeviceBattery.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/DeviceBattery.swift)
 
 <table>
@@ -486,18 +486,18 @@ Send a series of still images to the workflow's [*File Action*](https://www.alfr
 
 - Send `PDF`, `docx`, `doc`, `rtf` or `txt` documents to the workflow's File Actions
 - Pass the text from your selection in macOS on to the workflow's Universal Action
-- Use the keyword and paste your text (default: `kw`) 
+- Use the keyword and paste your text (default: `kw`)
 
 ### Dependencies
 
 The workflow relies on **Python3** to install the YAKE standalone.
 
 #### YAKE!
-- `pip install git+https://github.com/LIAAD/yake` 
+- `pip install git+https://github.com/LIAAD/yake`
 - [official installation guide](https://github.com/LIAAD/yake/#option-3-standalone-installation-for-development-or-integration)
 
 #### pdftotext
-- `brew install poppler` 
+- `brew install poppler`
 - [formula on brew.sh](https://formulae.brew.sh/formula/poppler)
 
 <img src="assets/images/preview_kw1.png" width="564px"/>
@@ -518,7 +518,7 @@ The workflow relies on **Python3** to install the YAKE standalone.
     </tr>
 </table>
 
-### Usage 
+### Usage
 
 Activate the *Color Sampler* with the keyword (default: `cp`) and pick the desired color.
 
@@ -606,7 +606,7 @@ Press <kbd>↩</kbd> to return to the view where you can set the start and end p
 
 ### Usage
 
-Either invoke the workflow by using the keyword (default: `pdfsplit`) and locate a PDF, or send a PDF to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/). Specify the start and end pages of the range you want to be extracted. The specified first and last page can be previewed by pressing the <kbd>⌘</kbd> modifier. 
+Either invoke the workflow by using the keyword (default: `pdfsplit`) and locate a PDF, or send a PDF to the workflow's [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/). Specify the start and end pages of the range you want to be extracted. The specified first and last page can be previewed by pressing the <kbd>⌘</kbd> modifier.
 
 <img src="assets/images/preview_pdfsplit-1.png" width="564px"/>
 <img src="assets/images/preview_pdfsplit-2.png" width="564px"/>
@@ -647,9 +647,9 @@ Press <kbd>↩</kbd> to return to the view where you can set the start and end p
 ### Usage
 
 
-Either invoke the workflow by using the keyword (default: `pdfcompress`) and locate a PDF, or send a PDF to the workflow's "Compress PDF Document" [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/). 
+Either invoke the workflow by using the keyword (default: `pdfcompress`) and locate a PDF, or send a PDF to the workflow's "Compress PDF Document" [File Action](https://www.alfredapp.com/help/workflows/triggers/file-action/).
 
-A compression preset can be selected by pressing <kbd>⌥</kbd> before proceeding with <kbd>↩</kbd>. 
+A compression preset can be selected by pressing <kbd>⌥</kbd> before proceeding with <kbd>↩</kbd>.
 
 #### File Filter
 
@@ -693,16 +693,16 @@ The result will be a compressed document in the same location as the source PDF 
         </td>
         <td>
             <p>
-            Quickly access up to 9 scratchpads for spontaneous note-taking.<br> 🟡 🟠 🔴 🟣 🔵 🟢 
+            Quickly access up to 9 scratchpads for spontaneous note-taking.<br> 🟡 🟠 🔴 🟣 🔵 🟢
             </p>
         </td>
     </tr>
 </table>
 
 
-### Usage 
+### Usage
 
-Press the keyboard shortcut to open the scratchpad that was last used.  
+Press the keyboard shortcut to open the scratchpad that was last used.
 Press the keyboard shortcut again or <kbd>⎋</kbd> to dismiss the scratchpad without saving.
 
 In __Editing Mode__
@@ -715,7 +715,7 @@ In __Markdown Mode__
 * <kbd>⏎</kbd> or <kbd>⇧⏎</kbd> to start editing
 * <kbd>⌥⏎</kbd> to view all pads and search your notes²
 * <kbd>⌘⇧⏎</kbd> to cycle through your scratchpads
-* <kbd>⎋</kbd> to either cancel or go back through previously viewed pads 
+* <kbd>⎋</kbd> to either cancel or go back through previously viewed pads
 
 
 Press the secondary keyboard shortcut or enter the workflow's keyword (default: `pad`) to view all scratchpads and to search their contents.
@@ -725,8 +725,8 @@ Press the secondary keyboard shortcut or enter the workflow's keyword (default: 
 <img src="assets/images/preview_pad-3.png" width="564px"/>
 
 
-__Notes:__  
-¹  Changes are also saved when previewing and when switching the active pad.  
+__Notes:__
+¹  Changes are also saved when previewing and when switching the active pad.
 ²  When searching for a pad containing a keyword, the first matching line will be used as subtitle. Press <kbd>⌘L</kbd> to view the matched line as [Large Type](https://www.alfredapp.com/help/features/large-type/).
 
 
@@ -747,16 +747,16 @@ __Notes:__
     </tr>
 </table>
 
-<!--  
+<!--
 > [!NOTE]
 > macOS 15  deprecates an API that Window Navigator uses to retrieve window information. Already compiled executables will continue to work as expected, but compilation will fail if you try to run the workflow for the first time with macOS 15.
-> I'm investigating a solution to this problem. 
+> I'm investigating a solution to this problem.
 -->
 
-### Usage 
+### Usage
 
-1. Search the windows of the active app globally using the Navigator keyword. 
-2. Search app windows in the current desktop space using the Switcher keyword. 
+1. Search the windows of the active app globally using the Navigator keyword.
+2. Search app windows in the current desktop space using the Switcher keyword.
 3. Search all visible windows of all apps globally using the Global keyword.
 * <kbd>↩</kbd> to navigate to the selected window.
 * <kbd>⌘</kbd><kbd>↩</kbd> to close the selected window.
@@ -768,11 +768,11 @@ __Notes:__
 
 #### 2. Switcher
 
-<img src="assets/images/preview_winnav-2.png" width="564px"/>  
+<img src="assets/images/preview_winnav-2.png" width="564px"/>
 
 #### 3. Global
 
-<img src="assets/images/preview_winnav-3.png" width="564px"/>  
+<img src="assets/images/preview_winnav-3.png" width="564px"/>
 
 
 
@@ -819,10 +819,10 @@ Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/he
 
 
 <!-- PDF to Table Universal Action preview image --->
-<img src="assets/images/preview_pdftable-1.png" width="550px"/> 
+<img src="assets/images/preview_pdftable-1.png" width="550px"/>
 
 <!-- PDF to Table Lattice resulting CSV Quicklook preview image --->
-<img src="assets/images/preview_pdftable-2.png" width="550px"/> 
+<img src="assets/images/preview_pdftable-2.png" width="550px"/>
 
 
 ### Dependencies
@@ -856,7 +856,7 @@ Extract tables from PDFs via the [Universal Action](https://www.alfredapp.com/he
 Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions).
 
 <!-- PDF to Docx Universal Action preview image -->
-<img src="assets/images/preview_pdfdocx-1.png" width="550px"/> 
+<img src="assets/images/preview_pdfdocx-1.png" width="550px"/>
 
 
 ## 1.24 Internet Speedtest
@@ -876,7 +876,7 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
     </tr>
 </table>
 
-### Usage 
+### Usage
 
 
 <img src="assets/images/preview.speedtest.keyword.png" width="550px"/>
@@ -901,7 +901,7 @@ Convert PDFs to Word documents (docx) via the [Universal Action](https://www.alf
             <img src="assets/icons/imagecompress.png" width="150px">
         </td>
         <td>
-            The workflow is designed for aggressive compression, minimizing file size while preserving essential image quality details. 
+            The workflow is designed for aggressive compression, minimizing file size while preserving essential image quality details.
         </td>
     </tr>
 </table>
@@ -932,14 +932,14 @@ Compress one or more images via the [Universal Action](https://www.alfredapp.com
             <img src="assets/icons/findercrawl.png" width="150px">
         </td>
         <td>
-            Find files and folders recursively in the frontmost Finder window. 
+            Find files and folders recursively in the frontmost Finder window.
         </td>
     </tr>
 </table>
 
 ### Usage
 
-Find files and folders nested within folders of the active Finder window via the `fn` keyword. 
+Find files and folders nested within folders of the active Finder window via the `fn` keyword.
 Alternatively, use the `fnd` keyword to only search for folders.
 
 
@@ -966,11 +966,11 @@ Alternatively, use the `fnd` keyword to only search for folders.
 
 __Modifier Palettes & Double Tap Hotkeys.__ Proof of concept and demo implementation of modifier palettes to invoke actions on consecutive keystrokes in Alfred.
 
-Modifier Palette example behavior. 
-- `⌥O`, `⌥K` To trigger action A.  
+Modifier Palette example behavior.
+- `⌥O`, `⌥K` To trigger action A.
 - `⌥I`, `⌥K` To trigger action B.
 
-Double-Tap Hotkey example behavior  
+Double-Tap Hotkey example behavior
 - `⌃+`, `⌃+` To trigger action.
 
 ### Details
@@ -980,8 +980,8 @@ The core idea is to inject environment variables into the workflow configuration
 
 - To set up modifier palettes, all you have to do is define an identifier on any hotkey, `⌥O`, such as "`openA`". This is the "text" argument that the hotkey passes on as `{query}`. Set the identifier to some *environment* variable, say "`gate`", and use a downstream `conditional object` triggered by a different hotkey, `⌥K`, to check if the variable (`{var:gate}`) is equal to the identifier `openA`. Any action that you make depend on this condition will be triggered iff `gate` is equal to `openA`, i.e. if you have recently tapped the hotkey associated with the identifier.
 
-- To set up double-tap hotkeys, proceed in the same way, defining an identifier for the hotkey's "text" argument. For each double tap hotkey, an environment variable is injected that is either `0` or `1` for inactive or active. 
-	
+- To set up double-tap hotkeys, proceed in the same way, defining an identifier for the hotkey's "text" argument. For each double tap hotkey, an environment variable is injected that is either `0` or `1` for inactive or active.
+
 
 `Disclaimer`: Alfred may crash if you get the timing of the keystrokes just right. This is due to a data race where the same variable ("`gate`") is accessed and modified by different threads at the same time. Also, for the double-tap hotkeys, there is some "bleed" into the other hotkeys with the way it is set up in the demo. Tapping a, then b, will also trigger b, instead of having to tap b twice.
 
@@ -990,7 +990,7 @@ The core idea is to inject environment variables into the workflow configuration
 
 ---
 
-## 2.2. Permission Handler 
+## 2.2. Permission Handler
 
 An example of how to handle permissions gracefully for your executables. (For now, take a look at the *Duden Workflow* that implements the permission handler).
 
@@ -1003,7 +1003,7 @@ Run a graphical prompt and read the input. Proof of concept for using NSWindow a
 
 <img src="assets/images/preview_uiex1.png" width="564px"/>
 
-<details> 
+<details>
     <img src="assets/images/preview_uiex2.png" width="564px"/>
     <img src="assets/images/preview_uiex3.png" width="382px"/>
 </details>
@@ -1014,9 +1014,9 @@ Run a graphical prompt and read the input. Proof of concept for using NSWindow a
 <a href="https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-hudex"><img src="https://img.shields.io/badge/download-v1.0.0-informational"></a>
 [![](https://img.shields.io/static/v1?message=HUD.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/HUD.swift)
 
-Demo for displaying notifications on a heads-up display.  
-The script takes two arguments: 
-- The text to display 
+Demo for displaying notifications on a heads-up display.
+The script takes two arguments:
+- The text to display
 - The width of the prompt
 
 <img src="assets/images/demo.hud.gif" width="649px">
