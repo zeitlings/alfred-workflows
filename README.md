@@ -66,6 +66,8 @@ __Some workflows live in their own repository:__
   - [1.24 Internet Speedtest](#124-internet-speedtest)
   - [1.25 Image Compression](#125-image-compression)
   - [1.26 Finder Crawl](#126-finder-crawl)
+  - [1.27 DNS Selector](#127-dns-selector)
+  - [Usage](#usage-15)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -952,6 +954,48 @@ Alternatively, use the `fnd` keyword to only search for folders.
 - <kbd>⌘</kbd><kbd>L</kbd> View the unabridged file path as [Large Type](https://www.alfredapp.com/help/features/large-type/)
 - <kbd>⌃</kbd> View file path
 
+## 1.27 DNS Selector
+
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dns)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/dns.png" width="256px">
+        </td>
+        <td>
+            Change, test, and compare DNS resolvers, flush the DNS cache, or restore DNS settings to your ISP's defaults. The built-in connectivity test provides a heuristic to gauge DNS responsiveness, helping you pick the fastest resolver for your location or check your preferred resolver’s performance.
+        </td>
+    </tr>
+</table>
+
+## Usage
+
+Change your preferred DNS resolver via the `dns` keyword.
+
+![DNS Resolver dns keyword preview](assets/images/preview.dns.dns.png)
+
+- <kbd>⏎</kbd> Change DNS servers
+- <kbd>⌘</kbd><kbd>⏎</kbd> Test DNS resolver responsiveness
+- <kbd>⌥</kbd><kbd>⏎</kbd> Open the correlating website
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Ignore DNS resolver
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Open _dnsperf_ website if available
+- <kbd>⌘</kbd><kbd>Y</kbd> (or tap <kbd>⇧</kbd>) Quicklook correlating website
+- <kbd>⌘</kbd><kbd>L</kbd> View DNS resolver info as [Large Type](https://www.alfredapp.com/help/features/large-type/)
+- <kbd>⌃</kbd> Show description
+
+Additionally, restore DNS settings to your ISP's defaults by using the `dnsreset` keyword, or clear your local DNS cache with the `dnsflush` keyword.
+
+![DNS Resolver reset keyword preview](assets/images/preview.dns.reset.png)
+
+![DNS Resolver flush keyword preview](assets/images/preview.dns.flush.png) 
+
+Previously ignored services can be recovered via the `:dns` keyword.
+
+![DNS Resolver recover keyword preview](assets/images/preview.dns.recover.png) 
+
+- <kbd>⏎</kbd> Recover DNS option
+- <kbd>⌘</kbd><kbd>⏎</kbd> Go to the DNS resolver list
 
 ---
 
