@@ -67,7 +67,7 @@ __Some workflows live in their own repository:__
   - [1.25 Image Compression](#125-image-compression)
   - [1.26 Finder Crawl](#126-finder-crawl)
   - [1.27 DNS Selector](#127-dns-selector)
-  - [Usage](#usage-15)
+  - [1.28 Edit Clipboard](#128-edit-clipboard)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -945,7 +945,7 @@ Find files and folders nested within folders of the active Finder window via the
 Alternatively, use the `fnd` keyword to only search for folders.
 
 
-<img src="assets/images/preview.fcrawl.fn.png" width="550px"/>
+<img src="assets/images/preview.fcrawl.fn.png" width="550px"/> 
 <img src="assets/images/preview.fcrawl.fnd.png" width="550px"/>
 
 - <kbd>↩</kbd> Open file or folder
@@ -961,7 +961,7 @@ Alternatively, use the `fnd` keyword to only search for folders.
 <table>
     <tr>
         <td>
-            <img src="assets/icons/dns.png" width="256px">
+            <img src="assets/icons/dns.png" width="150px">
         </td>
         <td>
             Change, test, and compare DNS resolvers, flush the DNS cache, or restore DNS settings to your ISP's defaults. The built-in connectivity test provides a heuristic to gauge DNS responsiveness, helping you pick the fastest resolver for your location or check your preferred resolver’s performance.
@@ -969,11 +969,11 @@ Alternatively, use the `fnd` keyword to only search for folders.
     </tr>
 </table>
 
-## Usage
+### Usage
 
 Change your preferred DNS resolver via the `dns` keyword.
 
-![DNS Resolver dns keyword preview](assets/images/preview.dns.dns.png)
+<img src="assets/images/preview.dns.dns.png" width="550px"/> 
 
 - <kbd>⏎</kbd> Change DNS servers
 - <kbd>⌘</kbd><kbd>⏎</kbd> Test DNS resolver responsiveness
@@ -986,16 +986,50 @@ Change your preferred DNS resolver via the `dns` keyword.
 
 Additionally, restore DNS settings to your ISP's defaults by using the `dnsreset` keyword, or clear your local DNS cache with the `dnsflush` keyword.
 
-![DNS Resolver reset keyword preview](assets/images/preview.dns.reset.png)
+<img src="assets/images/preview.dns.reset.png" width="550px"/> 
 
-![DNS Resolver flush keyword preview](assets/images/preview.dns.flush.png) 
+<img src="assets/images/preview.dns.flush.png" width="550px"/>
 
 Previously ignored services can be recovered via the `:dns` keyword.
 
-![DNS Resolver recover keyword preview](assets/images/preview.dns.recover.png) 
+<img src="assets/images/preview.dns.recover.png" width="550px"/>
 
 - <kbd>⏎</kbd> Recover DNS option
 - <kbd>⌘</kbd><kbd>⏎</kbd> Go to the DNS resolver list
+
+## 1.28 Edit Clipboard
+
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ec)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/ec.png" width="150px">
+        </td>
+        <td>
+            Quickly inspect, edit, and update your clipboard text—no external editor needed.
+            <b>Hidden links</b> in text copied from websites or rich text can be <b>converted into Markdown</b> for enhanced visibility. Optionally, the <b>built-in data extractor</b> distills lengthy text into key components—URLs, emails, dates, mobile numbers, addresses, and names—streamlining clutter into a focused overview for rapid insight.
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Access and edit your clipboard contents via the `edit` keyword. 
+Alternatively, use the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/) to edit and copy text to the clipboard.
+
+<img src="assets/images/preview.ec.keyword.png" width="550px"/>
+
+- <kbd>⏎</kbd> Edit the clipboard
+- <kbd>⌘</kbd><kbd>⏎</kbd> Proceed retaining metadata
+- <kbd>⌥</kbd><kbd>⏎</kbd> Proceed ignoring metadata
+
+<img src="assets/images/preview.ec.textview.png" width="550px"/>
+
+- <kbd>⌘</kbd><kbd>⏎</kbd> Save Clipboard
+- <kbd>⌥</kbd><kbd>⏎</kbd> Extract Data if available
+
+<img src="assets/images/preview.ec.ua.png" width="550px"/>
 
 ---
 
