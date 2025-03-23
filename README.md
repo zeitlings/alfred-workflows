@@ -956,7 +956,7 @@ Alternatively, use the `fnd` keyword to only search for folders.
 
 ## 1.27 DNS Selector
 
-[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-dns)
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.0.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.1-dns)
 
 <table>
     <tr>
