@@ -329,7 +329,7 @@ __2 / PDF Document__
 
 ## 1.8. New File
 
-[![Download button for workflow: New File](https://img.shields.io/badge/download-v1.3.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.1-nf)
+[![Download button for workflow: New File](https://img.shields.io/badge/download-v1.3.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.2-nf)
 
 
 <table>
@@ -357,7 +357,7 @@ __Creating a new file__
 - <kbd>⌘</kbd><kbd>⇧</kbd><kbd>↩</kbd> to create the file **with clipboard** contents.
 - <kbd>⌥</kbd><kbd>⇧</kbd><kbd>↩</kbd> to create the file **without clipboard** contents.
 
-If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the suggested filename. (new in v1.2.0)
+If auto-suggest is enabled, press <kbd>TAB</kbd> to accept and expand the suggested filename. 
 
 
 ## 1.9. Keyboard Brightness
