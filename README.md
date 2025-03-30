@@ -999,7 +999,7 @@ Previously ignored services can be recovered via the `:dns` keyword.
 
 ## 1.28 Edit Clipboard
 
-[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-ec)
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ec)
 
 <table>
     <tr>
@@ -1026,10 +1026,24 @@ Alternatively, use the [Universal Action](https://www.alfredapp.com/help/feature
 
 <img src="assets/images/preview.ec.textview.png" width="550px"/>
 
-- <kbd>⌘</kbd><kbd>⏎</kbd> Save Clipboard
-- <kbd>⌥</kbd><kbd>⏎</kbd> Extract Data if available
+- <kbd>⌘</kbd><kbd>⏎</kbd> Save clipboard
+- <kbd>⌥</kbd><kbd>⏎</kbd> Extract data (if available)
+- <kbd>⌘</kbd><kbd>⌥</kbd><kbd>⏎</kbd> Save clipboard and continue
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Add from clipboard history
+
 
 <img src="assets/images/preview.ec.ua.png" width="550px"/>
+
+#### Clipboard History
+
+<img src="assets/images/preview.ec.search.all.png" width="550px"/>  
+
+<img src="assets/images/preview.ec.search.filtered.png" width="550px"/>
+
+- <kbd>⌘</kbd><kbd>⏎</kbd> (or <kbd>⏎</kbd>) Append to clipboard
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend to clipboard
+- <kbd>⌥</kbd><kbd>⏎</kbd> Append all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
 
 ---
 
