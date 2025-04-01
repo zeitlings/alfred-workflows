@@ -107,7 +107,7 @@ __Some workflows live in their own repository:__
 <!-- What Unicode Character is this? (ツ)_/¯ -->
 ## 1.2. What Unicode character is this?
 
-[![Download button for workflow: What Unicode character is this?](https://img.shields.io/badge/download-v2.0.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.2-uni)
+[![Download button for workflow: What Unicode character is this?](https://img.shields.io/badge/download-v2.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.0-uni)
 [![Swift source code button for workflow: What Unicode character is this?](https://img.shields.io/static/v1?message=WhatIsIt.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WhatIsIt.swift)
 
 <table>
@@ -116,31 +116,29 @@ __Some workflows live in their own repository:__
             <img src="assets/icons/whatisit.png">
         </td>
         <td>
-            The <i>What Unicode character is this?</i> workflow tells you which unicode character it is. Given a character or string, you will get the unicode code points, the scalar names and general categories.
+            The <i>What Unicode character is this?</i> workflow tells you which unicode character it is. Given a character or string, you will get the unicode code points, scalar names, and general categories.
         </td>
     </tr>
 </table>
 
-### Example `ツ`
+### Usage
 
-- KATAKANA LETTER TU
-- `U+30C4`
-- Other Letter
+<img src="assets/images/preview.whatisit.keyword.standard.png" width="550px" />
 
-### Modifiers
-
-- `⌘ cmd` yields `\u{30C4}` (swift, ES6 formatted)
-- `⌥ opt` yields `\u30C4` (python, go formatted)
-- `⌃ ctrl` yields `&#x30C4;` (HTML entity)
-- `⇧ shift` yields `0x30C4` (hex literal)
+- <kbd>↩</kbd> Copy | Paste the Unicode character
+- <kbd>⌘</kbd><kbd>↩</kbd> Copy | Paste the Swift, ES6 formatted code unit (e.g. `\u{30C4}`)
+- <kbd>⌥</kbd><kbd>↩</kbd> Copy | Paste the Python, Go-lang formatted code unit (e.g. `\u30C4`)
+- <kbd>⇧</kbd><kbd>↩</kbd> Copy | Paste the hex literal (e.g. `0x30C4`)
+- <kbd>⌃</kbd><kbd>↩</kbd> Copy | Paste the HTML numerical reference (e.g. `&#12484;`)
+- <kbd>⌃</kbd><kbd>⇧</kbd><kbd>↩</kbd> Copy | Paste the HTML hex reference (e.g. `&#x30C4;`)
+- <kbd>⌘</kbd><kbd>⇧</kbd><kbd>↩</kbd> Copy | Paste the HTML named entity (e.g. `&amp;`)
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>↩</kbd> Copy | Paste the URL encoded representation (e.g. `%20`)
 
 ### Inverse
 
-Given a hex value either raw or in any of the above formattings will return its corresponding unicode character.
-- `whatisit? \u{1F914}` yields info for 🤔
+Given a hex value, either raw or in one of the above formats, will return its corresponding Unicode character. For example, `whatisit? \u{1F914}` returns the info for 🤔
 
-
-<img src="assets/images/preview_whatisit.png" width="564px" />
+<img src="assets/images/preview.whatisit.keyword.inverse.png" width="550px" />
 
 
 ---
