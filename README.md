@@ -997,7 +997,7 @@ Previously ignored services can be recovered via the `:dns` keyword.
 
 ## 1.28 Edit Clipboard
 
-[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-ec)
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-ec)
 
 <table>
     <tr>
@@ -1042,6 +1042,7 @@ Alternatively, use the [Universal Action](https://www.alfredapp.com/help/feature
 - <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend to clipboard
 - <kbd>⌥</kbd><kbd>⏎</kbd> Append all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
 - <kbd>⌥</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
+- <kbd>⌃</kbd><kbd>⏎</kbd> Skip and return to editing
 
 ---
 
