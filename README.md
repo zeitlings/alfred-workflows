@@ -732,7 +732,7 @@ __Notes:__
 
 ## 1.20 Window Navigator
 
-[![Download button for workflow: Window Navigator](https://img.shields.io/badge/download-v2.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.0.0-winnav) [![Swift source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![Objective-C source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
+[![Download button for workflow: Window Navigator](https://img.shields.io/badge/download-v2.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v2.1.0-winnav) [![Swift source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=WindowNavigator.swift&color=F05138&logo=Swift&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/WindowNavigator.swift) [![Objective-C source code button for workflow: Window Navigator](https://img.shields.io/static/v1?message=AccessibilityBridgingHeader.h&color=%233A95E3&logo=Xcode&logoColor=FFFFFF&label=Code)](/assets/code/WindowNavigator/AccessibilityBridgingHeader.h)
 
 <table>
     <tr>
@@ -764,15 +764,15 @@ __Notes:__
 
 #### 1. Navigator
 
-<img src="assets/images/preview_winnav-1.png" width="564px"/>
+<img src="assets/images/preview.winnav.navigate.png" width="564px"/>
 
 #### 2. Switcher
 
-<img src="assets/images/preview_winnav-2.png" width="564px"/>
+<img src="assets/images/preview.winnav.switch.png" width="564px"/>
 
 #### 3. Global
 
-<img src="assets/images/preview_winnav-3.png" width="564px"/>
+<img src="assets/images/preview.winnav.global.png" width="564px"/>
 
 
 
