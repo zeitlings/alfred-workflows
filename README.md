@@ -997,7 +997,7 @@ Previously ignored services can be recovered via the `:dns` keyword.
 
 ## 1.28 Edit Clipboard
 
-[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.2.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.2.0-ec)
+[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ec)
 
 <table>
     <tr>
@@ -1032,17 +1032,48 @@ Alternatively, use the [Universal Action](https://www.alfredapp.com/help/feature
 
 <img src="assets/images/preview.ec.ua.png" width="550px"/>
 
-#### Clipboard History
+#### Integrated Clipboard History
 
 <img src="assets/images/preview.ec.search.all.png" width="550px"/>  
 
-<img src="assets/images/preview.ec.search.filtered.png" width="550px"/>
-
 - <kbd>⌘</kbd><kbd>⏎</kbd> (or <kbd>⏎</kbd>) Append to clipboard
 - <kbd>⌘</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend to clipboard
-- <kbd>⌥</kbd><kbd>⏎</kbd> Append all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
-- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend all [buffered files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
-- <kbd>⌃</kbd><kbd>⏎</kbd> Skip and return to editing
+- <kbd>⌥</kbd><kbd>⏎</kbd> Append all [Buffered Files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
+- <kbd>⌥</kbd><kbd>⇧</kbd><kbd>⏎</kbd> Prepend all [Buffered Files](https://www.alfredapp.com/help/features/file-search/#file-buffer)
+- <kbd>⇧</kbd><kbd>⏎</kbd> Skip and return to editing
+- <kbd>⇥</kbd> Limit query to selected application
+- <kbd>⌃</kbd> View information if subtext is disabled
+- <kbd>⌘</kbd><kbd>Y</kbd> (or tap <kbd>⇧</kbd>) Quick Look the clipboard contents
+- <kbd>⌘</kbd><kbd>L</kbd> Preview the clipboard contents as [Large Type](https://www.alfredapp.com/help/features/large-type/)
+
+#### Standalone Clipboard History
+
+Use the *standalone* variant as Alfred clipboard history replacement via the `hist` __History Keyword__, or by defining the dedicated [Hotkey Trigger](https://www.alfredapp.com/help/workflows/triggers/hotkey/). 
+
+<img src="assets/images/preview.ec.search.filtered.png" width="550px"/>
+
+- <kbd>⏎</kbd> Paste to frontmost application
+- <kbd>⌘</kbd><kbd>⏎</kbd> Inspect and edit clipboard item
+- <kbd>⌥</kbd><kbd>⏎</kbd> Action clipboard text in Alfred
+- <kbd>⌘</kbd><kbd>C</kbd> Copy to clipboard
+- <kbd>⇥</kbd> Limit query to selected application
+- <kbd>⌃</kbd> View information if subtext is disabled
+- <kbd>⌘</kbd><kbd>Y</kbd> (or tap <kbd>⇧</kbd>) Quick Look the clipboard contents
+- <kbd>⌘</kbd><kbd>L</kbd> Preview the clipboard contents as [Large Type](https://www.alfredapp.com/help/features/large-type/)
+
+### Clipboard Filters
+
+Type the prefix `:::` to filter clipboard items copied from specific applications.  
+__Tip:__ Tap <kbd>⇥</kbd> twice to reach the app selector.
+
+<img src="assets/images/preview.ec.search.filter.available.png" width="550px"/>
+
+
+- <kbd>⏎</kbd> (or tap <kbd>⇥</kbd>) Limit to clipboard items that originate from the selected application.
+
+<img src="assets/images/preview.ec.search.filter.filtered.png" width="550px"/>
+
+
 
 ---
 
