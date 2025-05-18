@@ -10,11 +10,11 @@ __Some workflows live in their own repository:__
 - [µBib | Citations, BibTeX, and Research](https://github.com/zeitlings/ubib)
 - [Quill | Text processing utility](https://github.com/zeitlings/alfred-quill)
 - [Ayai · GPT Nexus (alpha)](https://github.com/zeitlings/ayai-gpt-nexus)
-- [DEVONthink 3 Portal](https://github.com/zeitlings/alfred-devonthink)
+- [DEVONthink 4 Portal](https://github.com/zeitlings/alfred-devonthink) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
 - [Logseq Workflow](https://github.com/zeitlings/alfred-logseq)
-- [Ollama Workflow](https://github.com/zeitlings/alfred-ollama) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
+- [Ollama Workflow](https://github.com/zeitlings/alfred-ollama) 
 - [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
-- [Unified Search](https://github.com/zeitlings/alfred-unified-search) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
+- [Unified Search](https://github.com/zeitlings/alfred-unified-search) 
 - [Calendar++](https://github.com/zeitlings/alfred-calendar)
 
 <!--
