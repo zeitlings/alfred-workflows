@@ -15,7 +15,7 @@ __Some workflows live in their own repository:__
 - [Ollama Workflow](https://github.com/zeitlings/alfred-ollama) 
 - [Default Browser](https://github.com/zeitlings/alfred-set-default-browser/)
 - [Unified Search](https://github.com/zeitlings/alfred-unified-search) 
-- [Calendar++](https://github.com/zeitlings/alfred-calendar)
+- [Calendar++](https://github.com/zeitlings/alfred-calendar) <img src="https://img.shields.io/badge/new-FFFFFF?style=flat-square&logo=alfred&logoColor=424242" />
 
 <!--
 <table align="center">
