@@ -327,7 +327,7 @@ __2 / PDF Document__
 
 ## 1.8. New File
 
-[![Download button for workflow: New File](https://img.shields.io/badge/download-v1.3.2-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.2-nf)
+[![Download button for workflow: New File](https://img.shields.io/badge/download-v1.4.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.4.0-nf)
 
 
 <table>
