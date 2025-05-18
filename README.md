@@ -68,6 +68,8 @@ __Some workflows live in their own repository:__
   - [1.26 Finder Crawl](#126-finder-crawl)
   - [1.27 DNS Selector](#127-dns-selector)
   - [1.28 Edit Clipboard](#128-edit-clipboard)
+  - [Grep this!](#grep-this)
+  - [File, Please](#file-please)
 - [2. Proof of Concept \& Demos](#2-proof-of-concept--demos)
   - [2.1. Extended Hotkeys](#21-extended-hotkeys)
   - [2.2. Permission Handler](#22-permission-handler)
@@ -997,7 +999,7 @@ Previously ignored services can be recovered via the `:dns` keyword.
 
 ## 1.28 Edit Clipboard
 
-[![Download button for workflow: DNS Selector](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ec)
+[![Download button for workflow: Edit Clipboard](https://img.shields.io/badge/download-v1.3.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.3.0-ec)
 
 <table>
     <tr>
@@ -1061,7 +1063,7 @@ Use the *standalone* variant as Alfred clipboard history replacement via the `hi
 - <kbd>⌘</kbd><kbd>Y</kbd> (or tap <kbd>⇧</kbd>) Quick Look the clipboard contents
 - <kbd>⌘</kbd><kbd>L</kbd> Preview the clipboard contents as [Large Type](https://www.alfredapp.com/help/features/large-type/)
 
-### Clipboard Filters
+#### Clipboard Filters
 
 Type the prefix `:::` to filter clipboard items copied from specific applications.  
 __Tip:__ Tap <kbd>⇥</kbd> twice to reach the app selector.
@@ -1073,7 +1075,63 @@ __Tip:__ Tap <kbd>⇥</kbd> twice to reach the app selector.
 
 <img src="assets/images/preview.ec.search.filter.filtered.png" width="550px"/>
 
+## Grep this!
 
+[![Download button for workflow: Grep this!](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-grep)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/grep.png" width="150px">
+        </td>
+        <td>
+            Grep text from folders, files, or plain text to quickly inspect their contents, or help you locate that specific file you know had this particular word in it. 
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+
+Use the __*Grep this!*__ [Universal Action](https://www.alfredapp.com/help/workflows/triggers/universal-action/) to find lines in your input that match the query.
+
+
+Alternatively, use the [Hotkey](https://www.alfredapp.com/help/workflows/triggers/hotkey/) to grep your selection in macOS—text, files, or folders—or to search within the __document currently open__ in your IDE or text editor, if that editor is supported.  
+
+Additionally, you can locate files or folders for grepping via the `grep` keyword.
+
+<img src="assets/images/preview.grep.action.png" width="550px"/>
+<img src="assets/images/preview.grep.entry.png" width="550px"/>
+<img src="assets/images/preview.grep.results.png" width="550px"/>
+
+- <kbd>⏎</kbd> Open the file at the matched line and column.
+
+
+## File, Please
+
+[![Download button for workflow: File, Please](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fp)
+
+<table>
+    <tr>
+        <td>
+            <img src="assets/icons/file.please.png" width="150px">
+        </td>
+        <td>
+            Go to the file. 
+        </td>
+    </tr>
+</table>
+
+### Usage
+
+Quickly go to the file or document open in the frontmost application, or browse the current Finder location via the __primary__ [Hotkey Trigger](https://www.alfredapp.com/help/workflows/triggers/hotkey/) ✱  
+
+
+The __secondary__ [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) in this workflow allow you to quickly reveal the most recently downloaded file in your Downloads folder, or the file most recently added to the Desktop.
+
+---
+
+> ✱  __Browsing the Finder location__ requires either the *Alfred Browser*, or *Command Line* default strategy, and is invoked when pressing the primary Hotkey combination while Finder has focus.
 
 ---
 
