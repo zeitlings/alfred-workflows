@@ -1109,7 +1109,7 @@ Additionally, you can locate files or folders for grepping via the `grep` keywor
 
 ## 1.30 File, Please
 
-[![Download button for workflow: File, Please](https://img.shields.io/badge/download-v1.0.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.0.0-fp)
+[![Download button for workflow: File, Please](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fp)
 
 <table>
     <tr>
@@ -1128,6 +1128,13 @@ Quickly go to the file or document open in the frontmost application, or browse 
 
 
 The __secondary__ [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) in this workflow allow you to quickly reveal the most recently downloaded file in your Downloads folder, or the file most recently added to the Desktop.
+
+<img src="assets/images/preview.fp.keyword.png" width="550px"/>
+
+- <kbd>↩</kbd> Get the file using the default strategy
+- <kbd>⌘</kbd><kbd>↩</kbd> Get the file using the __Alfred Browser__
+- <kbd>⌥</kbd><kbd>↩</kbd> Get the file using the __Command Line__
+- <kbd>⌃</kbd><kbd>↩</kbd> Reveal the file in __Finder__
 
 
 ---
