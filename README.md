@@ -1129,6 +1129,8 @@ Quickly go to the file or document open in the frontmost application, or browse 
 
 The __secondary__ [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/) in this workflow allow you to quickly reveal the most recently downloaded file in your Downloads folder, or the file most recently added to the Desktop.
 
+Alternatively, use the `fp`, `fpl`, and `fpd` keywords to get the file you want.
+
 <img src="assets/images/preview.fp.keyword.png" width="550px"/>
 
 - <kbd>↩</kbd> Get the file using the default strategy
