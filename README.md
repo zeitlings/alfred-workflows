@@ -1101,16 +1101,18 @@ Alternatively, use the [Hotkey](https://www.alfredapp.com/help/workflows/trigger
 
 Additionally, you can locate files or folders for grepping via the `grep` keyword.
 
-<img src="assets/images/preview.grep.action.png" width="550px"/>
-<img src="assets/images/preview.grep.entry.png" width="550px"/>
-<img src="assets/images/preview.grep.results.png" width="550px"/>
+<img src="assets/images/preview.grep.action.png" width="550px"/>  
+
+<img src="assets/images/preview.grep.entry.png" width="550px"/>  
+
+<img src="assets/images/preview.grep.results.png" width="550px"/>  
 
 - <kbd>⏎</kbd> Open the file at the matched line and column.
 
 
 ## 1.30 File, Please
 
-[![Download button for workflow: File, Please](https://img.shields.io/badge/download-v1.1.0-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.0-fp)
+[![Download button for workflow: File, Please](https://img.shields.io/badge/download-v1.1.1-informational)](https://github.com/zeitlings/alfred-workflows/releases/tag/v1.1.1-fp)
 
 <table>
     <tr>
